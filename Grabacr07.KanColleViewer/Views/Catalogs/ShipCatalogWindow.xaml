@@ -165,7 +165,7 @@
 								<WrapPanel Grid.Column="2">
 									<CheckBox IsChecked="{Binding WithoutLv1Ship, Mode=TwoWay}"
 											  Margin="0,2,20,2">
-										<TextBlock Text="Do not show Lv.1 ship daughters" />
+										<TextBlock Text="Do not show Lv.1 ship girls" />
 									</CheckBox>
 								</WrapPanel>
 							</Grid>
@@ -184,7 +184,7 @@
 								<WrapPanel Grid.Column="2">
 									<CheckBox IsChecked="{Binding WithoutMaxModernizedShip, Mode=TwoWay}"
 											  Margin="0,2">
-										<TextBlock Text="Hide maxed ship daughters" />
+										<TextBlock Text="Hide maxed ship girls" />
 									</CheckBox>
 								</WrapPanel>
 							</Grid>

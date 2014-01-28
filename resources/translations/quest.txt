@@ -15,8 +15,8 @@ A13;戦艦と重巡による主力艦隊を編成せよ！;Organize the Main Fle
 A14;「川内」型軽巡姉妹の全3艦を編成せよ！;Organize the Sendai-class!;川内型軽巡洋艦、「川内」「神通」「那珂」を同一艦隊に編成せよ！;Have all three Sendai-class CL in your main fleet.
 A15;「妙高」型重巡姉妹の全4隻を編成せよ！;Organize the Myoukou-class!;妙高型重巡洋艦「妙高」「那智」「足柄」「羽黒」を同一艦隊に配属せよ！;Have all four Myoukou-class CA in your main fleet.
 A16;「金剛」型による高速戦艦部隊を編成せよ！;Organize the Kongou-class!;金剛型戦艦「金剛」「比叡」「榛名」「霧島」全4隻の高速戦艦を集中配備せよ！;Have all four Kongou-class BB in your main fleet.
-A17;「扶桑」型戦艦姉妹の全2隻を編成せよ！;Organize the Fusou-class!;扶桑型戦艦「扶桑」「山城」を同一艦隊に配属せよ！;Have both Fusou-class BB in your main fleet.
-A18;「伊勢」型戦艦姉妹の全2隻を編成せよ！;Organize the Ise-class!;伊勢型戦艦「伊勢」「日向」を同一艦隊に配属せよ！;Have both Ise-class BB in your main fleet.
+A17;「扶桑」型戦艦姉妹の全２隻を編成せよ！;Organize the Fusou-class!;扶桑型戦艦「扶桑」「山城」を同一艦隊に配属せよ！;Have both Fusou-class BB in your main fleet.
+A18;「伊勢」型戦艦姉妹の全２隻を編成せよ！;Organize the Ise-class!;伊勢型戦艦「伊勢」「日向」を同一艦隊に配属せよ！;Have both Ise-class BB in your main fleet.
 A19;「南雲機動部隊」を編成せよ！;Organize the Nagumo Task Force!;一航戦「赤城」「加賀」二航戦「飛龍」「蒼龍」からなる第一機動部隊を編成せよ！;Have Akagi, Kaga, Hiryuu, and Souryuu in your main fleet.
 A20;「三川艦隊」を編成せよ！;Organize the Mikawa Fleet!;「鳥海」「青葉」「加古」「古鷹」「天龍」を含む高速艦隊を編成せよ！;Have Choukai, Aoba, Kako, Furutaka, and Tenryuu in your main fleet, with one additional fast ship (DD/CL/CA).
 A21;「第四戦隊」を編成せよ！;Organize the Cruiser Division 4!;「愛宕」「高雄」「鳥海」「摩耶」を基幹とした第四戦隊を編成せよ！;Have all four Takao-class CA in your main fleet.
