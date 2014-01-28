@@ -262,10 +262,10 @@
     <value>Fleet HQ</value>
   </data>
   <data name="Homeport_InstantBuild" xml:space="preserve">
-    <value>Instant Build Materials:  </value>
+    <value>Instant Build:  </value>
   </data>
   <data name="Homeport_InstantRepair" xml:space="preserve">
-    <value>Instant Repair Materials:</value>
+    <value>Instant Repair:</value>
   </data>
   <data name="Homeport_NoOfEquipment" xml:space="preserve">
     <value>Equipment:</value>

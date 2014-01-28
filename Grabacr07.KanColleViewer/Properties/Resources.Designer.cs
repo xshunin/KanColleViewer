@@ -322,7 +322,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Instant Build Materials:  .
+        ///   Looks up a localized string similar to Instant Build:  .
         /// </summary>
         public static string Homeport_InstantBuild {
             get {
@@ -331,7 +331,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Instant Repair Materials:.
+        ///   Looks up a localized string similar to Instant Repair:.
         /// </summary>
         public static string Homeport_InstantRepair {
             get {
