@@ -1,8 +1,14 @@
 KanColleViewer! (提督業も忙しい！)
 --
+**--This is the current prototype branch which includes new features such as new notifications, ship girl lists, and more!**
 
 A browser utility that makes it easy to play Kantai Collection.
 This is the translation project of the original [KanColleViewer](http://grabacr.net/kancolleviewer)
+
+### Downloads
+All builds can be found in the following links below.
+
+* [SkyDrive](http://sdrv.ms/1b01S24) -- Major revision binaries
 
 ### About This Project
 KanColleViewer uses the web browser component of the Windows Presentation Foundation (WPF) in combination of [FiddlerCore](http://fiddler2.com/fiddlercore) to capture communication packets inbetween the server and the page itself.
