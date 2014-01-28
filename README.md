@@ -1,6 +1,6 @@
 KanColleViewer! (提督業も忙しい！)
 --
---Currently working on the [prototype](https://github.com/Zharay/KanColleViewer/tree/prototype) branch.
+**--Currently working on the [prototype](https://github.com/Zharay/KanColleViewer/tree/prototype) branch.**
 
 A browser utility that makes it easy to play Kantai Collection.
 This is the translation project of the original [KanColleViewer](http://grabacr.net/kancolleviewer)
