@@ -51,7 +51,27 @@ namespace Grabacr07.KanColleWrapper.Models
 		/// </summary>
 		public string Title
 		{
-			get { return this.RawData.api_title; }
+			//get { return this.RawData.api_title; }
+			get
+			{
+				System.IO.StreamReader filereader = new System.IO.StreamReader("quest.txt", System.Text.Encoding.UTF8, true);
+				string read_line = null;
+				string jap_name = null;
+				string eng_name = null;
+				while (true)
+				{
+					read_line = filereader.ReadLine();
+					if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
+					else
+					{
+						char[] delimiter = { ';' };
+						jap_name = read_line.Split(delimiter)[1];
+						eng_name = read_line.Split(delimiter)[2];
+						if (String.Equals(RawData.api_title, jap_name)) { filereader.Close(); return eng_name; }
+					}
+				}
+				return this.RawData.api_title;
+			}
 		}
 
 		/// <summary>
@@ -59,7 +79,28 @@ namespace Grabacr07.KanColleWrapper.Models
 		/// </summary>
 		public string Detail
 		{
-			get { return this.RawData.api_detail; }
+			//get { return this.RawData.api_detail; }
+
+			get
+			{
+				System.IO.StreamReader filereader = new System.IO.StreamReader("quest.txt", System.Text.Encoding.UTF8, true);
+				string read_line = null;
+				string jap_name = null;
+				string eng_name = null;
+				while (true)
+				{
+					read_line = filereader.ReadLine();
+					if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
+					else
+					{
+						char[] delimiter = { ';' };
+						jap_name = read_line.Split(delimiter)[3];
+						eng_name = read_line.Split(delimiter)[4];
+						if (String.Equals(RawData.api_detail, jap_name)) { filereader.Close(); return eng_name; }
+					}
+				}
+				return this.RawData.api_detail;
+			}
 		}
 
 

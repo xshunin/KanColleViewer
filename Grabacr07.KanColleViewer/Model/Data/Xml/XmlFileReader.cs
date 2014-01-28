@@ -22,7 +22,7 @@ namespace Grabacr07.KanColleViewer.Model.Data.Xml
 			if (filePath == null || !File.Exists(filePath))
 			{
 				// 指定されたファイルパスの XML ファイルが見つからない場合
-				throw new FileNotFoundException("ファイルが見つかりません。", filePath);
+				throw new FileNotFoundException("File not found.", filePath);
 			}
 
 			FileStream stream = null;			// 読込用ストリーム

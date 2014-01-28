@@ -26,7 +26,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Fleets
 
 		public string Name
 		{
-			get { return string.IsNullOrEmpty(this.source.Name.Trim()) ? "(第 " + this.source.Id + " 艦隊)" : this.source.Name; }
+			get { return string.IsNullOrEmpty(this.source.Name.Trim()) ? "(First " + this.source.Id + " Fleet)" : this.source.Name; }
 		}
 
 		public string AverageLevel

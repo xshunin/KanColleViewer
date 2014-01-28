@@ -24,7 +24,7 @@
 		<views:BrowserNavigator Margin="6,-4,6,0" />
 
 		<TextBlock Grid.Row="1"
-				   Text="艦これの開始を待っています..."
+				   Text="Waiting for Kantai Collection to start..."
 				   VerticalAlignment="Center"
 				   Margin="6" />
 	</Grid>

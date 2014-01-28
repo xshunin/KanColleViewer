@@ -20,7 +20,7 @@ namespace Grabacr07.KanColleViewer.Model.Internal
 		{
 			try
 			{
-				var shortcutPath = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\Programs\\提督業も忙しい！.lnk";
+				var shortcutPath = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu) + "\\Programs\\KanColleViewer!.lnk";
 #if DEBUG
 				if (!File.Exists(shortcutPath))
 				{

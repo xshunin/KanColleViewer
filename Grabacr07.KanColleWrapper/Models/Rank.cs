@@ -13,26 +13,26 @@ namespace Grabacr07.KanColleWrapper.Models
 			switch (rank)
 			{
 				case 1:
-					return "元帥";
+					return "Marshal Admiral";
 				case 2:
-					return "大将";
+					return "Admiral";
 				case 3:
-					return "中将";
+					return "Vice-Admiral";
 				case 4:
-					return "少将";
+					return "Rear-Admiral";
 				case 5:
-					return "大佐";
+					return "Captain";
 				case 6:
-					return "中佐";
+					return "Commander";
 				case 7:
-					return "新米中佐";
+					return "Novice Commander";
 				case 8:
-					return "少佐";
+					return "Lt. Commander";
 				case 9:
-					return "中堅少佐";
+					return "Lieutenant";
 				case 10:
 				default:
-					return "新米少佐";
+					return "Novice Lieutenant";
 			}
 		}
 	}
