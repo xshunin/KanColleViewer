@@ -162,7 +162,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 					}
 					else
 					{
-						this.reSortieConditionError = "コンディション値は 0 ～ 49 の数値で入力してください。";
+                        this.reSortieConditionError = "Please enter a condition value between 0 and 49.";
 					}
 
 					this._ReSortieCondition = value;
