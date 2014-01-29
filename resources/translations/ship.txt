@@ -84,7 +84,7 @@
 多摩改,Tama Kai
 木曾,Kiso
 木曾改,Kiso Kai
-木曾改二, Kiso Kai2
+木曾改二,Kiso Kai2
 長良,Nagara
 長良改,Nagara Kai
 五十鈴,Isuzu
