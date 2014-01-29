@@ -5,6 +5,12 @@ KanColleViewer! (提督業も忙しい！)
 A browser utility that makes it easy to play Kantai Collection.
 This is the translation project of the original [KanColleViewer](http://grabacr.net/kancolleviewer)
 
+##### Main Contributors
+* [@Zharay](http://twitter.com/Zharay) -- English Version
+* [@Grabacr07](https://twitter.com/Grabacr07) -- Original author
+* [silfumus](https://github.com/silfumus) -- Continued Work (defunct)
+* [southrop](https://github.com/southrop) -- Original text file translation code (defunct)
+
 ### Downloads
 All builds can be found in the following links below.
 
@@ -29,7 +35,6 @@ The way the translation works is that it manually loads the translation from sev
 * Screenshot saving
 * Sound muting
 
-
 ### Requirements
 * Windows 8 or later
 * Windows 7 (limited functionality)
@@ -48,7 +53,6 @@ This was mainly developed using C# + WPF in Windows 8.1 Pro and Visual Studio Pr
 * [Livet](http://ugaya40.net/livet) (MVVM Infrastructure)
 * [DynamicJson](http://dynamicjson.codeplex.com/) (JSON deserialization processing)
 * [FiddlerCore](http://fiddler2.com/fiddlercore) (Network capture)
-
 
 #### Liscense
 * MIT License
