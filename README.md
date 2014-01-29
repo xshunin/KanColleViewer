@@ -6,10 +6,10 @@ A browser utility that makes it easy to play Kantai Collection.
 This is the translation project of the original [KanColleViewer](http://grabacr.net/kancolleviewer)
 
 ##### Main Contributors
-* [@Zharay](http://twitter.com/Zharay) -- English Version
-* [@Grabacr07](https://twitter.com/Grabacr07) -- Original author
-* [silfumus](https://github.com/silfumus) -- Continued Work (defunct)
-* [southrop](https://github.com/southrop) -- Original text file translation code (defunct)
+* [@Zharay](http://twitter.com/Zharay) - Current project lead
+* [silfumus](https://github.com/silfumus) - Continued Work (defunct)
+* [southrop](https://github.com/southrop) - Original text file translation code (defunct)
+* [@Grabacr07](https://twitter.com/Grabacr07) - Original author
 
 ### Downloads
 All builds can be found in the following links below.
