@@ -2,7 +2,7 @@
 	KCV Change Log
 ========================
 
-Prototype r201 - 1/30/2014
+Prototype r210 - 1/30/2014
 	* Added 2 new ships to the translation: Yayoi, Uzuki
 	* Added quest A33, removed old event quests.
 	* Composition quests requiring specific ships now also has their names in Japanese.
