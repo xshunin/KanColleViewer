@@ -2,10 +2,18 @@
 	KCV Change Log
 ========================
 
+Prototype r201 - 1/30/2014
+	* Added 2 new ships to the translation: Yayoi, Uzuki
+	* Added quest A33, removed old event quests.
+	* Composition quests requiring specific ships now also has their names in Japanese.
+	* *NEW* Merge: You can now access the options before KCV loads a page.
+	* Merge: New way of disabling JavaScript errors. Same as what I did, only more elegant.
+	* Merge: The windows now have a glow to them via Metro Radiance. Win8 Only.
+
 Prototype r199 - 1/30/2014
-	* KCV should no longer be showing javascript errors. You'll still get popups from DMM's main website however.
+	* KCV should no longer be showing JavaScript errors. You'll still get popups from DMM's main website however.
 	* Translation: If you still get "Adopted Ship Girls" it should now be "Ship Girl Roster".
 	* Typo: Kiso Kai 2 no longer has a space in her name.
-	* Main Branch: Various minor changes in the way colors are displayed.
+	* Merge: Various minor changes in the way colors are displayed.
 
 .:| There are none before this |:.

@@ -264,3 +264,7 @@
 イオナ,IONA
 タカオ,TAKAO
 ハルナ,HARUNA
+弥生,Yayoi
+弥生改,Yayoi Kai
+卯月,Uzuki
+卯月改,Uzuki Kai

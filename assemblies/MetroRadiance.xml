@@ -54,11 +54,6 @@
             ウィンドウの位置とサイズを保存または復元する方法を指定するオブジェクトを取得または設定します。
             </summary>
         </member>
-        <member name="P:MetroRadiance.Controls.MetroWindow.CaptionBarHeight">
-            <summary>
-            IsCaptionBar 添付プロパティで指定したキャプション バーの高さを取得します。
-            </summary>
-        </member>
         <member name="T:MetroRadiance.Controls.PromptComboBox">
             <summary>
             未入力時にプロンプトを表示できる <see cref="T:System.Windows.Controls.ComboBox"/> を表します。
