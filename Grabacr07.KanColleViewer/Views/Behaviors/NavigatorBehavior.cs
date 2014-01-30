@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Reflection;
 using System.Windows.Controls;
 using System.Windows.Interactivity;
 using System.Windows.Navigation;
@@ -67,6 +68,13 @@ namespace Grabacr07.KanColleViewer.Views.Behaviors
 				this.Navigator.Source = navigationEventArgs.Uri;
 				this.Navigator.CanGoBack = this.AssociatedObject.CanGoBack;
 				this.Navigator.CanGoForward = this.AssociatedObject.CanGoForward;
+				
+				// Disable script errors and other pop ups.
+				FieldInfo fiComWebBrowser = typeof(WebBrowser).GetField("_axIWebBrowser2", BindingFlags.Instance | BindingFlags.NonPublic);
+				if (fiComWebBrowser == null) return;
+				object objComWebBrowser = fiComWebBrowser.GetValue(this.AssociatedObject);
+				if (objComWebBrowser == null) return;
+				objComWebBrowser.GetType().InvokeMember("Silent", BindingFlags.SetProperty, null, objComWebBrowser, new object[] { true });
 			}
 		}
 
