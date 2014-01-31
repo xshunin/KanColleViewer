@@ -36,7 +36,7 @@
 敷波改,Shikinami Kai
 大井,Ooi
 大井改,Ooi Kai
-大井改,Ooi Kai2
+大井改二,Ooi Kai2
 北上,Kitakami
 北上改,Kitakami Kai
 北上改二,Kitakami Kai2
@@ -263,11 +263,8 @@
 まるゆ,Maruyu
 まるゆ改,Maruyu Kai
 弥生,Yayoi
-
 弥生改,Yayoi Kai
-
 卯月,Uzuki
-
 卯月改,Uzuki Kai
 イオナ,IONA
 タカオ,TAKAO
