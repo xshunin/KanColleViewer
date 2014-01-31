@@ -1,6 +1,6 @@
 KanColleViewer! (提督業も忙しい！)
 --
-**--This is the current prototype branch which includes new features such as new notifications, ship girl lists, and more!**
+**--This is the horizontal branch for those on computers not vertically endowed. Max width must be under 1440px**
 
 A browser utility that makes it easy to play Kantai Collection.
 This is the translation project of the original [KanColleViewer](http://grabacr.net/kancolleviewer)
