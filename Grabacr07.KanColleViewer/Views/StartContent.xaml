@@ -14,7 +14,7 @@
 			 xmlns:settings="clr-namespace:Grabacr07.KanColleViewer.Views.Settings"
 			 xmlns:vm="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
 			 mc:Ignorable="d"
-			 d:DesignWidth="800"
+			 d:DesignWidth="638"
 			 d:DesignHeight="350"
 			 d:DataContext="{d:DesignInstance vm:NotStartedViewModel}"
 			 Background="{DynamicResource ThemeBrushKey}">
@@ -52,7 +52,7 @@
 								<Path x:Name="Arrow"
 									  Grid.Column="1"
 									  Data="M 0,0 0,10 30,5 z"
-									  Width="20"
+									  Width="10"
 									  Fill="{TemplateBinding Background}"
 									  Stretch="Fill" />
 								<ContentPresenter Grid.Column="0"
@@ -113,7 +113,7 @@
 		</Grid.RowDefinitions>
 
 		<Border ClipToBounds="True"
-				Width="{Binding ElementName=WebBrowser, Path=Width}">
+				Width="Auto">
 			<views:BrowserNavigator Margin="6,-4,6,10"
 									VerticalAlignment="Top" />
 		</Border>
@@ -129,7 +129,7 @@
 				<RadioButton x:Name="InformationTab"
 							 Style="{StaticResource TabLikeRadioButtonStyleKey}"
 							 IsChecked="True">
-					<TextBlock Text="Information"
+					<TextBlock Text="About"
 							   FontSize="18"
 							   Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}, Path=Foreground}" />
 				</RadioButton>
@@ -184,22 +184,22 @@
 									   Margin="0,12"
 									   Style="{DynamicResource SeparatorRectangleStyleKey}" />
 
-                            <TextBlock FontFamily="Segoe UI">
+							<TextBlock FontFamily="Segoe UI">
 								<Run Text="Author / Developer:" />
 								<metro2:HyperlinkEx Uri="https://twitter.com/Grabacr07">
 									<Run Text="@Grabacr07" />
 								</metro2:HyperlinkEx>
-                            </TextBlock>
+							</TextBlock>
 
-                            <TextBlock FontFamily="Segoe UI"
+							<TextBlock FontFamily="Segoe UI"
 									   Margin="0,6,0,0">
 								<Run Text="Translation:" />
 								<metro2:HyperlinkEx Uri="https://twitter.com/Zharay">
 									<Run Text="@Zharay" />
 								</metro2:HyperlinkEx>
-                            </TextBlock>
+							</TextBlock>
 
-                            <TextBlock FontFamily="Segoe UI"
+							<TextBlock FontFamily="Segoe UI"
 									   Margin="0,6,0,0">
 								<Run Text="Icon design:" />
 								<metro2:HyperlinkEx Uri="https://twitter.com/Nrtwd/">
@@ -248,7 +248,7 @@
 					DataContext="{Binding Source={x:Static root:App.ViewModelRoot}, Path=Settings}"
 					Visibility="{Binding ElementName=SettingsTab, Path=IsChecked, Converter={StaticResource BooleanToVisibilityConverter}}">
 				<ScrollViewer VerticalScrollBarVisibility="Auto">
-					<TabControl Width="640"
+					<TabControl Width="530"
 								HorizontalAlignment="Left"
 								Style="{StaticResource TabControlStyleKey}">
 						<TabItem>

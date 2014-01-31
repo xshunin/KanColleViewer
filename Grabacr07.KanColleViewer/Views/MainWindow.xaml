@@ -15,7 +15,7 @@
 				   mc:Ignorable="d"
 				   d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
 				   Title="{Binding Title}"
-				   Width="1580"
+				   Width="1440"
 				   MinWidth="{Binding ElementName=WebBrowser, Path=ActualWidth}"
 				   MinHeight="{Binding ElementName=WebBrowser, Path=ActualHeight}"
 				   Topmost="{Binding TopMost}"
