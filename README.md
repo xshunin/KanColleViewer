@@ -1,6 +1,5 @@
 KanColleViewer! (提督業も忙しい！)
 --
-**--This is the current prototype branch which includes new features such as new notifications, ship girl lists, and more!**
 
 A browser utility that makes it easy to play Kantai Collection.
 This is the translation project of the original [KanColleViewer](http://grabacr.net/kancolleviewer)
