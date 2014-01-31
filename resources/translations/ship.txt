@@ -100,6 +100,7 @@
 神通改,Jintsuu Kai
 那珂,Naka
 那珂改,Naka Kai
+那珂改二,Naka Kai2
 千歳,Chitose
 千歳改,Chitose Kai
 千歳甲,Chitose A
