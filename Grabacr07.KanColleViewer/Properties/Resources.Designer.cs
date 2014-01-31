@@ -196,7 +196,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ship In Progress.
+        ///   Looks up a localized string similar to Ship.
         /// </summary>
         public static string Dockyard_ShipName {
             get {
@@ -205,7 +205,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completion Time.
+        ///   Looks up a localized string similar to Completion.
         /// </summary>
         public static string Dockyard_TimeComplete {
             get {
@@ -214,7 +214,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remaining Time.
+        ///   Looks up a localized string similar to Remaining.
         /// </summary>
         public static string Dockyard_TimeRemaining {
             get {
@@ -286,7 +286,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completion Time.
+        ///   Looks up a localized string similar to Completion.
         /// </summary>
         public static string Expedition_TimeComplete {
             get {
@@ -295,7 +295,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remaining Time.
+        ///   Looks up a localized string similar to Remaining.
         /// </summary>
         public static string Expedition_TimeRemaining {
             get {
@@ -439,7 +439,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ※ The indicators (50%, 80%) mirror in-game indicators. Enemy fleet kills, successful expeditions, etc are not actively counted..
+        ///   Looks up a localized string similar to ※ The indicators (50%, 80%) mirror in-game indicators. Quests are not actively tracked..
         /// </summary>
         public static string Quests_Notice {
             get {
@@ -529,7 +529,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completion Time.
+        ///   Looks up a localized string similar to Completion.
         /// </summary>
         public static string Repairyard_TimeComplete {
             get {
@@ -538,7 +538,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remaining Time.
+        ///   Looks up a localized string similar to Remaining.
         /// </summary>
         public static string Repairyard_TimeRemaining {
             get {
@@ -853,7 +853,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Waiting for KanColle to start.
+        ///   Looks up a localized string similar to Waiting for Kantai Collection to start.
         /// </summary>
         public static string StatusBar_NotStarted {
             get {

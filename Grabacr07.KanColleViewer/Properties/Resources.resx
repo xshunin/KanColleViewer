@@ -145,7 +145,7 @@
     <value> Complete </value>
   </data>
   <data name="Quests_Notice" xml:space="preserve">
-    <value>※ The indicators (50%, 80%) mirror in-game indicators. Enemy fleet kills, successful expeditions, etc are not actively counted.</value>
+    <value>※ The indicators (50%, 80%) mirror in-game indicators. Quests are not actively tracked.</value>
   </data>
   <data name="Settings_BrowserControl_Notice" xml:space="preserve">
     <value>※ This will leave the game, so use with caution</value>
@@ -241,7 +241,7 @@
     <value>Average Level:</value>
   </data>
   <data name="StatusBar_NotStarted" xml:space="preserve">
-    <value>Waiting for KanColle to start</value>
+    <value>Waiting for Kantai Collection to start</value>
   </data>
   <data name="StatusBar_Ready" xml:space="preserve">
     <value>Ready</value>
@@ -277,7 +277,7 @@
     <value>No Notifications</value>
   </data>
   <data name="Common_Notifications_NotImplemented" xml:space="preserve">
-    <value>(planned)</value>
+    <value></value>
   </data>
   <data name="Common_Notifications_Title" xml:space="preserve">
     <value>Notifications</value>
@@ -292,13 +292,13 @@
     <value>Locked</value>
   </data>
   <data name="Dockyard_ShipName" xml:space="preserve">
-    <value>Ship In Progress</value>
+    <value>Ship</value>
   </data>
   <data name="Dockyard_TimeComplete" xml:space="preserve">
-    <value>Completion Time</value>
+    <value>Completion</value>
   </data>
   <data name="Dockyard_TimeRemaining" xml:space="preserve">
-    <value>Remaining Time</value>
+    <value>Remaining</value>
   </data>
   <data name="Dockyard_Unused" xml:space="preserve">
     <value>Empty</value>
@@ -313,10 +313,10 @@
     <value>Individual Fleet Settings</value>
   </data>
   <data name="Expedition_TimeComplete" xml:space="preserve">
-    <value>Completion Time</value>
+    <value>Completion</value>
   </data>
   <data name="Expedition_TimeRemaining" xml:space="preserve">
-    <value>Remaining Time</value>
+    <value>Remaining</value>
   </data>
   <data name="Repairyard_Locked" xml:space="preserve">
     <value>Locked</value>
@@ -331,10 +331,10 @@
     <value>Docked Ship</value>
   </data>
   <data name="Repairyard_TimeComplete" xml:space="preserve">
-    <value>Completion Time</value>
+    <value>Completion</value>
   </data>
   <data name="Repairyard_TimeRemaining" xml:space="preserve">
-    <value>Remaining Time</value>
+    <value>Remaining</value>
   </data>
   <data name="Reparyard_Unused" xml:space="preserve">
     <value>Empty</value>
