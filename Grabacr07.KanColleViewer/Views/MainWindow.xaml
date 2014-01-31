@@ -17,7 +17,7 @@
 				   Title="{Binding Title}"
 				   Width="1440"
 				   MinWidth="{Binding ElementName=WebBrowser, Path=ActualWidth}"
-				   MinHeight="{Binding ElementName=WebBrowser, Path=ActualHeight}"
+				   MinHeight="525"
 				   Topmost="{Binding TopMost}"
 				   FontSize="12"
 				   Background="{DynamicResource ThemeBrushKey}"
@@ -41,7 +41,7 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto" />
 			<RowDefinition Height="*" />
-			<RowDefinition Height="23" />
+			<RowDefinition Height="18" />
 		</Grid.RowDefinitions>
 
 		<!-- #region CaptionBar -->
@@ -54,8 +54,8 @@
 					<ColumnDefinition Width="Auto" />
 				</Grid.ColumnDefinitions>
 
-				<controls:AppIcon Width="36"
-								  Height="36"
+				<controls:AppIcon Width="24"
+								  Height="24"
 								  Background="Transparent"
 								  AnchorVisibility="Collapsed"
 								  BandVisibility="Collapsed" />
