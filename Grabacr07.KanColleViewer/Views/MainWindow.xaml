@@ -15,9 +15,9 @@
 				   mc:Ignorable="d"
 				   d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
 				   Title="{Binding Title}"
-				   Width="960"
-				   Height="945"
+				   Width="1580"
 				   MinWidth="{Binding ElementName=WebBrowser, Path=ActualWidth}"
+				   MinHeight="{Binding ElementName=WebBrowser, Path=ActualHeight}"
 				   Topmost="{Binding TopMost}"
 				   FontSize="12"
 				   Background="{DynamicResource ThemeBrushKey}"
@@ -81,14 +81,15 @@
 		<!-- #endregion -->
 
 		<Grid Grid.Row="1">
-			<Grid.RowDefinitions>
-				<RowDefinition Height="Auto" />
-				<RowDefinition Height="*" />
-			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="*" />
+			</Grid.ColumnDefinitions>
 
 			<WebBrowser x:Name="WebBrowser"
-						Width="960"
-						Height="572"
+						Grid.Column="0"
+						Width="800"
+						Height="480"
 						controls:WebBrowserHelper.ScriptErrorsSuppressed="True">
 				<i:Interaction.Behaviors>
 					<behaviors:SetStyleSheetBehavior />
@@ -108,22 +109,25 @@
 				</i:Interaction.Triggers>
 			</WebBrowser>
 
-			<ContentControl Grid.Row="1"
-							Content="{Binding Content}">
-				<ContentControl.Resources>
-					<DataTemplate DataType="{x:Type viewModels:NotStartedViewModel}">
-						<views:StartContent />
-					</DataTemplate>
-
-					<DataTemplate DataType="{x:Type viewModels:MainContentViewModel}">
-						<views:MainContent />
-					</DataTemplate>
-				</ContentControl.Resources>
-			</ContentControl>
+			<DockPanel Grid.Column="1">
+				<ScrollViewer HorizontalScrollBarVisibility="Auto"
+							  VerticalScrollBarVisibility="Disabled">
+					<ContentControl Content="{Binding Content}">
+						<ContentControl.Resources>
+							<DataTemplate DataType="{x:Type viewModels:NotStartedViewModel}">
+								<views:StartContent />
+							</DataTemplate>
+							<DataTemplate DataType="{x:Type viewModels:MainContentViewModel}">
+								<views:MainContent />
+							</DataTemplate>
+						</ContentControl.Resources>
+					</ContentControl>
+				</ScrollViewer>
+			</DockPanel>
 		</Grid>
 
 		<!-- region Status area -->
-		<Grid Grid.Row="2"
+		<Grid Grid.Row="3"
 			  Background="{DynamicResource AccentBrushKey}"
 			  Panel.ZIndex="100">
 			<Grid.ColumnDefinitions>
@@ -132,7 +136,8 @@
 			</Grid.ColumnDefinitions>
 
 			<views:StatusBar />
-			<metro:ResizeGrip Grid.Column="1" />
+			<metro:ResizeGrip Grid.Column="1"
+							  Margin="5,3,2,2" />
 		</Grid>
 		<!-- endregion -->
 	</Grid>
