@@ -184,14 +184,22 @@
 									   Margin="0,12"
 									   Style="{DynamicResource SeparatorRectangleStyleKey}" />
 
-							<TextBlock FontFamily="Segoe UI">
+                            <TextBlock FontFamily="Segoe UI">
 								<Run Text="Author / Developer:" />
 								<metro2:HyperlinkEx Uri="https://twitter.com/Grabacr07">
 									<Run Text="@Grabacr07" />
 								</metro2:HyperlinkEx>
-							</TextBlock>
+                            </TextBlock>
 
 							<TextBlock FontFamily="Segoe UI">
+								<Run Text="Translation:" />
+								<metro2:HyperlinkEx Uri="https://twitter.com/Zharay">
+									<Run Text="@Zharay" />
+								</metro2:HyperlinkEx>
+                            </TextBlock>
+
+                            <TextBlock FontFamily="Segoe UI"
+									   Margin="0,6,0,0">
 								<Run Text="Icon design:" />
 								<metro2:HyperlinkEx Uri="https://twitter.com/Nrtwd/">
 									<Run Text="@Nrtwd" />
@@ -226,8 +234,7 @@
 				</Border>
 
 				<Rectangle x:Name="Dummy"
-						   Grid.Column="1"
-						   Margin="16,0,31,0" />
+						   Grid.Column="1" />
 
 				<Border Grid.Column="1">
 					<FlowDocumentScrollViewer Padding="0,-18,0,0">
@@ -238,36 +245,32 @@
 							<Paragraph>
 								<Run Foreground="White"
 									 FontSize="20"
-									 Text="ようこそ" />
-							</Paragraph>
-							<Paragraph Language="ja-jp">
-								<Run Text="「提督業も忙しい！」は、艦これを遊びやすくするためのツールです。" />
-								<LineBreak />
-								<Run Text="艦これは内臓された Internet Explorer (IE) 上で動作します。艦これのサーバーに対し一切負荷をかけないように設計・開発しており、通信内容の変更やサーバーに対する情報の送信、Flash 抽出、マクロ・チートの類は一切行っていません。" />
-							</Paragraph>
-							<Paragraph Language="ja-jp">
-								<Run Text="ゲームが正しく表示されない場合や、スクリプトエラーが頻発する場合は、IE のキャッシュを削除してみてください。改善しない場合は、IE の設定や、通常の IE 上で Flash が表示できるかどうか等をご確認ください。" />
+									 Text="Welcome" />
 							</Paragraph>
 							<Paragraph>
-								<InlineUIContainer>
-									<metro2:CallMethodButton Content="{Binding DeleteInternetCacheButtonContent}"
-															 MethodName="DeleteInternetCache"
-															 IsEnabled="{Binding CanDeleteInternetCache}"
-															 HorizontalAlignment="Left"
-															 Padding="30,5"
-															 SnapsToDevicePixels="True" />
-								</InlineUIContainer>
+								<Run Text="KanColleViwer is a tool to play Kantai Collection." />
 								<LineBreak />
-								<InlineUIContainer>
-									<Rectangle Width="{Binding ElementName=Dummy, Path=ActualWidth}"
-											   Height="1"
-											   Style="{DynamicResource SeparatorRectangleStyleKey}"
-											   Margin="0,16,0,0"
-											   SnapsToDevicePixels="True" />
-								</InlineUIContainer>
+								<Run Text="This program uses Internet Explorer (IE) and does not change the communication to the servers, extract from Flash, nor use macro cheats." />
 							</Paragraph>
-							<Paragraph Language="ja-jp">
-								<Run Text="ツールは不定期に更新されています。適宜、更新の確認をお願いします。" />
+							<Paragraph>
+								<Run Text="If you keep getting in game errors, please delete IE's cache. If this does not improve, check whether Flash works on IE." />
+							</Paragraph>
+							<BlockUIContainer>
+								<metro2:CallMethodButton Content="{Binding DeleteInternetCacheButtonContent}"
+														 MethodName="DeleteInternetCache"
+														 IsEnabled="{Binding CanDeleteInternetCache}"
+														 HorizontalAlignment="Left"
+														 Padding="30,5"
+														 SnapsToDevicePixels="True" />
+							</BlockUIContainer>
+							<BlockUIContainer>
+								<Rectangle Height="1"
+										   Style="{DynamicResource SeparatorRectangleStyleKey}"
+										   Margin="0,16,0,0"
+										   SnapsToDevicePixels="True" />
+							</BlockUIContainer>
+							<Paragraph>
+								<Run Text="This program is updated often. Please check below for updates." />
 								<LineBreak />
 								<LineBreak />
 								<Run Text="Project home:" />
@@ -275,9 +278,9 @@
 									<Run Text="http://grabacr.net/kancolleviewer" />
 								</metro2:HyperlinkEx>
 								<LineBreak />
-								<Run Text="Source code:" />
-								<metro2:HyperlinkEx Uri="https://github.com/Grabacr07/KanColleViewer">
-									<Run Text="https://github.com/Grabacr07/KanColleViewer" />
+								<Run Text="English Project:" />
+                                <metro2:HyperlinkEx Uri="https://github.com/Zharay/KanColleViewer">
+                                    <Run Text="https://github.com/Zharay/KanColleViewer" />
 								</metro2:HyperlinkEx>
 							</Paragraph>
 						</FlowDocument>

@@ -23,6 +23,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desktop.Metro", "Grabacr07.Desktop.Metro\Desktop.Metro.csproj", "{F00FC570-2A80-4F61-8364-798CD44514B2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Translations", "Translations", "{74D8B001-9382-4515-8709-5A09B55EB540}"
+	ProjectSection(SolutionItems) = preProject
+		resources\translations\equipment.txt = resources\translations\equipment.txt
+		resources\translations\quest.txt = resources\translations\quest.txt
+		resources\translations\ship.txt = resources\translations\ship.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -25,7 +25,7 @@
 			<RowDefinition Height="Auto" />
 		</Grid.RowDefinitions>
 
-		<TextBlock Text="「提督業も忙しい！」 を終了します。 よろしいですか？"
+		<TextBlock Text="「KanColleViewer!」 will close. Are you sure?"
 				   FontSize="13"
 				   Foreground="{DynamicResource ActiveForegroundBrushKey}"
 				   Margin="10,0"

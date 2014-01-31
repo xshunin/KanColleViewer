@@ -135,7 +135,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Catalogs
 
 		public ShipCatalogWindowViewModel()
 		{
-			this.Title = "所属艦娘一覧";
+			this.Title = "Ship Girl Roster";
 			this.IsOpenSettings = true;
 
 			this.SortWorker = new ShipCatalogSortWorker();

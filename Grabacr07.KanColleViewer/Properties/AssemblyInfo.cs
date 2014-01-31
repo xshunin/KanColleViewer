@@ -7,11 +7,11 @@ using System.Windows;
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle("提督業も忙しい！")]
-[assembly: AssemblyDescription("提督業も忙しい！")]
+[assembly: AssemblyTitle("KanColleViewer!")]
+[assembly: AssemblyDescription("KanColleViewer!")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("grabacr.net")]
-[assembly: AssemblyProduct("KanColleViewer")]
+[assembly: AssemblyProduct("KanColleViewer!")]
 [assembly: AssemblyCopyright("Copyright © 2013 Grabacr07")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

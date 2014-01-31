@@ -11,7 +11,7 @@
 	<Style x:Key="MetroDialogStyleKey"
 		   TargetType="{x:Type metro:MetroWindow}">
 		<Setter Property="Width"
-				Value="470" />
+				Value="280" />
 		<Setter Property="MinHeight"
 				Value="150" />
 		<Setter Property="Foreground"

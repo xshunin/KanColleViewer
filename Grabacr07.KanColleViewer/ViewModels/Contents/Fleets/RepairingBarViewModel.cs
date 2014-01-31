@@ -25,10 +25,10 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Fleets
 				.FirstOrDefault();
 			if (dock == null)
 			{
-				return "艦隊に入渠中の艦娘がいます。";
+				return "Ships are currently being repaired.";
 			}
 			var remaining = dock.CompleteTime.Value.LocalDateTime - DateTimeOffset.Now - TimeSpan.FromMinutes(1.0);
-			return string.Format(@"艦隊に入渠中の艦娘がいます。 完了時刻: {0:MM/dd HH\:mm} 完了まで: {1}:{2:mm\:ss}",
+			return string.Format(@"Ships are currently being repaired until {0:MM/dd HH\:mm} and will be complete in {1}:{2:mm\:ss}",
 				dock.CompleteTime.Value.LocalDateTime, (int)remaining.TotalHours, remaining);
 		}
 	}

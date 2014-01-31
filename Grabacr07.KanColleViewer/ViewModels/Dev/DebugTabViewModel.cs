@@ -17,7 +17,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Dev
 
 		public void Notify()
 		{
-			WindowsNotification.Notifier.Show("テスト", "これはテスト通知です。", () => App.ViewModelRoot.Activate());
+			WindowsNotification.Notifier.Show("Test", "This is a test notification.", () => App.ViewModelRoot.Activate());
 		}
 
 	}
