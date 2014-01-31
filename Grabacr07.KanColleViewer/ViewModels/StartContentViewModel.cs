@@ -42,7 +42,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#region DeleteInternetCacheButtonContent 変更通知プロパティ
 
-		private string _DeleteInternetCacheButtonContent = "キャッシュの削除";
+		private string _DeleteInternetCacheButtonContent = "Delete Cache";
 
 		public string DeleteInternetCacheButtonContent
 		{
@@ -72,7 +72,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				var result = await Helper.DeleteInternetCache();
 				if (result)
 				{
-					this.DeleteInternetCacheButtonContent = "キャッシュを削除しました";
+					this.DeleteInternetCacheButtonContent = "Cache removed";
 				}
 				else
 				{
