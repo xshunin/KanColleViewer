@@ -69,3 +69,5 @@ Ju87C改,Ju 87C Kai
 カ号観測機,Type Ka Liaison Aircraft
 三式指揮連絡機(対潜),Type 3 Liaison Aircraft
 10cm連装高角砲(砲架),Improved 10cm High-angle Cannon
+増設バルジ（中型艦）,Anti-Torpedo Bulge (M)
+増設バルジ（大型艦）,Anti-Torpedo Bulge (L)
