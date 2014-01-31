@@ -339,22 +339,22 @@
   <data name="Reparyard_Unused" xml:space="preserve">
     <value>Empty</value>
   </data>
-  <data name="ViewModels_Dockyard" xml:space="preserve">
+  <data name="Dockyard" xml:space="preserve">
     <value>Construction</value>
   </data>
-  <data name="ViewModels_Expeditions" xml:space="preserve">
+  <data name="Expedition" xml:space="preserve">
     <value>Expeditions</value>
   </data>
-  <data name="ViewModels_Fleets" xml:space="preserve">
+  <data name="Fleets" xml:space="preserve">
     <value>Fleets</value>
   </data>
-  <data name="ViewModels_Quests" xml:space="preserve">
+  <data name="Quests" xml:space="preserve">
     <value>Quests</value>
   </data>
-  <data name="ViewModels_Repairyard" xml:space="preserve">
+  <data name="Repairyard" xml:space="preserve">
     <value>Repair</value>
   </data>
-  <data name="ViewModels_Settings" xml:space="preserve">
+  <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
   <data name="Dockyard_Display_Reveal" xml:space="preserve">
@@ -368,5 +368,35 @@
   </data>
   <data name="Dockyard_Notifications_Individual" xml:space="preserve">
     <value>Individual Dock Settings</value>
+  </data>
+  <data name="IntegratedView" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="Dockyard_NotificationMessage" xml:space="preserve">
+    <value>Construction of {1} in Dock {0} has been completed.</value>
+  </data>
+  <data name="Dockyard_NotificationMessage_Title" xml:space="preserve">
+    <value>Construction Completed</value>
+  </data>
+  <data name="Common_ShipGirl" xml:space="preserve">
+    <value>Shipgirl</value>
+  </data>
+  <data name="Expedition_NotificationMessage" xml:space="preserve">
+    <value>「{0}」 has returned from an expedition.</value>
+  </data>
+  <data name="Expedition_NotificationMessage_Title" xml:space="preserve">
+    <value>Expedition Completed</value>
+  </data>
+  <data name="Repairyard_NotificationMessage" xml:space="preserve">
+    <value>Repairs on {1} in Dock {0} have been completed.</value>
+  </data>
+  <data name="Repairyard_NotificationMessage_Title" xml:space="preserve">
+    <value>Repairs Completed</value>
+  </data>
+  <data name="ReSortie_NotificationMessage" xml:space="preserve">
+    <value>All ships in 「{0}」 have fully recovered from fatigue.</value>
+  </data>
+  <data name="ReSortie_NotificationMessage_Title" xml:space="preserve">
+    <value>Fatigue Recovery Completed</value>
   </data>
 </root>

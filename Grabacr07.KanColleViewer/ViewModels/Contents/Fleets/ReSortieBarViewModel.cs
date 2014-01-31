@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Grabacr07.KanColleViewer.Model;
+using Grabacr07.KanColleViewer.Models;
+using Grabacr07.KanColleViewer.Properties;
 using Grabacr07.KanColleWrapper;
 using Grabacr07.KanColleWrapper.Models;
 using Livet;
@@ -106,31 +107,16 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Fleets
 			this.UpdateMessage();
 			this.UpdateRemaining();
 
-			if (Toast.IsSupported)
+			reSortie.Readied += (sender, args) =>
 			{
-				reSortie.Readied += (sender, args) =>
+				if (this.IsNotifyReadied)
 				{
-					if (this.IsNotifyReadied)
-					{
-						Toast.Show(
-							"疲労回復完了",
-							"「" + parent.Name + "」の全艦娘の疲労が回復しました。",
-							() => App.ViewModelRoot.Activate());
-					}
-				};
-			}
-			else
-			{
-				reSortie.Readied += (sender, args) =>
-				{
-					if (this.IsNotifyReadied)
-					{
-						NotifyIconWrapper.Show(
-							"疲労回復完了",
-							"「" + parent.Name + "」の全艦娘の疲労が回復しました。");
-					}
-				};
-			}
+					WindowsNotification.Notifier.Show(
+						Resources.ReSortie_NotificationMessage_Title,
+						string.Format(Resources.ReSortie_NotificationMessage, parent.Name),
+						() => App.ViewModelRoot.Activate());
+				}
+			};
 		}
 
 

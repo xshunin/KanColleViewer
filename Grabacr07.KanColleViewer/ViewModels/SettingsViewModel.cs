@@ -10,14 +10,15 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
-using Grabacr07.KanColleViewer.Model;
+using Grabacr07.KanColleViewer.Models;
 using Grabacr07.KanColleViewer.Properties;
 using Grabacr07.KanColleViewer.ViewModels.Messages;
 using Grabacr07.KanColleWrapper;
 using Livet;
 using Livet.EventListeners;
 using Livet.Messaging.IO;
-using Settings = Grabacr07.KanColleViewer.Model.Settings;
+using MetroRadiance;
+using Settings = Grabacr07.KanColleViewer.Models.Settings;
 
 namespace Grabacr07.KanColleViewer.ViewModels
 {
@@ -67,43 +68,6 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#endregion
 
-		#region ProxyHost 変更通知プロパティ
-
-		public string ProxyHost
-		{
-			get { return Settings.Current.ProxyHost; }
-			set
-			{
-				if (Settings.Current.ProxyHost != value)
-				{
-					Settings.Current.ProxyHost = value;
-					KanColleClient.Current.Proxy.UpstreamProxyHost = value;
-					this.RaisePropertyChanged();
-				}
-			}
-		}
-
-		#endregion
-
-		#region ProxyPort 変更通知プロパティ
-
-		public string ProxyPort
-		{
-			get { return Settings.Current.ProxyPort.ToString(); }
-			set
-			{
-				UInt16 numberPort;
-				if (UInt16.TryParse(value, out numberPort))
-				{
-					Settings.Current.ProxyPort = numberPort;
-					KanColleClient.Current.Proxy.UpstreamProxyPort = numberPort;
-					this.RaisePropertyChanged();
-				}
-			}
-		}
-
-		#endregion
-
 		#region UseProxy 変更通知プロパティ
 
 		public string UseProxy
@@ -134,6 +98,43 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				{
 					Settings.Current.EnableSSLProxy = value;
 					KanColleClient.Current.Proxy.UseProxyOnSSLConnect = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
+		#region ProxyHost 変更通知プロパティ
+
+		public string ProxyHost
+		{
+			get { return Settings.Current.ProxyHost; }
+			set
+			{
+				if (Settings.Current.ProxyHost != value)
+				{
+					Settings.Current.ProxyHost = value;
+					KanColleClient.Current.Proxy.UpstreamProxyHost = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
+		#region ProxyPort 変更通知プロパティ
+
+		public string ProxyPort
+		{
+			get { return Settings.Current.ProxyPort.ToString(); }
+			set
+			{
+				UInt16 numberPort;
+				if (UInt16.TryParse(value, out numberPort))
+				{
+					Settings.Current.ProxyPort = numberPort;
+					KanColleClient.Current.Proxy.UpstreamProxyPort = numberPort;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -181,10 +182,50 @@ namespace Grabacr07.KanColleViewer.ViewModels
 			get { return this._Libraries; }
 			set
 			{
-				if (this._Libraries != value)
+				if (!Equals(this._Libraries, value))
 				{
 					this._Libraries = value;
 					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
+		#region IsDarkTheme 変更通知プロパティ
+
+		private bool _IsDarkTheme;
+
+		public bool IsDarkTheme
+		{
+			get { return this._IsDarkTheme; }
+			set
+			{
+				if (this._IsDarkTheme != value)
+				{
+					this._IsDarkTheme = value;
+					this.RaisePropertyChanged();
+					if (value) ThemeService.Current.ChangeTheme(Theme.Dark);
+				}
+			}
+		}
+
+		#endregion
+
+		#region IsLightTheme 変更通知プロパティ
+
+		private bool _IsLightTheme;
+
+		public bool IsLightTheme
+		{
+			get { return this._IsLightTheme; }
+			set
+			{
+				if (this._IsLightTheme != value)
+				{
+					this._IsLightTheme = value;
+					this.RaisePropertyChanged();
+					if (value) ThemeService.Current.ChangeTheme(Theme.Light);
 				}
 			}
 		}
@@ -204,7 +245,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 		{
 			if (Helper.IsInDesignMode) return;
 
-			this.Name = Properties.Resources.ViewModels_Settings;
+			this.Name = Resources.Settings;
 
 			this.Libraries = App.ProductInfo.Libraries.Aggregate(
 				new List<BindableTextViewModel>(),
@@ -220,6 +261,9 @@ namespace Grabacr07.KanColleViewer.ViewModels
 			{
 				(sender, args) => this.RaisePropertyChanged(args.PropertyName),
 			});
+
+			this._IsDarkTheme = ThemeService.Current.Theme == Theme.Dark;
+			this._IsLightTheme = ThemeService.Current.Theme == Theme.Light;
 		}
 
 		public void OpenScreenshotFolderSelectionDialog()

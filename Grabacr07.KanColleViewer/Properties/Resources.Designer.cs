@@ -106,6 +106,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Shipgirl.
+        /// </summary>
+        public static string Common_ShipGirl {
+            get {
+                return ResourceManager.GetString("Common_ShipGirl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Construction.
+        /// </summary>
+        public static string Dockyard {
+            get {
+                return ResourceManager.GetString("Dockyard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Complete!.
         /// </summary>
         public static string Dockyard_Complete {
@@ -138,6 +156,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Dockyard_Locked {
             get {
                 return ResourceManager.GetString("Dockyard_Locked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Construction of {1} in Dock {0} has been completed..
+        /// </summary>
+        public static string Dockyard_NotificationMessage {
+            get {
+                return ResourceManager.GetString("Dockyard_NotificationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Construction Completed.
+        /// </summary>
+        public static string Dockyard_NotificationMessage_Title {
+            get {
+                return ResourceManager.GetString("Dockyard_NotificationMessage_Title", resourceCulture);
             }
         }
         
@@ -196,11 +232,38 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Expeditions.
+        /// </summary>
+        public static string Expedition {
+            get {
+                return ResourceManager.GetString("Expedition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Not on an Expedition..
         /// </summary>
         public static string Expedition_NoExpedition {
             get {
                 return ResourceManager.GetString("Expedition_NoExpedition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 「{0}」 has returned from an expedition..
+        /// </summary>
+        public static string Expedition_NotificationMessage {
+            get {
+                return ResourceManager.GetString("Expedition_NotificationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expedition Completed.
+        /// </summary>
+        public static string Expedition_NotificationMessage_Title {
+            get {
+                return ResourceManager.GetString("Expedition_NotificationMessage_Title", resourceCulture);
             }
         }
         
@@ -237,6 +300,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Expedition_TimeRemaining {
             get {
                 return ResourceManager.GetString("Expedition_TimeRemaining", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fleets.
+        /// </summary>
+        public static string Fleets {
+            get {
+                return ResourceManager.GetString("Fleets", resourceCulture);
             }
         }
         
@@ -286,6 +358,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Overview.
+        /// </summary>
+        public static string IntegratedView {
+            get {
+                return ResourceManager.GetString("IntegratedView", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please visit all of the quest pages..
         /// </summary>
         public static string Quest_Detail_Untaken {
@@ -327,6 +408,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Quest_Title_Untaken {
             get {
                 return ResourceManager.GetString("Quest_Title_Untaken", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quests.
+        /// </summary>
+        public static string Quests {
+            get {
+                return ResourceManager.GetString("Quests", resourceCulture);
             }
         }
         
@@ -376,11 +466,38 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Repair.
+        /// </summary>
+        public static string Repairyard {
+            get {
+                return ResourceManager.GetString("Repairyard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Locked.
         /// </summary>
         public static string Repairyard_Locked {
             get {
                 return ResourceManager.GetString("Repairyard_Locked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repairs on {1} in Dock {0} have been completed..
+        /// </summary>
+        public static string Repairyard_NotificationMessage {
+            get {
+                return ResourceManager.GetString("Repairyard_NotificationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Repairs Completed.
+        /// </summary>
+        public static string Repairyard_NotificationMessage_Title {
+            get {
+                return ResourceManager.GetString("Repairyard_NotificationMessage_Title", resourceCulture);
             }
         }
         
@@ -439,6 +556,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All ships in 「{0}」 have fully recovered from fatigue..
+        /// </summary>
+        public static string ReSortie_NotificationMessage {
+            get {
+                return ResourceManager.GetString("ReSortie_NotificationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fatigue Recovery Completed.
+        /// </summary>
+        public static string ReSortie_NotificationMessage_Title {
+            get {
+                return ResourceManager.GetString("ReSortie_NotificationMessage_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Screenshot save failed: .
         /// </summary>
         public static string Screenshot_Failed {
@@ -453,6 +588,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Screenshot_Saved {
             get {
                 return ResourceManager.GetString("Screenshot_Saved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        public static string Settings {
+            get {
+                return ResourceManager.GetString("Settings", resourceCulture);
             }
         }
         
@@ -741,60 +885,6 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string StatusBar_Speed_Slow {
             get {
                 return ResourceManager.GetString("StatusBar_Speed_Slow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Construction.
-        /// </summary>
-        public static string ViewModels_Dockyard {
-            get {
-                return ResourceManager.GetString("ViewModels_Dockyard", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Expeditions.
-        /// </summary>
-        public static string ViewModels_Expeditions {
-            get {
-                return ResourceManager.GetString("ViewModels_Expeditions", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Fleets.
-        /// </summary>
-        public static string ViewModels_Fleets {
-            get {
-                return ResourceManager.GetString("ViewModels_Fleets", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Quests.
-        /// </summary>
-        public static string ViewModels_Quests {
-            get {
-                return ResourceManager.GetString("ViewModels_Quests", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Repair.
-        /// </summary>
-        public static string ViewModels_Repairyard {
-            get {
-                return ResourceManager.GetString("ViewModels_Repairyard", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Settings.
-        /// </summary>
-        public static string ViewModels_Settings {
-            get {
-                return ResourceManager.GetString("ViewModels_Settings", resourceCulture);
             }
         }
         
