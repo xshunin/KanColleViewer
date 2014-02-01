@@ -130,6 +130,9 @@
 						<DataTemplate DataType="{x:Type vmContents:ExpeditionsViewModel}">
 							<contents:Expeditions />
 						</DataTemplate>
+						<DataTemplate DataType="{x:Type vmContents:RankingsViewModel}">
+							<contents:Rankings />
+						</DataTemplate>
 						<DataTemplate DataType="{x:Type vm:SettingsViewModel}">
 							<settings:Settings />
 						</DataTemplate>
