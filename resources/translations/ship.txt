@@ -224,6 +224,7 @@
 舞風改,Maikaze Kai
 衣笠,Kinugasa
 衣笠改,Kinugasa Kai
+衣笠改二,Kinugasa Kai2
 伊19,I-19
 伊19改,I-19 Kai
 鈴谷,Suzuya
