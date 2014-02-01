@@ -53,7 +53,7 @@ B18;「航空水上打撃艦隊」出撃せよ！;Deploy a Seaplane Attack Fleet
 B19;「第六戦隊」出撃せよ！;Deploy the Cruiser Division 6;編成した「第六戦隊」をもって出撃し、オリョール海の敵を撃滅「完全勝利」せよ！;Consists of Furutaka, Kako, Kinugasa, Aoba, and 2 additional ships.  Score an S victory or higher against World 2-3 Boss.
 B20;「第八駆逐隊」出撃せよ！;Deploy the 8th Destroyer Fleet;編成した「第八駆逐隊」を含む艦隊で出撃し、オリョール海の敵を撃滅せよ！;Consists of Asashio, Michishio, Ooshio, and Arashio. Score a victory against World 2-3 Boss.
 B21;「第十八駆逐隊」出撃せよ！;Deploy the 18th Destroyer Fleet;編成した「第十八駆逐隊」を含む艦隊で出撃し、モーレイ海の敵を撃滅せよ！;Consists of Kasumi, Arare, Kagerou, and Shiranui. Score a victory against World 3-1 Boss.
-B22;「第三十駆逐隊（第一次）」出撃せよ！;Deploy the 30th Destroyer Fleet;「第三十駆逐隊（一次）」を含む艦隊で出撃しキス島沖の主力艦隊と交戦せよ！;Consists of Mutsuki, Kisaragi, Yayoi, and Mochizuki. Score a victory against World 3-2 Boss.
+B22;「第三十駆逐隊（第一次）」出撃せよ！;Deploy the 30th Destroyer Fleet;「第三十駆逐隊（第一次）」を含む艦隊で出撃しキス島沖の主力艦隊と交戦せよ！;Consists of Mutsuki, Kisaragi, Yayoi, and Mochizuki. Score a victory against World 3-2 Boss.
 Bd1;敵艦隊を撃破せよ！;Daily Sortie 1;艦隊を出撃させ、敵艦隊を捕捉、これを撃滅せよ！;Defeat an enemy fleet.
 Bd2;敵艦隊主力を撃滅せよ！;Daily Sortie 2;艦隊を出撃させ、敵艦隊「主力」を捕捉！これを撃滅せよ！;Defeat the flagship of an enemy fleet.
 Bd3;敵艦隊を10回邀撃せよ！;Daily Sortie 3;艦隊全力出撃！遊弋する敵艦隊を10回邀撃せよ！;Defeat 10 enemy fleets.
