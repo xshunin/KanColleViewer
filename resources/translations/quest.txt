@@ -53,6 +53,7 @@ B18;「航空水上打撃艦隊」出撃せよ！;Deploy a Seaplane Attack Fleet
 B19;「第六戦隊」出撃せよ！;Deploy the Cruiser Division 6;編成した「第六戦隊」をもって出撃し、オリョール海の敵を撃滅「完全勝利」せよ！;Consists of Furutaka, Kako, Kinugasa, Aoba, and 2 additional ships.  Score an S victory or higher against World 2-3 Boss.
 B20;「第八駆逐隊」出撃せよ！;Deploy the 8th Destroyer Fleet;編成した「第八駆逐隊」を含む艦隊で出撃し、オリョール海の敵を撃滅せよ！;Consists of Asashio, Michishio, Ooshio, and Arashio. Score a victory against World 2-3 Boss.
 B21;「第十八駆逐隊」出撃せよ！;Deploy the 18th Destroyer Fleet;編成した「第十八駆逐隊」を含む艦隊で出撃し、モーレイ海の敵を撃滅せよ！;Consists of Kasumi, Arare, Kagerou, and Shiranui. Score a victory against World 3-1 Boss.
+B22;「第三十駆逐隊（第一次）」出撃せよ！;Deploy the 30th Destroyer Fleet;「第三十駆逐隊（一次）」を含む艦隊で出撃しキス島沖の主力艦隊と交戦せよ！;Consists of Mutsuki, Kisaragi, Yayoi, and Mochizuki. Score a victory against World 3-2 Boss.
 Bd1;敵艦隊を撃破せよ！;Daily Sortie 1;艦隊を出撃させ、敵艦隊を捕捉、これを撃滅せよ！;Defeat an enemy fleet.
 Bd2;敵艦隊主力を撃滅せよ！;Daily Sortie 2;艦隊を出撃させ、敵艦隊「主力」を捕捉！これを撃滅せよ！;Defeat the flagship of an enemy fleet.
 Bd3;敵艦隊を10回邀撃せよ！;Daily Sortie 3;艦隊全力出撃！遊弋する敵艦隊を10回邀撃せよ！;Defeat 10 enemy fleets.
@@ -67,6 +68,9 @@ Bw3;海上通商破壊作戦;Weekly Sortie 3;1週間で敵輸送船を20隻以�
 Bw4;ろ号作戦;Weekly Sortie 4;1週間の全力出撃を行い、敵輸送船団を捕捉・撃滅、敵の補給路を寸断せよ！;Sink 50 transport ships.
 Bw5;海上護衛戦;Weekly Sortie 5;有力な対潜能力を持つ海上護衛隊によって、可能な限り多くの敵潜水艦を撃滅せよ！;Sink 15 submarines.
 Bw6;敵東方艦隊を撃滅せよ！;Weekly Sortie 6;西方海域に出撃し、敵東方艦隊の主力を捕捉、これを撃滅せよ！;Defeat 12 bosses in the World 4.
+Bw7;敵北方艦隊主力を撃滅せよ！;Weekly Sortie 7;北方海域の深部に出撃し、敵北方艦隊の主力艦隊を捕捉、これを撃滅せよ！;Defeat 5 bosses in World 3-3 and 3-4. 
+Bw8;敵東方中枢艦隊を撃滅せよ！;Weekly Sortie 8;西方海域カスガダマ島沖に出撃し、敵東方中枢艦隊を補足、これを撃破せよ！;Score a victory against World 4-4 Boss.
+Bw9;南方海域珊瑚諸島沖の制空権を握れ！;Weekly Sortie 9;南方海域珊瑚諸島沖に出撃し、敵機動部隊本体を撃滅、これに完全勝利せよ！;Score two S victories or higher against World 5-2 Boss.
 C1;はじめての「演習」！;Practice 1;他の提督(プレイヤー)の艦隊と「演習」を行おう！;Challenge another fleet in practice mode.
 C2;「演習」で練度向上！;Daily Practice 1;本日中に他の司令官の艦隊に対して3回「演習」を挑もう！;Challenge 3 other fleets in practice mode within the same day.
 C3;「演習」で他提督を圧倒せよ！;Daily Practice 2;本日中に他の司令官の艦隊との「演習」で5回以上「勝利」をおさめよう！;Get 5 victories in practice mode within the same day.
@@ -77,6 +81,7 @@ D3;「遠征」を１０回成功させよう！;Daily Expeditions 2;本日中�
 D4;大規模遠征作戦、発令！;Weekly Expeditions;今週中に「遠征」30回成功させよう！;Perform 30 successful expeditions within the same week.
 D5;第一次潜水艦派遣作戦;The First Submarine Operation;はじめての潜水艦派遣作戦を成功させよう！;Complete Expedition 30.
 D6;第二次潜水艦派遣作戦;The Second Submarine Operation;第2次潜水艦派遣作戦を成功させよう！;Complete Expedition 30 one more time.
+D7;潜水艦派遣作戦による技術入手の継続!;Continuation of Submarine Operation;第3次及び第4次潜水艦派遣作戦を成功させ、他国製技術の導入に努めよ!;Complete Expedition 30 two more times.
 E1;はじめての「補給」！;First-Time Resupply;補給は大事です！燃料・弾薬を艦に「補給」しよう！;Resupply a ship.
 E2;はじめての「入渠」！;First-Time Repair;戦闘で傷ついた艦を「入渠」させて修理して、次の出撃に備えよう！;Repair a ship.
 E3;艦隊大整備！;Major Fleet Maintenance;各艦隊から整備が必要な艦を5隻以上ドック入りさせ、大規模な整備をしよう！;Repair 5 Ships.
