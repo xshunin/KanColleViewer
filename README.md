@@ -10,6 +10,8 @@ This is the translation project of the original [KanColleViewer](http://grabacr.
 * [@Grabacr07](https://twitter.com/Grabacr07) -- Original author
 * [silfumus](https://github.com/silfumus) -- Continued Work (defunct)
 * [southrop](https://github.com/southrop) -- Original text file translation code (defunct)
+* [m-kc](https://github.com/m-kc) -- Rankings section
+* [taihou](https://github.com/taihou) -- Logging option
 
 ### Downloads
 All builds can be found in the following links below.
