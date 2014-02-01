@@ -466,6 +466,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current Rankings.
+        /// </summary>
+        public static string Rankings_RankingsList {
+            get {
+                return ResourceManager.GetString("Rankings_RankingsList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Repair.
         /// </summary>
         public static string Repairyard {
@@ -885,6 +894,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string StatusBar_Speed_Slow {
             get {
                 return ResourceManager.GetString("StatusBar_Speed_Slow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rankings.
+        /// </summary>
+        public static string ViewModel_Rankings {
+            get {
+                return ResourceManager.GetString("ViewModel_Rankings", resourceCulture);
             }
         }
         
