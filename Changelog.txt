@@ -2,6 +2,14 @@
 	KCV Change Log
 ========================
 
+v2.0.0 r239 - 1/31/2014
+	* *NEW* Horizontal KCV! Should keep to a minimum of 1440. It may still cross over.
+		* Overview page has been re-orderd to fit the size
+		* Many elements have been tightened and made smaller as well. Very compact.
+	* *NEW* Merge: New start page with some info and a button to delete IE's cache.
+	* New quests, equipment, and ship name fixes.
+	* Equipment List is still temporary.
+
 Prototype r210 - 1/30/2014
 	* Added 2 new ships to the translation: Yayoi, Uzuki
 	* Added quest A33, removed old event quests.

@@ -165,12 +165,12 @@
 								  Padding="10,0,20,14">
 						<StackPanel Margin="0,-9,0,0">
 							<TextBlock>
-								<Run Text="{Binding Source={x:Static root:App.ProductInfo}, Path=Product, Mode=OneWay}"
+								<Run Text="{Binding Source={x:Static root:App.ProductInfo}, Path=Title, Mode=OneWay}"
 									 FontFamily="Segoe UI Light"
 									 FontSize="30"
 									 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
 								<LineBreak />
-								<Run Text="{Binding Source={x:Static root:App.ProductInfo}, Path=Title, Mode=OneWay}"
+								<Run Text="{Binding Source={x:Static root:App.ProductInfo}, Path=Product, Mode=OneWay}"
 									 FontSize="16" />
 							</TextBlock>
 
