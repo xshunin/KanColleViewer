@@ -402,6 +402,12 @@
   <data name="Rankings_RankingsList" xml:space="preserve">
     <value>Current Rankings</value>
   </data>
+  <data name="Settings_Logging" xml:space="preserve">
+    <value>Logging</value>
+  </data>
+  <data name="Settings_Logging_Enable" xml:space="preserve">
+    <value>Log drops and crafting results to file</value>
+  </data>
   <data name="ViewModel_Rankings" xml:space="preserve">
     <value>Rankings</value>
   </data>
