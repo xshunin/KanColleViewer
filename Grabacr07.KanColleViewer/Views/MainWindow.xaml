@@ -16,7 +16,7 @@
 				   d:DataContext="{d:DesignInstance viewModels:MainWindowViewModel}"
 				   Title="{Binding Title}"
 				   Width="1440"
-				   MinWidth="{Binding ElementName=WebBrowser, Path=ActualWidth}"
+				   MinWidth="{Binding ElementName=WebBrowser, Path=Width}"
 				   MinHeight="525"
 				   Topmost="{Binding TopMost}"
 				   FontSize="12"
@@ -114,7 +114,7 @@
 							  VerticalScrollBarVisibility="Disabled">
 					<ContentControl Content="{Binding Content}">
 						<ContentControl.Resources>
-							<DataTemplate DataType="{x:Type viewModels:NotStartedViewModel}">
+                            <DataTemplate DataType="{x:Type viewModels:StartContentViewModel}">
 								<views:StartContent />
 							</DataTemplate>
 							<DataTemplate DataType="{x:Type viewModels:MainContentViewModel}">

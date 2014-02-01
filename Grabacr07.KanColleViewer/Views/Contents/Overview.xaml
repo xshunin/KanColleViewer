@@ -247,9 +247,7 @@
 
 					<metroControls:CallMethodButton Content="Eq. List"
 													Padding="12,8"
-													MethodName="ShowSlotItemCatalog"
-													IsEnabled="False" 
-													ToolTip="Not Implemented Yet" />
+													MethodName="ShowSlotItemCatalog" />
 				</StackPanel>
 			</Border>
 
