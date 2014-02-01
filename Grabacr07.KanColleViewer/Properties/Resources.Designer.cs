@@ -655,6 +655,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Logging.
+        /// </summary>
+        public static string Settings_Logging {
+            get {
+                return ResourceManager.GetString("Settings_Logging", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Log drops and crafting results to file.
+        /// </summary>
+        public static string Settings_Logging_Enable {
+            get {
+                return ResourceManager.GetString("Settings_Logging_Enable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Network.
         /// </summary>
         public static string Settings_Network {
