@@ -1,4 +1,4 @@
-﻿長門,Nagato
+長門,Nagato
 長門改,Nagato Kai
 陸奥,Mutsu
 陸奥改,Mutsu Kai
@@ -157,7 +157,7 @@
 暁改,Akatsuki Kai
 響,Hibiki
 響改,Hibiki Kai
-ヴェールヌイ,Верный
+Верный,Vérnyj
 雷,Ikazuchi
 雷改,Ikazuchi Kai
 電,Inazuma
@@ -258,14 +258,14 @@
 大鳳改,Taihou Kai
 伊401,I-401
 伊401改,I-401 Kai
-まるゆ,Maruyu
-まるゆ改,Maruyu Kai
 あきつ丸,Akitsu Maru
 あきつ丸改,Akitsu Maru Kai
-イオナ,IONA
-タカオ,TAKAO
-ハルナ,HARUNA
+まるゆ,Maruyu
+まるゆ改,Maruyu Kai
 弥生,Yayoi
 弥生改,Yayoi Kai
 卯月,Uzuki
 卯月改,Uzuki Kai
+イオナ,IONA
+タカオ,TAKAO
+ハルナ,HARUNA
