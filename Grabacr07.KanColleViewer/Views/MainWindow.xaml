@@ -17,6 +17,7 @@
 				   Title="{Binding Title}"
 				   Width="1440"
 				   MinWidth="{Binding ElementName=WebBrowser, Path=Width}"
+                   Height="525"
 				   MinHeight="525"
 				   Topmost="{Binding TopMost}"
 				   FontSize="12"
