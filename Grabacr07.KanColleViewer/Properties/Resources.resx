@@ -145,7 +145,7 @@
     <value> Complete </value>
   </data>
   <data name="Quests_Notice" xml:space="preserve">
-    <value>※ The indicators (50%, 80%) mirror in-game indicators. Quests are not actively tracked.</value>
+    <value>※ The indicators (50%, 80%) mirror in-game indicators. Enemy fleet kills, successful expeditions, etc are not actively counted.</value>
   </data>
   <data name="Settings_BrowserControl_Notice" xml:space="preserve">
     <value>※ This will leave the game, so use with caution</value>
@@ -241,7 +241,7 @@
     <value>Average Level:</value>
   </data>
   <data name="StatusBar_NotStarted" xml:space="preserve">
-    <value>Waiting for Kantai Collection to start</value>
+    <value>Waiting for KanColle to start</value>
   </data>
   <data name="StatusBar_Ready" xml:space="preserve">
     <value>Ready</value>
@@ -277,7 +277,7 @@
     <value>No Notifications</value>
   </data>
   <data name="Common_Notifications_NotImplemented" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Common_Notifications_Title" xml:space="preserve">
     <value>Notifications</value>
@@ -292,7 +292,7 @@
     <value>Locked</value>
   </data>
   <data name="Dockyard_ShipName" xml:space="preserve">
-    <value>Ship</value>
+    <value>Ship In Progress</value>
   </data>
   <data name="Dockyard_TimeComplete" xml:space="preserve">
     <value>Completion</value>

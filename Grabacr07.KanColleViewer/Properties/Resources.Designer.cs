@@ -79,7 +79,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (planned).
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Common_Notifications_NotImplemented {
             get {
