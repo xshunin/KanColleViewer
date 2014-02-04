@@ -79,7 +79,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (planned).
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Common_Notifications_NotImplemented {
             get {
@@ -205,7 +205,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completion Time.
+        ///   Looks up a localized string similar to Completion.
         /// </summary>
         public static string Dockyard_TimeComplete {
             get {
@@ -214,7 +214,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remaining Time.
+        ///   Looks up a localized string similar to Remaining.
         /// </summary>
         public static string Dockyard_TimeRemaining {
             get {
@@ -286,7 +286,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completion Time.
+        ///   Looks up a localized string similar to Completion.
         /// </summary>
         public static string Expedition_TimeComplete {
             get {
@@ -295,7 +295,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remaining Time.
+        ///   Looks up a localized string similar to Remaining.
         /// </summary>
         public static string Expedition_TimeRemaining {
             get {
@@ -538,7 +538,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Completion Time.
+        ///   Looks up a localized string similar to Completion.
         /// </summary>
         public static string Repairyard_TimeComplete {
             get {
@@ -547,7 +547,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remaining Time.
+        ///   Looks up a localized string similar to Remaining.
         /// </summary>
         public static string Repairyard_TimeRemaining {
             get {
