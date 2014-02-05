@@ -466,6 +466,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Rankings.
+        /// </summary>
+        public static string Rankings {
+            get {
+                return ResourceManager.GetString("Rankings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Current Rankings.
         /// </summary>
         public static string Rankings_RankingsList {
@@ -651,6 +660,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Settings_Display {
             get {
                 return ResourceManager.GetString("Settings_Display", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language.
+        /// </summary>
+        public static string Settings_Language {
+            get {
+                return ResourceManager.GetString("Settings_Language", resourceCulture);
             }
         }
         
@@ -912,15 +930,6 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string StatusBar_Speed_Slow {
             get {
                 return ResourceManager.GetString("StatusBar_Speed_Slow", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Rankings.
-        /// </summary>
-        public static string ViewModel_Rankings {
-            get {
-                return ResourceManager.GetString("ViewModel_Rankings", resourceCulture);
             }
         }
         
