@@ -21,7 +21,7 @@
 			 xmlns:devVm="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Dev"
 			 xmlns:dev="clr-namespace:Grabacr07.KanColleViewer.Views.Dev"
 			 mc:Ignorable="d"
-			 d:DesignWidth="800"
+			 d:DesignWidth="638"
 			 d:DataContext="{d:DesignInstance vm:MainContentViewModel}"
 			 Background="{DynamicResource ThemeBrushKey}">
 
