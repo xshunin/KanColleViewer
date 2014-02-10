@@ -127,7 +127,7 @@
 						<GridView>
 							<GridViewColumn Width="180">
 								<GridViewColumn.Header>
-									<TextBlock Text="装備名" />
+									<TextBlock Text="Eq. Name" />
 								</GridViewColumn.Header>
 								<GridViewColumn.CellTemplate>
 									<DataTemplate DataType="{x:Type viewModels:SlotItemViewModel}">
@@ -148,9 +148,9 @@
 							<GridViewColumn Width="82">
 								<GridViewColumn.Header>
 									<TextBlock>
-										<Run Text="所持数" />
-										<Run Text="(余り)"
-											 FontSize="11" />
+										<Run Text="Owned" />
+										<Run Text="(Extra)"
+											 FontSize="10" />
 									</TextBlock>
 								</GridViewColumn.Header>
 								<GridViewColumn.CellTemplate>
@@ -167,7 +167,7 @@
 
 							<GridViewColumn Width="550">
 								<GridViewColumn.Header>
-									<TextBlock Text="装備している艦娘" />
+									<TextBlock Text="Equipped Ship Girls" />
 								</GridViewColumn.Header>
 								<GridViewColumn.CellTemplate>
 									<DataTemplate DataType="{x:Type viewModels:SlotItemViewModel}">
@@ -210,7 +210,7 @@
 				Padding="20"
 				Visibility="{Binding IsReloading, Converter={StaticResource BooleanToVisibilityConverter}}"
 				d:IsHidden="True">
-			<TextBlock Text="一覧を生成しています..."
+			<TextBlock Text="Generating the list..."
 					   FontSize="16"
 					   Foreground="{DynamicResource ActiveForegroundBrushKey}"
 					   Background="{DynamicResource ThemeBrushKey}"
