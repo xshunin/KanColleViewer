@@ -82,6 +82,7 @@ D4;大規模遠征作戦、発令！;Weekly Expeditions;今週中に「遠征」
 D5;第一次潜水艦派遣作戦;The First Submarine Operation;はじめての潜水艦派遣作戦を成功させよう！;Complete Expedition 30.
 D6;第二次潜水艦派遣作戦;The Second Submarine Operation;第2次潜水艦派遣作戦を成功させよう！;Complete Expedition 30 one more time.
 D7;潜水艦派遣作戦による技術入手の継続!;Continuation of Submarine Operations;第3次及び第4次潜水艦派遣作戦を成功させ、他国製技術の導入に努めよ!;Complete Expedition 30 two more times.
+D8;式の準備！(その弐);Perparation of Love! (Part 2);本日中に「演習」で2回以上「勝利」をおさめ、式への気持ちを整理しよう！;Perform 2 successful expeditions.
 E1;はじめての「補給」！;First Supply;補給は大事です！燃料・弾薬を艦に「補給」しよう！;Resupply a ship.
 E2;はじめての「入渠」！;First Docking;戦闘で傷ついた艦を「入渠」させて修理して、次の出撃に備えよう！;Repair a ship.
 E3;艦隊大整備！;Daily Repairs;各艦隊から整備が必要な艦を5隻以上ドック入りさせ、大規模な整備をしよう！;Repair 5 ships.
@@ -96,6 +97,7 @@ F7;装備「開発」集中強化！;Daily Development 2;「工廠」で装備�
 F8;艦娘「建造」艦隊強化！;Daily Construction 2;艦隊強化のため、「工廠」で艦娘を本日中に3隻「建造」しよう！;Craft 3 ships.
 F9;軍縮条約対応！;Daily Dismantlement;少し艦隊規模が大きくなりすぎました！「工廠」で不要な艦を2隻「解体」してください！;Scrap 2 ships.
 F10;「大型艦建造」の準備！(その弐);Preparation for LCS (Part 2);大型艦建造の準備をします！「工廠」で装備アイテムを4回「廃棄」してみてください！;Scrap 4 pieces of equipment.
+F11;式の準備！(その壱);Preparation of Love! (Part 1);式の準備をします！「工廠」で装備アイテムを2回「廃棄」して身の回りの整理を！;Scrap 2 pieces of equipment.
 G1;はじめての「近代化改修」！;First Modernization;任意の艦を近代化改修(合成)して、強化せよ！;Perform a successful modernization.
 G2;艦の「近代化改修」を実施せよ！;Daily Modernization;近代化改修を実施して、２回以上これを成功させよ！;Perform 2 successful modernizations within the same day.
 G3;「近代化改修」を進め、戦備を整えよ！;Weekly Modernization;一週間の間に、近代化改修を１5回成功させよ！;Perform 15 successful modernizations within the same week.
