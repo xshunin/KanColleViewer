@@ -269,25 +269,26 @@
 							<Paragraph>
 								<Run Text="If you keep getting in game errors, please delete IE's cache. If this does not improve, check whether Flash works on IE." />
 							</Paragraph>
-							<Table>
+							<Table CellSpacing="5">
 								<Table.Columns>
-									<TableColumn/>
 									<TableColumn/>
 								</Table.Columns>
 								
 								<TableRowGroup>
-									<TableRow>
-										<TableCell>
-											<BlockUIContainer>
-												<metro2:CallMethodButton Content="{Binding DeleteInternetCacheButtonContent}"
+                                    <TableRow>
+                                        <TableCell>
+                                            <BlockUIContainer>
+                                                <metro2:CallMethodButton Content="{Binding DeleteInternetCacheButtonContent}"
 																		 MethodName="DeleteInternetCache"
 																		 IsEnabled="{Binding CanDeleteInternetCache}"
 																		 HorizontalAlignment="Center"
 																		 Padding="30,5"
 																		 SnapsToDevicePixels="True" />
-											</BlockUIContainer>
-										</TableCell>
-										<TableCell>
+                                            </BlockUIContainer>
+                                        </TableCell>
+                                    </TableRow>
+                                    <TableRow>
+                                        <TableCell>
 											<BlockUIContainer>
                                                 <metro2:CallMethodButton Content="{Binding SetRegionCookieButtonContent}"
 																		 MethodName="SetRegionCookie"
