@@ -117,7 +117,7 @@
 		<Border ClipToBounds="True"
 				Width="Auto">
 			<views:BrowserNavigator Margin="6,-4,6,10"
-									VerticalAlignment="Top" />
+									VerticalAlignment="Top"/>
 		</Border>
 
 		<Grid Grid.Row="1">
@@ -269,20 +269,43 @@
 							<Paragraph>
 								<Run Text="If you keep getting in game errors, please delete IE's cache. If this does not improve, check whether Flash works on IE." />
 							</Paragraph>
-							<BlockUIContainer>
-								<metro2:CallMethodButton Content="{Binding DeleteInternetCacheButtonContent}"
-														 MethodName="DeleteInternetCache"
-														 IsEnabled="{Binding CanDeleteInternetCache}"
-														 HorizontalAlignment="Left"
-														 Padding="30,5"
-														 SnapsToDevicePixels="True" />
-							</BlockUIContainer>
+							<Table>
+								<Table.Columns>
+									<TableColumn/>
+									<TableColumn/>
+								</Table.Columns>
+								
+								<TableRowGroup>
+									<TableRow>
+										<TableCell>
+											<BlockUIContainer>
+												<metro2:CallMethodButton Content="{Binding DeleteInternetCacheButtonContent}"
+																		 MethodName="DeleteInternetCache"
+																		 IsEnabled="{Binding CanDeleteInternetCache}"
+																		 HorizontalAlignment="Center"
+																		 Padding="30,5"
+																		 SnapsToDevicePixels="True" />
+											</BlockUIContainer>
+										</TableCell>
+										<TableCell>
+											<BlockUIContainer>
+                                                <metro2:CallMethodButton Content="{Binding SetRegionCookieButtonContent}"
+																		 MethodName="SetRegionCookie"
+																		 IsEnabled="{Binding CanSetRegionCookie}"
+																		 HorizontalAlignment="Center"
+																		 Padding="30,5"
+																		 SnapsToDevicePixels="True" />
+											</BlockUIContainer>
+										</TableCell> 
+									</TableRow>
+								</TableRowGroup>
+							</Table>
 							<BlockUIContainer>
 								<Rectangle Height="1"
 										   Style="{DynamicResource SeparatorRectangleStyleKey}"
-										   Margin="0,16,0,0"
 										   SnapsToDevicePixels="True" />
 							</BlockUIContainer>
+							
 							<Paragraph>
 								<Run Text="This program is updated often. Please check below for updates." />
 								<LineBreak />
@@ -293,8 +316,8 @@
 								</metro2:HyperlinkEx>
 								<LineBreak />
 								<Run Text="English Project:" />
-                                <metro2:HyperlinkEx Uri="https://github.com/Zharay/KanColleViewer">
-                                    <Run Text="https://github.com/Zharay/KanColleViewer" />
+								<metro2:HyperlinkEx Uri="https://github.com/Zharay/KanColleViewer">
+									<Run Text="https://github.com/Zharay/KanColleViewer" />
 								</metro2:HyperlinkEx>
 							</Paragraph>
 						</FlowDocument>
