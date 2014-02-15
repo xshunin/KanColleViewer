@@ -260,7 +260,7 @@
 									 Text="Welcome" />
 							</Paragraph>
 							<Paragraph>
-								<Run Text="KanColleViwer is a tool to play Kantai Collection." />
+								<Run Text="KanColleViewer is a tool to play Kantai Collection." />
 								<LineBreak />
 								<Run Text="This program uses Internet Explorer (IE) and does not change the communication to the servers, extract from Flash, nor use macro cheats." />
 							</Paragraph>
