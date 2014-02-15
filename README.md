@@ -18,26 +18,6 @@ All builds can be found in the following links below.
 
 * [SkyDrive](http://sdrv.ms/1b01S24) -- Major revision binaries
 
-## :bangbang: How to use KCV without a VPN :bangbang:
-1. Switch language on DMM.com to Japanese (日本の) at the top of the website (go to main page if it doesn't show)
-2. Log into DMM.com as usual.
-3. Copy and paste the following line into the URL bar of KCV and press enter.
-
-```
-javascript:void(eval("document.cookie = \"ckcy=1;expires=Sun, 09 Feb 2015 09:00:09 GMT;domain=osapi.dmm.com;path=/\";document.cookie = \"ckcy=1;expires=Sun, 09 Feb 2015 09:00:09 GMT;domain=203.104.209.7;path=/\";document.cookie = \"ckcy=1;expires=Sun, 09 Feb 2015 09:00:09 GMT;domain=www.dmm.com;path=/netgame/\";"))
-```
-
-4. Navigate back to Kancolle and it should start!
-
-How this works is that it change's your visitor cookie so that you are recognized as a user from Japan. If the cookie ever gets removed, just redo this process again!
-
-If this doesn't work after doing this once, perform the following:
-* Go to IE's options > Privacy > Advanced
-* Check "Override automatic cookie handling"
-* Accept under both First and Third party sites
-* Check "Always allow session cookies"
-* Press OK 2x and try again
-
 ## About This Project
 KanColleViewer uses the web browser component of the Windows Presentation Foundation (WPF) in combination of [FiddlerCore](http://fiddler2.com/fiddlercore) to capture communication packets inbetween the server and the page itself.
 
