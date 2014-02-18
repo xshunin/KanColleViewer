@@ -33,6 +33,9 @@ Also be sure to have the latest version of [Flash for Internet Explorer](http://
 #### The game will not start or KCV makes me download a flash file instead of opening the link
 Install [Flash for Internet Explorer](http://get.adobe.com/flashplayer/otherversions/). You may also have to disable any programs that have been installed on to IE without your consent such as antivirus software and other programs.
 
+#### I'm on Windows 7/XP and the program does not run!
+You need to have [.NET Framework 4.5](http://www.microsoft.com/en-us/download/details.aspx?id=30653) installed for your version of Windows. Those on Windows 8 do not have to do this.
+
 #### I want the original Japanese names for ships/items/etc.
 Easiest way is to just delete the text file corrisponding to the things you don't wish to be translated. You are also encouraged to use the [original version of KCV](http://grabacr.net/kancolleviewer) as it has an english UI now.
 
