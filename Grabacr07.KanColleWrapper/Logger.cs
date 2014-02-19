@@ -53,22 +53,27 @@ namespace Grabacr07.KanColleWrapper
 
         private string GetTranslation(string JPTerm, string FileName)
         {
-            System.IO.StreamReader filereader = new System.IO.StreamReader(FileName, System.Text.Encoding.UTF8, true);
-            string read_line = null;
-            string jap_name = null;
-            string eng_name = null;
-            while (true)
+            try
             {
-                read_line = filereader.ReadLine();
-                if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
-                else
+                System.IO.StreamReader filereader = new System.IO.StreamReader(FileName, System.Text.Encoding.UTF8, true);
+                string read_line = null;
+                string jap_name = null;
+                string eng_name = null;
+                while (true)
                 {
-                    char[] delimiter = { ';', ',' };
-                    jap_name = read_line.Split(delimiter)[0];
-                    eng_name = read_line.Split(delimiter)[1];
-                    if (String.Equals(JPTerm, jap_name)) { filereader.Close(); return eng_name; }
+                    read_line = filereader.ReadLine();
+                    if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
+                    else
+                    {
+                        char[] delimiter = { ';', ',' };
+                        jap_name = read_line.Split(delimiter)[0];
+                        eng_name = read_line.Split(delimiter)[1];
+                        if (String.Equals(JPTerm, jap_name)) { filereader.Close(); return eng_name; }
+                    }
                 }
             }
+            catch { }
+
             return JPTerm;
         }
 
