@@ -10,6 +10,7 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Specialized;
+using System.Xml.Linq;
 using Codeplex.Data;
 using Fiddler;
 using Grabacr07.KanColleWrapper.Internal;
@@ -51,26 +52,24 @@ namespace Grabacr07.KanColleWrapper
                 .Subscribe(this.BattleResult);
         }
 
-        private string GetTranslation(string JPTerm, string FileName)
+        private string GetTranslation(string JPTerm, string FileName, string ElementName, string JPChildElement = "JP-Name", string TRChildElement = "TR-Name")
         {
             try
             {
-                System.IO.StreamReader filereader = new System.IO.StreamReader(FileName, System.Text.Encoding.UTF8, true);
-                string read_line = null;
-                string jap_name = null;
-                string eng_name = null;
-                while (true)
-                {
-                    read_line = filereader.ReadLine();
-                    if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
-                    else
-                    {
-                        char[] delimiter = { ';', ',' };
-                        jap_name = read_line.Split(delimiter)[0];
-                        eng_name = read_line.Split(delimiter)[1];
-                        if (String.Equals(JPTerm, jap_name)) { filereader.Close(); return eng_name; }
-                    }
-                }
+                XDocument XML = XDocument.Load("Translations\\" + FileName);
+                IEnumerable<XElement> Translations = XML.Descendants(ElementName);
+                IEnumerable<XElement> FoundTranslation = Translations.Where(b => b.Element(JPChildElement).Value.Equals(JPTerm));
+
+                foreach (XElement el in FoundTranslation)
+                    return el.Element(TRChildElement).Value;
+
+                // Translation not found! Stick it onto the XML file for future translations.
+                XML.Root.Add(new XElement(ElementName,
+                        new XElement(JPChildElement, JPTerm),
+                        new XElement(TRChildElement, JPTerm)
+                    ));
+
+                XML.Save("Translations\\" + FileName);
             }
             catch { }
 
@@ -109,7 +108,7 @@ namespace Grabacr07.KanColleWrapper
 
         private void BattleResult(kcsapi_battleresult br)
         {
-            Log(LogType.ShipDrop, "{0},{1},{2},{3},{4}", br.api_get_ship != null ? GetTranslation(br.api_get_ship.api_ship_name, "ship.txt") : "", GetTranslation(br.api_quest_name, "operation.txt"), GetTranslation(br.api_enemy_info.api_deck_name, "operation.txt"), br.api_win_rank, DateTime.Now.ToString("M/d/yyyy H:mm"));
+            Log(LogType.ShipDrop, "{0},{1},{2},{3},{4}", br.api_get_ship != null ? GetTranslation(br.api_get_ship.api_ship_name, "Ships.xml", "Ship") : "", GetTranslation(br.api_quest_name, "Operations.xml", "Map"), GetTranslation(br.api_enemy_info.api_deck_name, "Operations.xml", "Sortie"), br.api_win_rank, DateTime.Now.ToString("M/d/yyyy H:mm"));
         }
 
         private void Log(LogType Type, string format, params object[] args)

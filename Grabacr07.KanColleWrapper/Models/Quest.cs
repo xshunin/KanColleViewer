@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Grabacr07.KanColleWrapper.Models.Raw;
 
 namespace Grabacr07.KanColleWrapper.Models
@@ -51,27 +52,27 @@ namespace Grabacr07.KanColleWrapper.Models
 		/// </summary>
 		public string Title
 		{
-			//get { return this.RawData.api_title; }
 			get
 			{
 				try
 				{
-					System.IO.StreamReader filereader = new System.IO.StreamReader("quest.txt", System.Text.Encoding.UTF8, true);
-					string read_line = null;
-					string jap_name = null;
-					string eng_name = null;
-					while (true)
-					{
-						read_line = filereader.ReadLine();
-						if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
-						else
-						{
-							char[] delimiter = { ';' };
-							jap_name = read_line.Split(delimiter)[1];
-							eng_name = read_line.Split(delimiter)[2];
-							if (String.Equals(RawData.api_title, jap_name)) { filereader.Close(); return eng_name; }
-						}
-					}
+					var XML = XDocument.Load("Translations\\Quests.xml");
+					var Translations = XML.Descendants("Quest");
+					var FoundTranslation = Translations.Where(b => b.Element("JP-Name").Value.Equals(RawData.api_title));
+
+					foreach (XElement el in FoundTranslation)
+						return el.Element("TR-Name").Value;
+
+					// Translation not found! Stick it onto the XML file for future translations.
+					XML.Root.Add(new XElement("Quest",
+							new XElement ("ID", Id),
+							new XElement("JP-Name", RawData.api_title),
+							new XElement("TR-Name", RawData.api_title),
+							new XElement("JP-Detail", RawData.api_detail),
+							new XElement("TR-Detail", RawData.api_detail)
+						));
+
+					XML.Save("Translations\\Quests.xml");
 				}
 				catch { }
 
@@ -84,28 +85,27 @@ namespace Grabacr07.KanColleWrapper.Models
 		/// </summary>
 		public string Detail
 		{
-			//get { return this.RawData.api_detail; }
-
 			get
 			{
 				try
 				{
-					System.IO.StreamReader filereader = new System.IO.StreamReader("quest.txt", System.Text.Encoding.UTF8, true);
-					string read_line = null;
-					string jap_name = null;
-					string eng_name = null;
-					while (true)
-					{
-						read_line = filereader.ReadLine();
-						if (String.IsNullOrEmpty(read_line)) { filereader.Close(); break; }
-						else
-						{
-							char[] delimiter = { ';' };
-							jap_name = read_line.Split(delimiter)[3];
-							eng_name = read_line.Split(delimiter)[4];
-							if (String.Equals(RawData.api_detail, jap_name)) { filereader.Close(); return eng_name; }
-						}
-					}
+					var XML = XDocument.Load("Translations\\Quests.xml");
+					var Translations = XML.Descendants("Quest");
+					var FoundTranslation = Translations.Where(b => b.Element("JP-Detail").Value.Equals(RawData.api_detail));
+
+					foreach (XElement el in FoundTranslation)
+						return el.Element("TR-Detail").Value;
+
+					// Translation not found! Stick it onto the XML file for future translations.
+					XML.Root.Add(new XElement("Quest",
+							new XElement("ID", Id),
+							new XElement("JP-Name", RawData.api_title),
+							new XElement("TR-Name", RawData.api_title),
+							new XElement("JP-Detail", RawData.api_detail),
+							new XElement("TR-Detail", RawData.api_detail)
+						));
+
+					XML.Save("Translations\\Quests.xml");
 				}
 				catch { }
 
