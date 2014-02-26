@@ -749,11 +749,4 @@
     <JP-Detail>強い絆を結んだ艦娘を旗艦とした第一艦隊でリランカ島へ出撃、敵中枢を撃滅せよ！</JP-Detail>
     <TR-Detail>Deploy a fleet to 4-3 with a bonded ship of Lv.100 or more as flagship and score an S vectory or higher against the boss.</TR-Detail>
   </Quest>
-  <Quest>
-    <ID>612</ID>
-    <JP-Name>輸送用ドラム缶の準備</JP-Name>
-    <TR-Name>Prepare the shipping barrel</TR-Name>
-    <JP-Detail>「工廠」で装備アイテムを3回「廃棄」して、輸送用のドラム缶を準備します。</JP-Detail>
-    <TR-Detail>Scrap 3 pieces of equipment to acquire a shipping barrel</TR-Detail>
-  </Quest>
 </Quests>

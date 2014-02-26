@@ -21,8 +21,10 @@ namespace Grabacr07.KanColleWrapper
         private XDocument QuestsXML;
 
         public enum TransType { Ships, ShipTypes, Equipment, OperationMaps, OperationSortie, Quests, QuestDetail, QuestTitle };
-
+        public bool EnableTranslations { get; set; }
         public bool EnableAddUntranslated { get; set; }
+
+        private string CurrentCulture;
 
         internal Translations()
         {
@@ -37,39 +39,62 @@ namespace Grabacr07.KanColleWrapper
             catch { }
         }
 
+        public void ChangeCulture(string Culture)
+        {
+            EnableTranslations = EnableTranslations && Culture != "ja-JP";
+            CurrentCulture = Culture == "en-US" ? "" : Culture;
+
+            try
+            {
+                ShipsXML = XDocument.Load("Translations\\" + CurrentCulture + "\\Ships.xml");
+                ShipTypesXML = XDocument.Load("Translations\\" + CurrentCulture + "\\ShipTypes.xml");
+                EquipmentXML = XDocument.Load("Translations\\" + CurrentCulture + "\\Equipment.xml");
+                OperationsXML = XDocument.Load("Translations\\" + CurrentCulture + "\\Operations.xml");
+                QuestsXML = XDocument.Load("Translations\\" + CurrentCulture + "\\Quests.xml");
+            }
+            catch { }
+        }
+
         private IEnumerable<XElement> GetTranslationList(TransType Type)
         {
-            IEnumerable<XElement> Translations = null;
-
             switch(Type)
             {
                 case TransType.Ships:
-                    if (ShipsXML != null) Translations = ShipsXML.Descendants("Ship");
+                    if (ShipsXML != null) 
+                        return ShipsXML.Descendants("Ship");
                     break;
                 case TransType.ShipTypes:
-                    if (ShipTypesXML != null) Translations = ShipTypesXML.Descendants("Type");
+                    if (ShipTypesXML != null) 
+                        return ShipTypesXML.Descendants("Type");
                     break;
                 case TransType.Equipment:
-                    if (EquipmentXML != null) Translations = EquipmentXML.Descendants("Item");
+                    if (EquipmentXML != null) 
+                        return EquipmentXML.Descendants("Item");
                     break;
                 case TransType.OperationMaps:
-                    if (OperationsXML != null) Translations = OperationsXML.Descendants("Map");
+                    if (OperationsXML != null) 
+                        return OperationsXML.Descendants("Map");
                     break;
                 case TransType.OperationSortie:
-                    if (OperationsXML != null) Translations = OperationsXML.Descendants("Sortie");
+                    if (OperationsXML != null) 
+                        return OperationsXML.Descendants("Sortie");
                     break;
                 case TransType.Quests:
                 case TransType.QuestTitle:
                 case TransType.QuestDetail:
-                    if (QuestsXML != null) Translations = QuestsXML.Descendants("Quest");
+                    if (QuestsXML != null) 
+                        return QuestsXML.Descendants("Quest");
                     break;
             }
 
-            return Translations;
+            return null;
         }
 
-        public string GetTranslation(string JPString, TransType Type)
+        public string GetTranslation(string JPString, TransType Type, Object RawData)
         {
+            if (!EnableTranslations)
+                return JPString;
+
             try
             {
                 IEnumerable<XElement> TranslationList = GetTranslationList(Type);
@@ -83,7 +108,7 @@ namespace Grabacr07.KanColleWrapper
                 if (Type == TransType.QuestDetail)
                 {
                     JPChildElement = "JP-Detail";
-                    JPChildElement = "TR-Detail";
+                    TRChildElement = "TR-Detail";
                 }
 
                 IEnumerable<XElement> FoundTranslation = TranslationList.Where(b => b.Element(JPChildElement).Value.Equals(JPString));
@@ -92,6 +117,8 @@ namespace Grabacr07.KanColleWrapper
                     return el.Element(TRChildElement).Value;
             }
             catch { }
+
+            AddTranslation(RawData, Type);
 
             return JPString;
         }
@@ -117,7 +144,7 @@ namespace Grabacr07.KanColleWrapper
                                 new XElement("JP-Name", Data.api_name),
                                 new XElement("TR-Name", Data.api_name)
                                 ));
-                            ShipsXML.Save("Translations\\Ships.xml");
+                            ShipsXML.Save("Translations\\" + CurrentCulture + "\\Ships.xml");
                         }
                         break;
                     case TransType.ShipTypes:
@@ -128,11 +155,11 @@ namespace Grabacr07.KanColleWrapper
                             if (Data == null)
                                 return;
 
-                            ShipsXML.Root.Add(new XElement("Type",
+                            ShipTypesXML.Root.Add(new XElement("Type",
                                 new XElement("JP-Name", Data.api_name),
                                 new XElement("TR-Name", Data.api_name)
                                 ));
-                            ShipTypesXML.Save("Translations\\ShipTypes.xml");
+                            ShipTypesXML.Save("Translations\\" + CurrentCulture + "\\ShipTypes.xml");
                         }
                         break;
                     case TransType.Equipment:
@@ -143,11 +170,11 @@ namespace Grabacr07.KanColleWrapper
                             if (Data == null)
                                 return;
 
-                            ShipsXML.Root.Add(new XElement("Item",
+                            EquipmentXML.Root.Add(new XElement("Item",
                                 new XElement("JP-Name", Data.api_name),
                                 new XElement("TR-Name", Data.api_name)
                                 ));
-                            EquipmentXML.Save("Translations\\Equipment.xml");
+                            EquipmentXML.Save("Translations\\" + CurrentCulture + "\\Equipment.xml");
                         }
                         break;
                     case TransType.OperationMaps:
@@ -158,11 +185,11 @@ namespace Grabacr07.KanColleWrapper
                             if (Data == null)
                                 return;
 
-                            ShipsXML.Root.Add(new XElement("Map",
+                            OperationsXML.Root.Add(new XElement("Map",
                                 new XElement("JP-Name", Data.api_quest_name),
                                 new XElement("TR-Name", Data.api_quest_name)
                                 ));
-                            OperationsXML.Save("Translations\\Operations.xml");
+                            OperationsXML.Save("Translations\\" + CurrentCulture + "\\Operations.xml");
                         }
                         break;
                     case TransType.OperationSortie:
@@ -173,11 +200,11 @@ namespace Grabacr07.KanColleWrapper
                             if (Data == null)
                                 return;
 
-                            ShipsXML.Root.Add(new XElement("Sortie",
+                            OperationsXML.Root.Add(new XElement("Sortie",
                                 new XElement("JP-Name", Data.api_enemy_info.api_deck_name),
                                 new XElement("TR-Name", Data.api_enemy_info.api_deck_name)
                                 ));
-                            OperationsXML.Save("Translations\\Operations.xml");
+                            OperationsXML.Save("Translations\\" + CurrentCulture + "\\Operations.xml");
                         }
                         break;
                     case TransType.Quests:
@@ -190,66 +217,36 @@ namespace Grabacr07.KanColleWrapper
                             if (Data == null)
                                 return;
 
-                            ShipsXML.Root.Add(new XElement("Quest",
-                                new XElement("ID", Data.api_no),
-                                new XElement("JP-Name", Data.api_title),
-                                new XElement("TR-Name", Data.api_title),
-                                new XElement("JP-Detail", Data.api_detail),
-                                new XElement("TR-Detail", Data.api_detail)
-                                ));
-                            QuestsXML.Save("Translations\\Quests.xml");
-                        }
-                        break;
-                }
-            }
-            catch { }
-        }
+                            IEnumerable<XElement> FoundTranslationDetail = QuestsXML.Descendants("Quest").Where(b => b.Element("JP-Detail").Value.Equals(Data.api_detail));
+                            IEnumerable<XElement> FoundTranslationTitle = QuestsXML.Descendants("Quest").Where(b => b.Element("JP-Name").Value.Equals(Data.api_title));
 
-        public void AddTranslation(XElement TranslationElement, TransType Type)
-        {
-            if (TranslationElement == null || !EnableAddUntranslated)
-                return;
+                            // Check the current list for any errors and fix them before writing a whole new element.
+                            if (Type == TransType.QuestTitle && FoundTranslationDetail != null && FoundTranslationDetail.Any())
+                            {
+                                // The title is wrong, but the detail is right. Fix the title.
+                                foreach (XElement el in FoundTranslationDetail)
+                                    el.Element("JP-Name").Value = Data.api_title;
 
-            try
-            {
-                switch (Type)
-                {
-                    case TransType.Ships:
-                        if (ShipsXML != null)
-                        {
-                            ShipsXML.Root.Add(TranslationElement);
-                            ShipsXML.Save("Translations\\Ships.xml");
-                        }
-                        break;
-                    case TransType.ShipTypes:
-                        if (ShipTypesXML != null)
-                        {
-                            ShipTypesXML.Root.Add(TranslationElement);
-                            ShipTypesXML.Save("Translations\\ShipTypes.xml");
-                        }
-                        break;
-                    case TransType.Equipment:
-                        if (EquipmentXML != null)
-                        {
-                            EquipmentXML.Root.Add(TranslationElement);
-                            EquipmentXML.Save("Translations\\Equipment.xml");
-                        }
-                        break;
-                    case TransType.OperationMaps:
-                    case TransType.OperationSortie:
-                        if (OperationsXML != null)
-                        {
-                            OperationsXML.Root.Add(TranslationElement);
-                            OperationsXML.Save("Translations\\Operations.xml");
-                        }
-                        break;
-                    case TransType.Quests:
-                    case TransType.QuestTitle:
-                    case TransType.QuestDetail:
-                        if (QuestsXML != null)
-                        {
-                            QuestsXML.Root.Add(TranslationElement);
-                            QuestsXML.Save("Translations\\Quests.xml");
+                            }
+                            else if (Type == TransType.QuestDetail && FoundTranslationTitle != null && FoundTranslationTitle.Any())
+                            {
+                                // We found an existing detail, the title must be broken. Fix it.
+                                foreach (XElement el in FoundTranslationTitle)
+                                    el.Element("JP-Detail").Value = Data.api_detail;
+                            }
+                            else
+                            {
+                                // The quest doesn't exist at all. Add it.
+                                QuestsXML.Root.Add(new XElement("Quest",
+                                    new XElement("ID", Data.api_no),
+                                    new XElement("JP-Name", Data.api_title),
+                                    new XElement("TR-Name", Data.api_title),
+                                    new XElement("JP-Detail", Data.api_detail),
+                                    new XElement("TR-Detail", Data.api_detail)
+                                    ));
+                            }
+
+                            QuestsXML.Save("Translations\\" + CurrentCulture + "\\Quests.xml");
                         }
                         break;
                 }

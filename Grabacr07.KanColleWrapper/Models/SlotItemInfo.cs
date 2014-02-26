@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 using Grabacr07.KanColleWrapper.Internal;
 using Grabacr07.KanColleWrapper.Models.Raw;
 
@@ -27,26 +26,7 @@ namespace Grabacr07.KanColleWrapper.Models
 		{
 			get
 			{
-				try
-				{
-					var XML = XDocument.Load("Translations\\Equipment.xml");
-					var Translations = XML.Descendants("Item");
-					var FoundTranslation = Translations.Where(b => b.Element("JP-Name").Value.Equals(RawData.api_name));
-
-					foreach (XElement el in FoundTranslation)
-						return el.Element("TR-Name").Value;
-
-					// Translation not found! Stick it onto the XML file for future translations.
-					XML.Root.Add(new XElement("Item",
-							new XElement("JP-Name", RawData.api_name),
-							new XElement("TR-Name", RawData.api_name)
-						));
-
-					XML.Save("Translations\\Equipment.xml");
-				}
-				catch { }
-
-				return this.RawData.api_name;
+				return KanColleClient.Current.Homeport.Translations.GetTranslation(RawData.api_name, Translations.TransType.Equipment, this.RawData);
 			}
 		}
 

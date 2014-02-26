@@ -10,7 +10,6 @@ using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Specialized;
-using System.Xml.Linq;
 using Codeplex.Data;
 using Fiddler;
 using Grabacr07.KanColleWrapper.Internal;
@@ -51,31 +50,7 @@ namespace Grabacr07.KanColleWrapper
                 .TryParse<kcsapi_battleresult>()
                 .Subscribe(this.BattleResult);
         }
-
-        private string GetTranslation(string JPTerm, string FileName, string ElementName, string JPChildElement = "JP-Name", string TRChildElement = "TR-Name")
-        {
-            try
-            {
-                XDocument XML = XDocument.Load("Translations\\" + FileName);
-                IEnumerable<XElement> Translations = XML.Descendants(ElementName);
-                IEnumerable<XElement> FoundTranslation = Translations.Where(b => b.Element(JPChildElement).Value.Equals(JPTerm));
-
-                foreach (XElement el in FoundTranslation)
-                    return el.Element(TRChildElement).Value;
-
-                // Translation not found! Stick it onto the XML file for future translations.
-                XML.Root.Add(new XElement(ElementName,
-                        new XElement(JPChildElement, JPTerm),
-                        new XElement(TRChildElement, JPTerm)
-                    ));
-
-                XML.Save("Translations\\" + FileName);
-            }
-            catch { }
-
-            return JPTerm;
-        }
-
+        
         private void CreateItem(kcsapi_createitem item, NameValueCollection req)
         {
             Log(LogType.BuildItem, "{0},{1},{2},{3},{4},{5},{6}", item.api_create_flag == 1 ? KanColleClient.Current.Master.SlotItems[item.api_slotitem_id].Name : "Penguin",
@@ -108,7 +83,10 @@ namespace Grabacr07.KanColleWrapper
 
         private void BattleResult(kcsapi_battleresult br)
         {
-            Log(LogType.ShipDrop, "{0},{1},{2},{3},{4}", br.api_get_ship != null ? GetTranslation(br.api_get_ship.api_ship_name, "Ships.xml", "Ship") : "", GetTranslation(br.api_quest_name, "Operations.xml", "Map"), GetTranslation(br.api_enemy_info.api_deck_name, "Operations.xml", "Sortie"), br.api_win_rank, DateTime.Now.ToString("M/d/yyyy H:mm"));
+            Log(LogType.ShipDrop, "{0},{1},{2},{3},{4}", br.api_get_ship != null ? KanColleClient.Current.Homeport.Translations.GetTranslation(br.api_get_ship.api_ship_name, Translations.TransType.Ships, br)  : "", 
+                KanColleClient.Current.Homeport.Translations.GetTranslation(br.api_quest_name, Translations.TransType.OperationMaps, br),
+                KanColleClient.Current.Homeport.Translations.GetTranslation(br.api_enemy_info.api_deck_name, Translations.TransType.OperationSortie, br),
+                br.api_win_rank, DateTime.Now.ToString("M/d/yyyy H:mm"));
         }
 
         private void Log(LogType Type, string format, params object[] args)

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 using Grabacr07.KanColleWrapper.Models.Raw;
 
 namespace Grabacr07.KanColleWrapper.Models
@@ -54,29 +53,7 @@ namespace Grabacr07.KanColleWrapper.Models
 		{
 			get
 			{
-				try
-				{
-					var XML = XDocument.Load("Translations\\Quests.xml");
-					var Translations = XML.Descendants("Quest");
-					var FoundTranslation = Translations.Where(b => b.Element("JP-Name").Value.Equals(RawData.api_title));
-
-					foreach (XElement el in FoundTranslation)
-						return el.Element("TR-Name").Value;
-
-					// Translation not found! Stick it onto the XML file for future translations.
-					XML.Root.Add(new XElement("Quest",
-							new XElement ("ID", Id),
-							new XElement("JP-Name", RawData.api_title),
-							new XElement("TR-Name", RawData.api_title),
-							new XElement("JP-Detail", RawData.api_detail),
-							new XElement("TR-Detail", RawData.api_detail)
-						));
-
-					XML.Save("Translations\\Quests.xml");
-				}
-				catch { }
-
-				return this.RawData.api_title;
+				return KanColleClient.Current.Homeport.Translations.GetTranslation(RawData.api_title, Translations.TransType.QuestTitle, this.RawData);
 			}
 		}
 
@@ -87,29 +64,7 @@ namespace Grabacr07.KanColleWrapper.Models
 		{
 			get
 			{
-				try
-				{
-					var XML = XDocument.Load("Translations\\Quests.xml");
-					var Translations = XML.Descendants("Quest");
-					var FoundTranslation = Translations.Where(b => b.Element("JP-Detail").Value.Equals(RawData.api_detail));
-
-					foreach (XElement el in FoundTranslation)
-						return el.Element("TR-Detail").Value;
-
-					// Translation not found! Stick it onto the XML file for future translations.
-					XML.Root.Add(new XElement("Quest",
-							new XElement("ID", Id),
-							new XElement("JP-Name", RawData.api_title),
-							new XElement("TR-Name", RawData.api_title),
-							new XElement("JP-Detail", RawData.api_detail),
-							new XElement("TR-Detail", RawData.api_detail)
-						));
-
-					XML.Save("Translations\\Quests.xml");
-				}
-				catch { }
-
-				return this.RawData.api_detail;
+				return KanColleClient.Current.Homeport.Translations.GetTranslation(RawData.api_detail, Translations.TransType.QuestDetail, this.RawData);
 			}
 		}
 
