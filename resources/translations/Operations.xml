@@ -76,6 +76,10 @@
     <JP-Name>サブ島沖海域</JP-Name>
     <TR-Name>World 5-3</TR-Name>
   </Map>
+  <Map>
+    <JP-Name>サーモン海域</JP-Name>
+    <TR-Name>World 5-4</TR-Name>
+  </Map>
   
   <Sortie>
     <JP-Name>渦潮</JP-Name>

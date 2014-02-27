@@ -292,4 +292,12 @@
     <JP-Name>増設バルジ（大型艦）</JP-Name>
     <TR-Name>Anti-Torpedo Bulge (L)</TR-Name>
   </Item>
+  <Item>
+    <JP-Name>探照灯</JP-Name>
+    <TR-Name>Searchlight</TR-Name>
+  </Item>
+  <Item>
+    <JP-Name>ドラム缶(輸送用)</JP-Name>
+    <TR-Name>Drum (Transport)</TR-Name>
+  </Item>
 </Equipment>
