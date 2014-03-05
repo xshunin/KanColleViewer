@@ -212,7 +212,6 @@
     <Compile Include="Views\Contents\Rankings.xaml.cs">
       <DependentUpon>Rankings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\WebBrowserHelper.cs" />
     <Compile Include="Views\BrowserNavigator.xaml.cs">
       <DependentUpon>BrowserNavigator.xaml</DependentUpon>
     </Compile>
@@ -405,6 +404,7 @@
     <Page Include="Views\Contents\Rankings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+	</Page>
     <Page Include="Views\Controls\ZoomFactorSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

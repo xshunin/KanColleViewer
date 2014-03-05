@@ -64,11 +64,11 @@
 									   HorizontalAlignment="Center">
 								<TextBlock.Text>
 									<Binding Path="BrowserZoomFactor.CurrentParcentage"
-											 StringFormat="ゲーム画面を {0} % に戻す"
+											 StringFormat="Return display size to {0} %"
 											 Mode="OneWay" />
 								</TextBlock.Text>
 							</TextBlock>
-							<TextBlock Text="(誤ってズームしたとき用)"
+							<TextBlock Text="(When zoomed incorrectly)"
 									   FontSize="11"
 									   HorizontalAlignment="Center" />
 						</StackPanel>
@@ -83,8 +83,9 @@
 
 					<TextBlock Margin="8,0,10,0"
 							   TextWrapping="Wrap">
-						<Run Text="ウィンドウ上部のボタンでゲーム画面 (Internet Explorer) の表示サイズを変更できます。" />
-						<Run Text="スクリーンショットは常に 100 % のサイズで撮影され、表示サイズ設定の影響を受けません。" />
+						<Run Text="You can change the display size of the game (IE) with the zoom button at the top of the window." />
+                        <LineBreak />
+						<Run Text="Screenshots will always capture at 100% screen size." />
 					</TextBlock>
 				</DockPanel>
 
