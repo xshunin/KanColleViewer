@@ -38,6 +38,10 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Fleets
 		{
 			get { return this.source.TotalLevel.ToString(); }
 		}
+		public string TotalAverageLevel
+		{
+			get { return TotalLevel + " (" + AverageLevel + ")"; }
+		}
 
 		public string Speed
 		{

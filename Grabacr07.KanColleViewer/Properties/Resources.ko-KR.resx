@@ -456,7 +456,7 @@
   <data name="StartContent_SetRegionCookieToolTip" xml:space="preserve">
     <value>Make sure DMM.com is set to Japanese (日本語)</value>
   </data>
-  <data name="StatusBar_TotalLevel" xml:space="preserve">
-    <value>Total Level:</value>
+  <data name="StatusBar_TotalAverageLevel" xml:space="preserve">
+    <value>Total Level (Average):</value>
   </data>
 </root>

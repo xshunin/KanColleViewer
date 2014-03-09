@@ -1141,11 +1141,11 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total Level:.
+        ///   Looks up a localized string similar to Total Level (Average):.
         /// </summary>
-        public static string StatusBar_TotalLevel {
+        public static string StatusBar_TotalAverageLevel {
             get {
-                return ResourceManager.GetString("StatusBar_TotalLevel", resourceCulture);
+                return ResourceManager.GetString("StatusBar_TotalAverageLevel", resourceCulture);
             }
         }
         
