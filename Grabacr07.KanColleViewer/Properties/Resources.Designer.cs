@@ -1078,6 +1078,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Make sure DMM.com is set to Japanese (日本語).
+        /// </summary>
+        public static string StartContent_SetRegionCookieToolTip {
+            get {
+                return ResourceManager.GetString("StartContent_SetRegionCookieToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Air Superiority Potential:.
         /// </summary>
         public static string StatusBar_AirSuperiorityPotential {
@@ -1128,6 +1137,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string StatusBar_Speed_Slow {
             get {
                 return ResourceManager.GetString("StatusBar_Speed_Slow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Level (Average):.
+        /// </summary>
+        public static string StatusBar_TotalAverageLevel {
+            get {
+                return ResourceManager.GetString("StatusBar_TotalAverageLevel", resourceCulture);
             }
         }
         
