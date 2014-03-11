@@ -97,12 +97,12 @@ namespace Grabacr07.KanColleViewer.ViewModels.Catalogs
 		{
 			if (this.Direction == SortDirection.Ascending)
 			{
-				return list.OrderBy(x => x.Ship.Info.SortId)
+				return list.OrderBy(x => x.Ship.Info.Name)
 					.ThenBy(x => x.Ship.Id);
 			}
 			if (this.Direction == SortDirection.Descending)
 			{
-				return list.OrderByDescending(x => x.Ship.Info.SortId)
+                return list.OrderByDescending(x => x.Ship.Info.Name)
 					.ThenByDescending(x => x.Ship.Id);
 			}
 			return list;
