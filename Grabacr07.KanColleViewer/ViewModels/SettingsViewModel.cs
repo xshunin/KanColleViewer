@@ -290,6 +290,21 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				{
 					ResourceService.Current.ChangeCulture(value);
                     KanColleClient.Current.Homeport.Translations.ChangeCulture(value);
+
+                    KanColleClient.Current.Homeport.Translations.Firepower =Properties.Resources.Stats_Firepower;
+                    KanColleClient.Current.Homeport.Translations.AntiAir = Properties.Resources.Stats_AntiAir;
+                    KanColleClient.Current.Homeport.Translations.Accuracy = Properties.Resources.Stats_Accuracy;
+                    KanColleClient.Current.Homeport.Translations.Torpedo = Properties.Resources.Stats_Torpedo;
+                    KanColleClient.Current.Homeport.Translations.AntiSub = Properties.Resources.Stats_AntiSub;
+                    KanColleClient.Current.Homeport.Translations.Evasion = Properties.Resources.Stats_Evasion;
+                    KanColleClient.Current.Homeport.Translations.SightRange = Properties.Resources.Stats_SightRange;
+                    KanColleClient.Current.Homeport.Translations.Luck = Properties.Resources.Stats_Luck;
+                    KanColleClient.Current.Homeport.Translations.Speed = Properties.Resources.Stats_Speed;
+                    KanColleClient.Current.Homeport.Translations.Armor = Properties.Resources.Stats_Armor;
+                    KanColleClient.Current.Homeport.Translations.Health = Properties.Resources.Stats_Health;
+                    KanColleClient.Current.Homeport.Translations.AttackRange = Properties.Resources.Stats_AttackRange;
+                    KanColleClient.Current.Homeport.Translations.DiveBomb = Properties.Resources.Stats_DiveBomb;
+
 					this.RaisePropertyChanged();
 				}
 			}

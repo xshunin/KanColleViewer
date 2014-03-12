@@ -1087,6 +1087,123 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Accuracy.
+        /// </summary>
+        public static string Stats_Accuracy {
+            get {
+                return ResourceManager.GetString("Stats_Accuracy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anti-Air.
+        /// </summary>
+        public static string Stats_AntiAir {
+            get {
+                return ResourceManager.GetString("Stats_AntiAir", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Anti-Sub.
+        /// </summary>
+        public static string Stats_AntiSub {
+            get {
+                return ResourceManager.GetString("Stats_AntiSub", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Armor.
+        /// </summary>
+        public static string Stats_Armor {
+            get {
+                return ResourceManager.GetString("Stats_Armor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attack Rng.
+        /// </summary>
+        public static string Stats_AttackRange {
+            get {
+                return ResourceManager.GetString("Stats_AttackRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bombing.
+        /// </summary>
+        public static string Stats_DiveBomb {
+            get {
+                return ResourceManager.GetString("Stats_DiveBomb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Evasion.
+        /// </summary>
+        public static string Stats_Evasion {
+            get {
+                return ResourceManager.GetString("Stats_Evasion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Firepower.
+        /// </summary>
+        public static string Stats_Firepower {
+            get {
+                return ResourceManager.GetString("Stats_Firepower", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Health.
+        /// </summary>
+        public static string Stats_Health {
+            get {
+                return ResourceManager.GetString("Stats_Health", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Luck.
+        /// </summary>
+        public static string Stats_Luck {
+            get {
+                return ResourceManager.GetString("Stats_Luck", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sight Rng.
+        /// </summary>
+        public static string Stats_SightRange {
+            get {
+                return ResourceManager.GetString("Stats_SightRange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Speed.
+        /// </summary>
+        public static string Stats_Speed {
+            get {
+                return ResourceManager.GetString("Stats_Speed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Torpedo.
+        /// </summary>
+        public static string Stats_Torpedo {
+            get {
+                return ResourceManager.GetString("Stats_Torpedo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Air Superiority Potential:.
         /// </summary>
         public static string StatusBar_AirSuperiorityPotential {

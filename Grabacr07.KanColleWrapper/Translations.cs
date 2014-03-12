@@ -19,12 +19,26 @@ namespace Grabacr07.KanColleWrapper
         private XDocument EquipmentXML;
         private XDocument OperationsXML;
         private XDocument QuestsXML;
+        private string CurrentCulture;
 
         public enum TransType { Ships, ShipTypes, Equipment, OperationMaps, OperationSortie, Quests, QuestDetail, QuestTitle };
         public bool EnableTranslations { get; set; }
         public bool EnableAddUntranslated { get; set; }
 
-        private string CurrentCulture;
+        // Item Stat Translations
+        public string Firepower { get; set; }
+        public string AntiAir { get; set; }
+        public string Accuracy { get; set; }
+        public string Torpedo { get; set; }
+        public string AntiSub { get; set; }
+        public string DiveBomb { get; set; }
+        public string Evasion { get; set; }
+        public string AttackRange { get; set; }
+        public string SightRange { get; set; }
+        public string Luck { get; set; }
+        public string Speed { get; set; }
+        public string Armor { get; set; }
+        public string Health { get; set; }
 
         internal Translations()
         {

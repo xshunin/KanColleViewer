@@ -293,7 +293,7 @@
 									</ItemsControl.Template>
 									<ItemsControl.ItemTemplate>
 										<DataTemplate>
-											<Border ToolTip="{Binding Info.Name}"
+                                            <Border ToolTip="{Binding Info.DetailedName}"
 													Background="Transparent">
 												<controls:SlotItemIcon Type="{Binding Info.IconType}"
 																	   Margin="3,0" />

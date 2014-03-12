@@ -51,6 +51,20 @@ namespace Grabacr07.KanColleViewer
 			ResourceService.Current.ChangeCulture(Settings.Current.Culture);
             KanColleClient.Current.Homeport.Translations.ChangeCulture(Settings.Current.Culture);
 
+            KanColleClient.Current.Homeport.Translations.Firepower = Grabacr07.KanColleViewer.Properties.Resources.Stats_Firepower;
+            KanColleClient.Current.Homeport.Translations.AntiAir = Grabacr07.KanColleViewer.Properties.Resources.Stats_AntiAir;
+            KanColleClient.Current.Homeport.Translations.Accuracy = Grabacr07.KanColleViewer.Properties.Resources.Stats_Accuracy;
+            KanColleClient.Current.Homeport.Translations.Torpedo = Grabacr07.KanColleViewer.Properties.Resources.Stats_Torpedo;
+            KanColleClient.Current.Homeport.Translations.AntiSub = Grabacr07.KanColleViewer.Properties.Resources.Stats_AntiSub;
+            KanColleClient.Current.Homeport.Translations.Evasion = Grabacr07.KanColleViewer.Properties.Resources.Stats_Evasion;
+            KanColleClient.Current.Homeport.Translations.SightRange = Grabacr07.KanColleViewer.Properties.Resources.Stats_SightRange;
+            KanColleClient.Current.Homeport.Translations.Luck = Grabacr07.KanColleViewer.Properties.Resources.Stats_Luck;
+            KanColleClient.Current.Homeport.Translations.Speed = Grabacr07.KanColleViewer.Properties.Resources.Stats_Speed;
+            KanColleClient.Current.Homeport.Translations.Armor = Grabacr07.KanColleViewer.Properties.Resources.Stats_Armor;
+            KanColleClient.Current.Homeport.Translations.Health = Grabacr07.KanColleViewer.Properties.Resources.Stats_Health;
+            KanColleClient.Current.Homeport.Translations.AttackRange = Grabacr07.KanColleViewer.Properties.Resources.Stats_AttackRange;
+            KanColleClient.Current.Homeport.Translations.DiveBomb = Grabacr07.KanColleViewer.Properties.Resources.Stats_DiveBomb;
+
             KanColleClient.Current.Homeport.Logger.EnableLogging = Settings.Current.EnableLogging;
 
 			ThemeService.Current.Initialize(this, Theme.Dark, Accent.Purple);
