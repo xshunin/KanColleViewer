@@ -51,6 +51,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
                 this.Rankings,
             };
 
+            this.SelectedItem = this.TabItems.FirstOrDefault();
         }
 
     }
