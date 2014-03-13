@@ -179,8 +179,8 @@
     <Compile Include="ViewModels\BindableTextViewModel.cs" />
     <Compile Include="ViewModels\Catalogs\ShipTypeViewModel.cs" />
     <Compile Include="ViewModels\Catalogs\ShipCatalogWindowViewModel.cs" />
-    <Compile Include="ViewModels\Contents\RankingsViewModel.cs" />
-    <Compile Include="ViewModels\Contents\RankingViewModel.cs" />
+    <Compile Include="ViewModels\Contents\Tools\RankingsViewModel.cs" />
+    <Compile Include="ViewModels\Contents\Tools\RankingViewModel.cs" />
     <Compile Include="ViewModels\Dev\DebugTabViewModel.cs" />
     <Compile Include="ViewModels\CultureViewModel.cs" />
     <Compile Include="ViewModels\MainContentViewModel.cs" />
@@ -197,6 +197,7 @@
     <Compile Include="ViewModels\Contents\SlotItemsViewModel.cs" />
     <Compile Include="ViewModels\StatusBarViewModel.cs" />
     <Compile Include="ViewModels\TabItemViewModel.cs" />
+    <Compile Include="ViewModels\Contents\ToolsViewModel.cs" />
     <Compile Include="ViewModels\VolumeViewModel.cs" />
     <Compile Include="Views\Behaviors\CountdownBehavior.cs" />
     <Compile Include="Views\Behaviors\FlickFleetsAction.cs" />
@@ -209,7 +210,7 @@
     <Compile Include="Views\Controls\KanColleHost.cs" />
     <Compile Include="Views\Controls\WebBrowserHelper.cs" />
     <Compile Include="Views\Behaviors\ZoomAction.cs" />
-    <Compile Include="Views\Contents\Rankings.xaml.cs">
+    <Compile Include="Views\Tools\Rankings.xaml.cs">
       <DependentUpon>Rankings.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\BrowserNavigator.xaml.cs">
@@ -281,6 +282,9 @@
     </Compile>
     <Compile Include="Views\StatusBar.xaml.cs">
       <DependentUpon>StatusBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Tools\Tools.xaml.cs">
+      <DependentUpon>Tools.xaml</DependentUpon>
     </Compile>
     <Compile Include="Win32\INTERNET_CACHE_ENTRY_INFOA.cs" />
     <Compile Include="Win32\WinInet.cs" />
@@ -401,7 +405,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Contents\Rankings.xaml">
+    <Page Include="Views\Tools\Common.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Tools\Rankings.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -498,6 +506,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\Tools\Tools.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Grabacr07.KanColleViewer.Views.Contents
+namespace Grabacr07.KanColleViewer.Views.Tools
 {
     /// <summary>
     /// Missions.xaml ?????????

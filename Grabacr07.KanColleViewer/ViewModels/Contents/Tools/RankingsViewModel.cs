@@ -7,7 +7,7 @@ using Grabacr07.KanColleWrapper;
 using Grabacr07.KanColleWrapper.Models;
 using Livet.EventListeners;
 
-namespace Grabacr07.KanColleViewer.ViewModels.Contents
+namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
 {
     public class RankingsViewModel : TabItemViewModel
     {
@@ -30,6 +30,8 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
                 {
                     this._Rankings = value;
                     this.RaisePropertyChanged();
+
+                    this.HasNoRankings = !(this._Rankings != null && this._Rankings.Length > 0);
                 }
             }
         }
@@ -86,6 +88,25 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
                 if (this._CurrentPage != value)
                 {
                     this._CurrentPage = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        #endregion
+
+        #region HasNoRankings
+
+        private bool _HasNoRankings;
+        
+        public bool HasNoRankings
+        {
+            get { return this._HasNoRankings; }
+            set
+            {
+                if (this._HasNoRankings != value)
+                {
+                    this._HasNoRankings = value;
                     this.RaisePropertyChanged();
                 }
             }
