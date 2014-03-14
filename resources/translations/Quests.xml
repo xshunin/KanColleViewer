@@ -46,7 +46,7 @@
     <ID>A7</ID>
     <JP-Name>「重巡戦隊」を編成せよ！</JP-Name>
     <TR-Name>Form a Heavy Cruiser Squadron!</TR-Name>
-    <JP-Detail>重巡洋艦2隻を擁する重巡艦隊を編成せよ！</JP-Detail>
+    <JP-Detail>重巡洋艦２隻を擁する重巡艦隊を編成せよ！</JP-Detail>
     <TR-Detail>Have 2 CA in your main fleet.</TR-Detail>
   </Quest>
   <Quest>
@@ -291,7 +291,7 @@
     <ID>B9</ID>
     <JP-Name>「空母機動部隊」出撃せよ！</JP-Name>
     <TR-Name>Sortie a Carrier Task Force!</TR-Name>
-    <JP-Detail>空母1隻とその護衛艦艇で編成した空母機動部隊を出撃させよ！</JP-Detail>
+    <JP-Detail>空母1隻とその護衛艦艇で構成した空母機動部隊を出撃させよ！</JP-Detail>
     <TR-Detail>Deply a fleet with CV(L) as flagship and 5 DD/CL/AV for the escorts.</TR-Detail>
   </Quest>
   <Quest>
