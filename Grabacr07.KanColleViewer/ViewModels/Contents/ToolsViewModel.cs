@@ -10,7 +10,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
 {
     public class ToolsViewModel : TabItemViewModel
     {
-
+        public CalculatorViewModel Calculator { get; private set; }
         public RankingsViewModel Rankings { get; private set; }
 
         public IList<TabItemViewModel> TabItems { get; private set; }
@@ -44,10 +44,12 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
 
         public ToolsViewModel()
         {
+            this.Calculator = new CalculatorViewModel();
             this.Rankings = new RankingsViewModel();
 
             this.TabItems = new List<TabItemViewModel> 
             {
+                this.Calculator,
                 this.Rankings,
             };
 

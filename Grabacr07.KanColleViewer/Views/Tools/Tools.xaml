@@ -51,6 +51,9 @@
                 <DataTemplate DataType="{x:Type vmTools:RankingsViewModel}">
                     <tools:Rankings />
                 </DataTemplate>
+                <DataTemplate DataType="{x:Type vmTools:CalculatorViewModel}">
+                    <tools:Calculator />
+                </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>
     </Grid>
