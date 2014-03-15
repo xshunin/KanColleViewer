@@ -384,11 +384,11 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
 				return;
 
 			// Lawl at that this inline conditional.
-			float Multiplier = (this.IsFlagship ? 1.5f : 1) * (this.IsMVP ? 2 : 1) * (this.SelectedResult == "S" ? 2 : (this.SelectedResult == "C" ? 0.8f : (this.SelectedResult == "D" ? 0.7f : (this.SelectedResult == "E" ? 0.5f : 1))));
+			double Multiplier = (this.IsFlagship ? 1.5 : 1) * (this.IsMVP ? 2 : 1) * (this.SelectedResult == "S" ? 1.2 : (this.SelectedResult == "C" ? 0.8 : (this.SelectedResult == "D" ? 0.7 : (this.SelectedResult == "E" ? 0.5 : 1))));
 
 			this.SortieExp = (int)Math.Floor( SeaExpTable[this.SelectedSea] * Multiplier );
 			this.RemainingExp = this.TargetExp - this.CurrentExp;
-			this.RunCount = (int)Math.Ceiling( (float)this.RemainingExp / (float)this.SortieExp );
+			this.RunCount = (int)Math.Ceiling( this.RemainingExp / (double)this.SortieExp );
 		}
 
 	}
