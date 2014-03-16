@@ -709,6 +709,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 「{0}」 in {1} is in critical condition!.
+        /// </summary>
+        public static string ReSortie_CriticalConditionMessage {
+            get {
+                return ResourceManager.GetString("ReSortie_CriticalConditionMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Critical Ship Warning.
+        /// </summary>
+        public static string ReSortie_CriticalConditionMessage_Title {
+            get {
+                return ResourceManager.GetString("ReSortie_CriticalConditionMessage_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to All ships in 「{0}」 have fully recovered from fatigue..
         /// </summary>
         public static string ReSortie_NotificationMessage {
@@ -750,6 +768,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change window color when a ship is in critical condition.
+        /// </summary>
+        public static string Settings_Accent_CriticalCondition {
+            get {
+                return ResourceManager.GetString("Settings_Accent_CriticalCondition", resourceCulture);
             }
         }
         
@@ -799,6 +826,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fleet Condition.
+        /// </summary>
+        public static string Settings_FleetCondition {
+            get {
+                return ResourceManager.GetString("Settings_FleetCondition", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Language.
         /// </summary>
         public static string Settings_Language {
@@ -831,6 +867,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Settings_Network {
             get {
                 return ResourceManager.GetString("Settings_Network", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Give a notification for ships in critical condition.
+        /// </summary>
+        public static string Settings_Notify_CriticalCondition {
+            get {
+                return ResourceManager.GetString("Settings_Notify_CriticalCondition", resourceCulture);
             }
         }
         

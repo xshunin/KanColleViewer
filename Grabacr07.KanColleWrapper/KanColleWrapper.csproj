@@ -128,6 +128,7 @@
     <Compile Include="Models\Raw\kcsapi_stype.cs" />
     <Compile Include="Models\RepairingDock.cs" />
     <Compile Include="Models\RepairingDockState.cs" />
+    <Compile Include="Models\ShipCriticalConditionEventArgs.cs" />
     <Compile Include="Models\ShipType.cs" />
     <Compile Include="Models\ShipTypeId.cs" />
     <Compile Include="Models\SlotItemType.cs" />

@@ -367,9 +367,43 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#endregion
 
+        #region EnableCriticalNotify 変更通知プロパティ
 
+        public bool EnableCriticalNotify
+        {
+            get { return Settings.Current.EnableCriticalNotify; }
+            set
+            {
+                if (Settings.Current.EnableCriticalNotify != value)
+                {
+                    Settings.Current.EnableCriticalNotify = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
 
-		public bool HasErrors
+        #endregion
+
+        #region EnableCriticalAccent 変更通知プロパティ
+
+        public bool EnableCriticalAccent
+        {
+            get { return Settings.Current.EnableCriticalAccent; }
+            set
+            {
+                if (Settings.Current.EnableCriticalAccent != value)
+                {
+                    Settings.Current.EnableCriticalAccent = value;
+                    if (!Settings.Current.EnableCriticalAccent && App.ViewModelRoot.Mode == Mode.CriticalCondition)
+                        App.ViewModelRoot.Mode = Mode.Started;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        #endregion
+
+        public bool HasErrors
 		{
 			get { return this.reSortieConditionError != null; }
 		}
@@ -391,7 +425,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 					return list;
 				});
 
-			this.Cultures = new[] { new CultureViewModel { DisplayName = "(auto)" } }
+			this.Cultures = new[] { new CultureViewModel { DisplayName = "(Auto)" } }
 				.Concat(ResourceService.Current.SupportedCultures
 					.Select(x => new CultureViewModel { DisplayName = x.EnglishName, Name = x.Name })
 					.OrderBy(x => x.DisplayName))
