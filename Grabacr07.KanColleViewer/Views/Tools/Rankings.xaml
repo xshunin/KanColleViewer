@@ -218,7 +218,6 @@
 					BorderBrush="{DynamicResource BorderBrushKey}"
 					BorderThickness="1"
 					Opacity="0.75"
-					Margin="8,0,8,0"
 					Padding="20"
 					Visibility="{Binding HasNoRankings, Converter={StaticResource BooleanToVisibilityConverter}}"
 					d:IsHidden="True">
