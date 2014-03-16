@@ -13,7 +13,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
     {
         public override string Name
         {
-            get { return Resources.Rankings; }
+            get { return Resources.Tools_Rankings; }
             protected set { throw new NotImplementedException(); }
         }
 

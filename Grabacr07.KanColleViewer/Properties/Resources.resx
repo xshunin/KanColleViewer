@@ -459,10 +459,10 @@
   <data name="Settings_Logging_Enable" xml:space="preserve">
     <value>Log drops and crafting results to file</value>
   </data>
-  <data name="Rankings" xml:space="preserve">
+  <data name="Tools_Rankings" xml:space="preserve">
     <value>Rankings</value>
   </data>
-  <data name="Rankings_RankingsList" xml:space="preserve">
+  <data name="Tools_Rankings_RankingsList" xml:space="preserve">
     <value>Current Rankings</value>
   </data>
   <data name="StartContent_SetRegionCookieButton" xml:space="preserve">
@@ -539,5 +539,59 @@
   </data>
   <data name="Settings_Accent_CriticalCondition" xml:space="preserve">
     <value>Change window color when a ship is in critical condition</value>
+  </data>
+  <data name="Tools_Calculator" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
+  <data name="Tools_Calculator_CurrentLevel" xml:space="preserve">
+    <value>Current Level</value>
+  </data>
+  <data name="Tools_Calculator_Flagship" xml:space="preserve">
+    <value>Flagship</value>
+  </data>
+  <data name="Tools_Calculator_ListPrompt" xml:space="preserve">
+    <value>Select a Ship Girl</value>
+  </data>
+  <data name="Tools_Calculator_Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="Tools_Calculator_MVP" xml:space="preserve">
+    <value>MVP</value>
+  </data>
+  <data name="Tools_Calculator_RemainingExp" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="Tools_Calculator_Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Tools_Calculator_SortieExp" xml:space="preserve">
+    <value>Sortie Exp</value>
+  </data>
+  <data name="Tools_Calculator_TargetLevel" xml:space="preserve">
+    <value>Target Level</value>
+  </data>
+  <data name="Tools_Rankings_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Tools_Rankings_Experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="Tools_Rankings_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Tools_Rankings_Page" xml:space="preserve">
+    <value>Page:</value>
+  </data>
+  <data name="Tools_Rankings_Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Tools_Rankings_Rate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="Tools_Rankings_TotalRanked" xml:space="preserve">
+    <value>Total Ranked:</value>
+  </data>
+  <data name="Tools_Rankings_User" xml:space="preserve">
+    <value>User</value>
   </data>
 </root>

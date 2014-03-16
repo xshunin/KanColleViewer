@@ -14,223 +14,205 @@
 			 xmlns:viewModels="clr-namespace:Grabacr07.KanColleViewer.ViewModels"
 			 xmlns:models="clr-namespace:Grabacr07.KanColleViewer.Models"
 			 mc:Ignorable="d"
-			 d:DesignWidth="500"
+			 d:DesignWidth="580"
 			 d:DesignHeight="300"
 			 FontSize="12"
 			 d:DataContext="{d:DesignInstance tools:RankingsViewModel}">
 
-    <UserControl.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Common.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
-    </UserControl.Resources>
+	<UserControl.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="Common.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</UserControl.Resources>
 
-    <StackPanel>
-        <Grid MaxHeight="{Binding Source={x:Static properties:Settings.Default}, Path=UIContentHight}">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+	<StackPanel>
+		<Grid MaxHeight="{Binding Source={x:Static properties:Settings.Default}, Path=UIContentHight}">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="*" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
 
-            <Border Panel.ZIndex="100"
+			<Border Panel.ZIndex="100"
 					Grid.Row="0">
-                <TextBlock Text="Current Rankings"
-						   FontFamily="Segoe UI"
-						   FontSize="16"
-						   Margin="2,2,8,2"
-						   Opacity="0.85" />
-            </Border>
+				<TextBlock Text="{Binding Resources.Tools_Rankings_RankingsList, Source={x:Static models:ResourceService.Current}, Mode=OneWay}"
+						   Style="{DynamicResource HeaderTextBlockStyleKey}" />
+			</Border>
 
-            <DockPanel Grid.Row="1">
-                <Border BorderBrush="{DynamicResource BorderBrushKey}"
-						BorderThickness="1"
-						Margin="8">
-                    <ListView ItemsSource="{Binding Rankings}"
+			<DockPanel Grid.Row="1">
+				<Border BorderBrush="{DynamicResource BorderBrushKey}"
+						BorderThickness="1">
+					<ListView ItemsSource="{Binding Rankings}"
 							  ItemContainerStyle="{DynamicResource GridViewItemContainerStyleKey}"
 							  d:DataContext="{d:DesignData /SampleData/RankingsViewModelSampleData.xaml}">
-                        <ListView.Resources>
-                            <Style TargetType="{x:Type GridViewColumnHeader}">
-                                <Setter Property="OverridesDefaultStyle"
+						<ListView.Resources>
+							<Style TargetType="{x:Type GridViewColumnHeader}">
+								<Setter Property="OverridesDefaultStyle"
 										Value="True" />
-                                <Setter Property="BorderThickness"
+								<Setter Property="BorderThickness"
 										Value="0,0,0,1" />
-                                <Setter Property="BorderBrush"
+								<Setter Property="BorderBrush"
 										Value="{DynamicResource BorderBrushKey}" />
-                                <Setter Property="Background"
+								<Setter Property="Background"
 										Value="{DynamicResource BackgroundBrushKey}" />
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="{x:Type GridViewColumnHeader}">
-                                            <Grid>
-                                                <Border BorderThickness="{TemplateBinding BorderThickness}"
+								<Setter Property="Template">
+									<Setter.Value>
+										<ControlTemplate TargetType="{x:Type GridViewColumnHeader}">
+											<Grid>
+												<Border BorderThickness="{TemplateBinding BorderThickness}"
 														BorderBrush="{TemplateBinding BorderBrush}"
 														Background="{TemplateBinding Background}">
-                                                    <ContentPresenter Margin="{TemplateBinding Padding}" />
-                                                </Border>
-                                                <Thumb x:Name="PART_HeaderGripper"
+													<ContentPresenter Margin="{TemplateBinding Padding}" />
+												</Border>
+												<Thumb x:Name="PART_HeaderGripper"
 													   HorizontalAlignment="Right"
 													   BorderBrush="{TemplateBinding BorderBrush}"
 													   Margin="0,0,-6,0">
-                                                    <Thumb.Template>
-                                                        <ControlTemplate TargetType="{x:Type Thumb}">
-                                                            <Border Background="Transparent"
+													<Thumb.Template>
+														<ControlTemplate TargetType="{x:Type Thumb}">
+															<Border Background="Transparent"
 																	Width="13">
-                                                                <Rectangle Width="1"
+																<Rectangle Width="1"
 																		   Stroke="{TemplateBinding BorderBrush}" />
-                                                            </Border>
-                                                        </ControlTemplate>
-                                                    </Thumb.Template>
-                                                </Thumb>
-                                            </Grid>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </ListView.Resources>
+															</Border>
+														</ControlTemplate>
+													</Thumb.Template>
+												</Thumb>
+											</Grid>
+										</ControlTemplate>
+									</Setter.Value>
+								</Setter>
+							</Style>
+						</ListView.Resources>
 
-                        <ListView.View>
-                            <GridView>
-                                <GridViewColumn Width="50">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="ID" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+						<ListView.View>
+							<GridView>
+								<GridViewColumn Width="50">
+									<GridViewColumn.Header>
+										<TextBlock Text="ID" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding Id, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
 
-                                <GridViewColumn Width="120">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="User" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+								<GridViewColumn Width="120">
+									<GridViewColumn.Header>
+										<TextBlock Text="{Binding Resources.Tools_Rankings_User, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding NickName, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
 
-                                <GridViewColumn Width="130">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="Comment" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+								<GridViewColumn Width="140">
+									<GridViewColumn.Header>
+										<TextBlock Text="{Binding Resources.Tools_Rankings_Comment, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding Comment, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
 
-                                <GridViewColumn Width="35">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="Rank" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+								<GridViewColumn Width="40">
+									<GridViewColumn.Header>
+										<TextBlock Text="{Binding Resources.Tools_Rankings_Rank, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding Rank, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
 
-                                <GridViewColumn Width="40">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="Rate" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+								<GridViewColumn Width="40">
+									<GridViewColumn.Header>
+										<TextBlock Text="{Binding Resources.Tools_Rankings_Rate, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding Rate, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
 
-                                <GridViewColumn Width="35">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="Level" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+								<GridViewColumn Width="40">
+									<GridViewColumn.Header>
+										<TextBlock Text="{Binding Resources.Tools_Rankings_Level, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding Level, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
 
-                                <GridViewColumn Width="80">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="Experience" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
+								<GridViewColumn Width="100">
+									<GridViewColumn.Header>
+										<TextBlock Text="{Binding Resources.Tools_Rankings_Experience, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
+									</GridViewColumn.Header>
+									<GridViewColumn.CellTemplate>
+										<DataTemplate DataType="{x:Type tools:RankingsViewModel}">
+											<TextBlock Margin="0,4">
 												<Run Text="{Binding Experience, Mode=OneWay}"
 													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
+											</TextBlock>
+										</DataTemplate>
+									</GridViewColumn.CellTemplate>
+								</GridViewColumn>
+							</GridView>
+						</ListView.View>
+					</ListView>
+				</Border>
+			</DockPanel>
 
-                                <GridViewColumn Width="35">
-                                    <GridViewColumn.Header>
-                                        <TextBlock Text="Flag" />
-                                    </GridViewColumn.Header>
-                                    <GridViewColumn.CellTemplate>
-                                        <DataTemplate DataType="{x:Type tools:RankingsViewModel}">
-                                            <TextBlock Margin="0,4">
-												<Run Text="{Binding Flag, Mode=OneWay}"
-													 Foreground="{DynamicResource ActiveForegroundBrushKey}" />
-                                            </TextBlock>
-                                        </DataTemplate>
-                                    </GridViewColumn.CellTemplate>
-                                </GridViewColumn>
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
-                </Border>
-            </DockPanel>
+			<Grid Grid.Row="2">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*" SharedSizeGroup="TotalRanked"/>
+					<ColumnDefinition Width="*" SharedSizeGroup="CurrentPage"/>
+					<ColumnDefinition Width="*" />
+				</Grid.ColumnDefinitions>
 
-            <Grid Grid.Row="2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" SharedSizeGroup="TotalRanked"/>
-                    <ColumnDefinition Width="*" SharedSizeGroup="CurrentPage"/>
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-
-                <TextBlock Grid.Column="0"
+				<TextBlock Grid.Column="0"
 						   Margin="8,2">
-					Total Ranked: <Run Text="{Binding TotalRanked, Mode=OneWay}" FontSize="16" />
-                </TextBlock>
+					<Run Text="{Binding Resources.Tools_Rankings_TotalRanked, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" /> <Run Text="{Binding TotalRanked, Mode=OneWay}" FontSize="16" />
+				</TextBlock>
 
-                <TextBlock Grid.Column="1"
+				<TextBlock Grid.Column="1"
 						   HorizontalAlignment="Center"
 						   Margin="8,2">
-					Page: <Run Text="{Binding CurrentPage, Mode=OneWay}" FontSize="16" /> / <Run Text="{Binding TotalPages, Mode=OneWay}" FontSize="16" />
-                </TextBlock>
+					<Run Text="{Binding Resources.Tools_Rankings_Page, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" /> <Run Text="{Binding CurrentPage, Mode=OneWay}" FontSize="16" /> / <Run Text="{Binding TotalPages, Mode=OneWay}" FontSize="16" />
+				</TextBlock>
 
-            </Grid>
+			</Grid>
 
-            <Border Grid.Row="1"
+			<Border Grid.Row="1"
 					Grid.RowSpan="2"
 					Background="{DynamicResource ThemeBrushKey}"
 					BorderBrush="{DynamicResource BorderBrushKey}"
@@ -240,15 +222,15 @@
 					Padding="20"
 					Visibility="{Binding HasNoRankings, Converter={StaticResource BooleanToVisibilityConverter}}"
 					d:IsHidden="True">
-                <TextBlock Text="Please visit the rankings page in game to generate list..."
+				<TextBlock Text="Please visit the rankings page in game to generate list..."
 						   FontSize="16"
 						   Foreground="{DynamicResource ActiveForegroundBrushKey}"
 						   Background="{DynamicResource ThemeBrushKey}"
 						   TextWrapping="Wrap"
 						   HorizontalAlignment="Center" />
-            </Border>
+			</Border>
 
-        </Grid>
+		</Grid>
 
-    </StackPanel>
+	</StackPanel>
 </UserControl>

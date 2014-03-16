@@ -32,11 +32,11 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
 		public IEnumerable<string> SeaList { get; private set; }
 		public static Dictionary<string, int> SeaExpTable = new Dictionary<string, int> 
 		{
-			{"1-1", 30}, {"1-2", 50}, {"1-3", 80}, {"1-4", 100}, {"1-5", 400},
+			{"1-1", 30}, {"1-2", 50}, {"1-3", 80}, {"1-4", 100}, {"1-5", 150},
 			{"2-1", 120}, {"2-2", 150}, {"2-3", 200},{"2-4", 300},
 			{"3-1", 310}, {"3-2", 320}, {"3-3", 330}, {"3-4", 350},
 			{"4-1", 310}, {"4-2", 320}, {"4-3", 330}, {"4-4", 340},
-			{"5-1", 360}, {"5-2", 380}, {"5-3", 400}, {"5-4", 420}, {"5-5", 440}
+			{"5-1", 360}, {"5-2", 380}, {"5-3", 400}, {"5-4", 420}, {"5-5", 450}
 		};
 
 		public IEnumerable<string> ResultList { get; private set; }
@@ -333,7 +333,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
 
 		public override string Name
 		{
-			get { return "Calculator"; }
+			get { return Properties.Resources.Tools_Calculator; }
 			protected set { throw new NotImplementedException(); }
 		}
 
@@ -371,7 +371,10 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
 
 		private void UpdateCore()
 		{
-			var list = this.homeport.Ships.Select(x => new ShipViewModel(x.Value));
+			var list = this.homeport.Ships
+				.Where(x => x.Value.Level != 1)
+				.Select(x => new ShipViewModel(x.Value));
+
 			this.Ships = this.SortWorker.Sort(list).ToList();
 		}
 
@@ -386,9 +389,9 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents.Tools
 			// Lawl at that this inline conditional.
 			double Multiplier = (this.IsFlagship ? 1.5 : 1) * (this.IsMVP ? 2 : 1) * (this.SelectedResult == "S" ? 1.2 : (this.SelectedResult == "C" ? 0.8 : (this.SelectedResult == "D" ? 0.7 : (this.SelectedResult == "E" ? 0.5 : 1))));
 
-			this.SortieExp = (int)Math.Floor( SeaExpTable[this.SelectedSea] * Multiplier );
+			this.SortieExp = (int)Math.Round( SeaExpTable[this.SelectedSea] * Multiplier );
 			this.RemainingExp = this.TargetExp - this.CurrentExp;
-			this.RunCount = (int)Math.Ceiling( this.RemainingExp / (double)this.SortieExp );
+			this.RunCount = (int)Math.Round( this.RemainingExp / (double)this.SortieExp );
 		}
 
 	}

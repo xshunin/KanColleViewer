@@ -40,7 +40,8 @@
               Grid.Column="0"
               Background="{DynamicResource BackgroundBrushKey}">
             <metro:TabView ItemsSource="{Binding TabItems}"
-                            SelectedValue="{Binding SelectedItem}" />
+                           SelectedValue="{Binding SelectedItem}"
+                           Style="{StaticResource ToolsTabViewStyleKey}" />
         </Grid>
         
         <ContentControl DataContext="{Binding SelectedItem}"
@@ -49,10 +50,10 @@
                         Grid.Column="1">
             <ContentControl.Resources>
                 <DataTemplate DataType="{x:Type vmTools:RankingsViewModel}">
-                    <tools:Rankings />
+                    <tools:Rankings Margin="10,0"/>
                 </DataTemplate>
                 <DataTemplate DataType="{x:Type vmTools:CalculatorViewModel}">
-                    <tools:Calculator />
+                    <tools:Calculator Margin="10,0" />
                 </DataTemplate>
             </ContentControl.Resources>
         </ContentControl>

@@ -601,24 +601,6 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Rankings.
-        /// </summary>
-        public static string Rankings {
-            get {
-                return ResourceManager.GetString("Rankings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Current Rankings.
-        /// </summary>
-        public static string Rankings_RankingsList {
-            get {
-                return ResourceManager.GetString("Rankings_RankingsList", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Repair.
         /// </summary>
         public static string Repairyard {
@@ -1308,6 +1290,186 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string StatusBar_TotalAverageLevel {
             get {
                 return ResourceManager.GetString("StatusBar_TotalAverageLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Calculator.
+        /// </summary>
+        public static string Tools_Calculator {
+            get {
+                return ResourceManager.GetString("Tools_Calculator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Level.
+        /// </summary>
+        public static string Tools_Calculator_CurrentLevel {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_CurrentLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Flagship.
+        /// </summary>
+        public static string Tools_Calculator_Flagship {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_Flagship", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Select a Ship Girl.
+        /// </summary>
+        public static string Tools_Calculator_ListPrompt {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_ListPrompt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Map.
+        /// </summary>
+        public static string Tools_Calculator_Map {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_Map", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to MVP.
+        /// </summary>
+        public static string Tools_Calculator_MVP {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_MVP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remaining.
+        /// </summary>
+        public static string Tools_Calculator_RemainingExp {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_RemainingExp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string Tools_Calculator_Result {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_Result", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sortie Exp.
+        /// </summary>
+        public static string Tools_Calculator_SortieExp {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_SortieExp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Target Level.
+        /// </summary>
+        public static string Tools_Calculator_TargetLevel {
+            get {
+                return ResourceManager.GetString("Tools_Calculator_TargetLevel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rankings.
+        /// </summary>
+        public static string Tools_Rankings {
+            get {
+                return ResourceManager.GetString("Tools_Rankings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment.
+        /// </summary>
+        public static string Tools_Rankings_Comment {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_Comment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Experience.
+        /// </summary>
+        public static string Tools_Rankings_Experience {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_Experience", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Level.
+        /// </summary>
+        public static string Tools_Rankings_Level {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_Level", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Page:.
+        /// </summary>
+        public static string Tools_Rankings_Page {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_Page", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rank.
+        /// </summary>
+        public static string Tools_Rankings_Rank {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_Rank", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current Rankings.
+        /// </summary>
+        public static string Tools_Rankings_RankingsList {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_RankingsList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rate.
+        /// </summary>
+        public static string Tools_Rankings_Rate {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_Rate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Total Ranked:.
+        /// </summary>
+        public static string Tools_Rankings_TotalRanked {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_TotalRanked", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User.
+        /// </summary>
+        public static string Tools_Rankings_User {
+            get {
+                return ResourceManager.GetString("Tools_Rankings_User", resourceCulture);
             }
         }
         
