@@ -771,6 +771,13 @@
     <TR-Detail>Scrap equipment 3 times to acquire a shipping barrel</TR-Detail>
   </Quest>
   <Quest>
+    <ID>409</ID>
+    <JP-Name>潜水艦派遣による海外艦との接触作戦</JP-Name>
+    <TR-Name>潜水艦派遣による海外艦との接触作戦</TR-Name>
+    <JP-Detail>有力な潜水艦隊派遣による海外艦との接触作戦を成功させよ！</JP-Detail>
+    <TR-Detail>有力な潜水艦隊派遣による海外艦との接触作戦を成功させよ！</TR-Detail>
+  </Quest>
+  <Quest>
     <ID>410</ID>
     <JP-Name>南方への輸送作戦を成功させよ！</JP-Name>
     <TR-Name>南方への輸送作戦を成功させよ！</TR-Name>
