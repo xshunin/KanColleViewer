@@ -106,8 +106,8 @@ namespace Grabacr07.KanColleWrapper.Models
 			{
 				this.ReadyTime = null;
 				this.UpdateCore();
-				if (this.prevShips.Length > 0) 
-					Array.Clear(this.prevShips, 0, this.prevShips.Length);
+				if (this.prevShips.Length > 0)
+                    this.prevShips = new Ship[0];
 				return;
 			}
 
@@ -158,8 +158,8 @@ namespace Grabacr07.KanColleWrapper.Models
 
 			this.UpdateCore();
 
-			if (this.prevShips.Length > 0)
-				Array.Clear(this.prevShips, 0, this.prevShips.Length);
+            if (this.prevShips.Length > 0)
+                this.prevShips = new Ship[0];
 
             this.prevShips = ships;
 		}
