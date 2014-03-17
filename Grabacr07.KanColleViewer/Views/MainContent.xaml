@@ -18,6 +18,7 @@
 			 xmlns:vmDocks="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Contents.Docks"
 			 xmlns:vmFleets="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Contents.Fleets"
 			 xmlns:settings="clr-namespace:Grabacr07.KanColleViewer.Views.Settings"
+			 xmlns:tools="clr-namespace:Grabacr07.KanColleViewer.Views.Tools"
 			 xmlns:devVm="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Dev"
 			 xmlns:dev="clr-namespace:Grabacr07.KanColleViewer.Views.Dev"
 			 mc:Ignorable="d"
@@ -146,11 +147,11 @@
 						</DataTemplate>
 						<DataTemplate DataType="{x:Type vmContents:ExpeditionsViewModel}">
 							<contents:Expeditions />
-						</DataTemplate>
-						<DataTemplate DataType="{x:Type vmContents:RankingsViewModel}">
-							<contents:Rankings />
-						</DataTemplate>
-						<DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type vmContents:ToolsViewModel}">
+                            <tools:Tools />
+                        </DataTemplate>
+                        <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
 							<settings:Settings />
 						</DataTemplate>
 						<DataTemplate DataType="{x:Type devVm:DebugTabViewModel}">
