@@ -471,4 +471,19 @@
   <data name="StartContent_SetRegionCookieMessage" xml:space="preserve">
     <value>Cookie has been set</value>
   </data>
+  <data name="Settings_Translations" xml:space="preserve">
+    <value>Translations</value>
+  </data>
+  <data name="Settings_Translations_Add_Enable" xml:space="preserve">
+    <value>Append untranslated items to the translation files?</value>
+  </data>
+  <data name="Settings_Translations_Enable" xml:space="preserve">
+    <value>Translate game items, ships, and quests to selected language?</value>
+  </data>
+  <data name="StartContent_SetRegionCookieToolTip" xml:space="preserve">
+    <value>Make sure DMM.com is set to Japanese (日本語)</value>
+  </data>
+  <data name="StatusBar_TotalAverageLevel" xml:space="preserve">
+    <value>Total Level (Average):</value>
+  </data>
 </root>

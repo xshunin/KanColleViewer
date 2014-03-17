@@ -142,7 +142,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\BrowserZoomFactor.cs" />
     <Compile Include="Models\IWindowsNotifier.cs" />
+    <Compile Include="Models\IZoomFactor.cs" />
     <Compile Include="Models\ProductInfo.cs" />
     <Compile Include="Models\Data\Xml\XmlFileReader.cs" />
     <Compile Include="Models\Data\Xml\XmlFileWriter.cs" />
@@ -193,19 +195,23 @@
     <Compile Include="ViewModels\SettingsViewModel.cs" />
     <Compile Include="ViewModels\Contents\ShipsViewModel.cs" />
     <Compile Include="ViewModels\Contents\SlotItemsViewModel.cs" />
-    <Compile Include="ViewModels\StatusBarItemViewModel.cs" />
     <Compile Include="ViewModels\StatusBarViewModel.cs" />
     <Compile Include="ViewModels\TabItemViewModel.cs" />
     <Compile Include="ViewModels\VolumeViewModel.cs" />
+    <Compile Include="Views\Behaviors\CountdownBehavior.cs" />
+    <Compile Include="Views\Behaviors\FlickFleetsAction.cs" />
+    <Compile Include="Views\Behaviors\FlickTrigger.cs" />
     <Compile Include="Views\Behaviors\NavigatorBehavior.cs" />
     <Compile Include="Views\Behaviors\ScreenshotAction.cs" />
     <Compile Include="Views\Behaviors\SetStyleSheetBehavior.cs" />
     <Compile Include="Views\Behaviors\SetWindowLocationAction.cs" />
+    <Compile Include="Views\Behaviors\TimerBehavior.cs" />
+    <Compile Include="Views\Controls\KanColleHost.cs" />
+    <Compile Include="Views\Controls\WebBrowserHelper.cs" />
+    <Compile Include="Views\Behaviors\ZoomAction.cs" />
     <Compile Include="Views\Contents\Rankings.xaml.cs">
       <DependentUpon>Rankings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Controls\WebBrowserHelper.cs" />
-    <Compile Include="Views\Behaviors\ZoomAction.cs" />
     <Compile Include="Views\BrowserNavigator.xaml.cs">
       <DependentUpon>BrowserNavigator.xaml</DependentUpon>
     </Compile>
@@ -239,6 +245,9 @@
     <Compile Include="Views\Contents\Expeditions.xaml.cs">
       <DependentUpon>Expeditions.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Controls\ZoomFactorSelector.xaml.cs">
+      <DependentUpon>ZoomFactorSelector.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Converters\QuestCategoryToColorConverter.cs" />
     <Compile Include="Views\Dev\DebugTab.xaml.cs">
       <DependentUpon>DebugTab.xaml</DependentUpon>
@@ -248,6 +257,8 @@
     </Compile>
     <Compile Include="Views\Info.xaml.cs">
       <DependentUpon>Info.xaml</DependentUpon>
+    <Compile Include="Views\Settings\Language.xaml.cs">
+      <DependentUpon>Language.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Settings\Operation.xaml.cs">
       <DependentUpon>Operation.xaml</DependentUpon>
@@ -330,6 +341,11 @@
       <Generator>MSBuild:Compile</Generator>
       <DependentUpon>Generic.xaml</DependentUpon>
     </Page>
+    <Page Include="Themes\Generic.KanColleHost.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <DependentUpon>Generic.xaml</DependentUpon>
+    </Page>
     <Page Include="Themes\Generic.Modernizable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -391,6 +407,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Controls\ZoomFactorSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Dev\DebugTab.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -406,6 +426,10 @@
     <Page Include="Views\Settings\Common.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Settings\Language.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\Settings\Operation.xaml">
       <SubType>Designer</SubType>
@@ -468,8 +492,6 @@
     <Compile Include="ViewModels\StartContentViewModel.cs" />
     <Compile Include="ViewModels\Contents\ShipViewModel.cs" />
     <Compile Include="ViewModels\WindowViewModel.cs" />
-    <Compile Include="Views\Behaviors\CountdownBehavior.cs" />
-    <Compile Include="Views\Behaviors\TimerBehavior.cs" />
     <Compile Include="Views\Controls\ColorIndicator.cs" />
     <Compile Include="Views\Controls\ConditionIcon.cs" />
     <Compile Include="Views\Fleets.xaml.cs">
@@ -508,6 +530,9 @@
     <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ja-JP.resx" />
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
+    <EmbeddedResource Include="Properties\Resources.ko-KR.resx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -584,19 +609,22 @@
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y "$(TargetDir)KanColleViewer.exe" "$(SolutionDir)KanColleViewer-Compiled"
 xcopy /Y "$(TargetDir)KanColleViewer.exe.config" "$(SolutionDir)KanColleViewer-Compiled"
-rename "$(SolutionDir)KanColleViewer-Compiled\KanColleViewer.exe" "KanColleViewer-Horizontal.exe"
-rename "$(SolutionDir)KanColleViewer-Compiled\KanColleViewer.exe.config" "KanColleViewer-Horizontal.exe.config"
 xcopy /Y "$(TargetDir)*.dll" "$(SolutionDir)KanColleViewer-Compiled\lib"
-xcopy /Y /E /I  "$(TargetDir)ja-JP" "$(SolutionDir)KanColleViewer-Compiled\lib\ja-JP"
+xcopy /Y /E /I "$(TargetDir)ja-JP" "$(SolutionDir)KanColleViewer-Compiled\lib\ja-JP"
 xcopy /Y /E /I "$(TargetDir)zh-CN" "$(SolutionDir)KanColleViewer-Compiled\lib\zh-CN"
-xcopy /Y "$(SolutionDir)resources\translations\*.txt" "$(SolutionDir)KanColleViewer-Compiled"
-xcopy /Y "$(SolutionDir)resources\translations\*.txt" "$(TargetDir)"</PostBuildEvent>
+xcopy /Y /E /I "$(TargetDir)ko-KR" "$(SolutionDir)KanColleViewer-Compiled\lib\ko-KR"
+xcopy /Y /E /I "$(SolutionDir)resources\Translations" "$(SolutionDir)KanColleViewer-Compiled\Translations"
+xcopy /Y /E /I "$(SolutionDir)resources\Translations" "$(TargetDir)Translations"
+ren "$(SolutionDir)KanColleViewer-Compiled\KanColleViewer.exe" "KanColleViewer-Horizontal.exe"
+ren "$(SolutionDir)KanColleViewer-Compiled\KanColleViewer.exe.config" "KanColleViewer-Horizontal.exe.config"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PreBuildEvent>del /Q "$(TargetDir)*.txt"
+    <PreBuildEvent>rd /S /Q "$(TargetDir)Translations"
 rd /S /Q "$(SolutionDir)KanColleViewer-Compiled"
 md "$(SolutionDir)KanColleViewer-Compiled"
-md "$(SolutionDir)KanColleViewer-Compiled\lib"</PreBuildEvent>
+md "$(SolutionDir)KanColleViewer-Compiled\lib"
+md "$(SolutionDir)KanColleViewer-Compiled\Translations"
+md "$(TargetDir)Translations"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

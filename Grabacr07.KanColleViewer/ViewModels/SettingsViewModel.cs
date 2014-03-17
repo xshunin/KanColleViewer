@@ -16,6 +16,7 @@ using Grabacr07.KanColleViewer.ViewModels.Messages;
 using Grabacr07.KanColleWrapper;
 using Livet;
 using Livet.EventListeners;
+using Livet.Messaging;
 using Livet.Messaging.IO;
 using MetroRadiance;
 using Settings = Grabacr07.KanColleViewer.Models.Settings;
@@ -275,7 +276,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#endregion
 
-		#region Culture 変更通知プロパティ
+        #region Culture 変更通知プロパティ
 
 		/// <summary>
 		/// カルチャを取得または設定します。
@@ -288,12 +289,70 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				if (Settings.Current.Culture != value)
 				{
 					ResourceService.Current.ChangeCulture(value);
+                    KanColleClient.Current.Homeport.Translations.ChangeCulture(value);
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+        #endregion
+
+        #region EnableTranslations 変更通知プロパティ
+
+        public bool EnableTranslations
+        {
+            get { return Settings.Current.EnableTranslations; }
+            set
+            {
+                if (Settings.Current.EnableTranslations != value)
+                {
+                    Settings.Current.EnableTranslations = value;
+                    KanColleClient.Current.Homeport.Translations.EnableTranslations = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        #endregion
+
+        #region EnableAddUntranslated 変更通知プロパティ
+
+        public bool EnableAddUntranslated
+        {
+            get { return Settings.Current.EnableAddUntranslated; }
+            set
+            {
+                if (Settings.Current.EnableAddUntranslated != value)
+                {
+                    Settings.Current.EnableAddUntranslated = value;
+                    KanColleClient.Current.Homeport.Translations.EnableAddUntranslated = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        #endregion
+
+		#region BrowserZoomFactor 変更通知プロパティ
+
+		private BrowserZoomFactor _BrowserZoomFactor;
+
+		public BrowserZoomFactor BrowserZoomFactor
+		{
+			get { return this._BrowserZoomFactor; }
+			private set
+			{
+				if (this._BrowserZoomFactor != value)
+				{
+					this._BrowserZoomFactor = value;
 					this.RaisePropertyChanged();
 				}
 			}
 		}
 
 		#endregion
+
+
 
 		public bool HasErrors
 		{
@@ -330,7 +389,15 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 			this._IsDarkTheme = ThemeService.Current.Theme == Theme.Dark;
 			this._IsLightTheme = ThemeService.Current.Theme == Theme.Light;
+
+			var zoomFactor = new BrowserZoomFactor { Current = Settings.Current.BrowserZoomFactor };
+			this.CompositeDisposable.Add(new PropertyChangedEventListener(zoomFactor)
+			{
+				{ "Current", (sender, args) => Settings.Current.BrowserZoomFactor = zoomFactor.Current },
+			});
+			this.BrowserZoomFactor = zoomFactor;
 		}
+
 
 		public void OpenScreenshotFolderSelectionDialog()
 		{
@@ -369,7 +436,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public void ClearZoomFactor()
 		{
-			App.ViewModelRoot.Messenger.Raise(new ZoomMessage { MessageKey = "WebBrowser/Zoom", ZoomFactor = 100 });
+			App.ViewModelRoot.Messenger.Raise(new InteractionMessage { MessageKey = "WebBrowser/Zoom" });
 		}
 
 		public void SetLocationLeft()
