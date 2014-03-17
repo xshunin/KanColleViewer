@@ -46,7 +46,7 @@
 						<Run Text="        " />
 						<Run
 							Text="{Binding Resources.StatusBar_TotalAverageLevel, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
-						<Run Text="{Binding TotalAverageLevel, Mode=OneWay}" />
+						<Run Text="{Binding TotalLevel, Mode=OneWay}" /> (<Run Text="{Binding AverageLevel, Mode=OneWay}" />)
 						<Run Text="        " />
 						<Run
 							Text="{Binding Resources.StatusBar_AirSuperiorityPotential, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
