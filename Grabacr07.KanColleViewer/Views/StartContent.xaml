@@ -130,7 +130,8 @@
 						TextOptions.TextFormattingMode="Ideal">
 				<RadioButton x:Name="InformationTab"
 							 Style="{StaticResource TabLikeRadioButtonStyleKey}"
-							 IsChecked="True">
+							 IsChecked="True"
+                             ToolTip="In memory of 'Horiztonal'">
 					<TextBlock Text="About"
 							   FontSize="18"
 							   Foreground="{Binding RelativeSource={RelativeSource AncestorType={x:Type RadioButton}}, Path=Foreground}" />
