@@ -1092,4 +1092,28 @@
     <JP-Name>ハルナ</JP-Name>
     <TR-Name>HARUNA</TR-Name>
   </Ship>
+  <Ship>
+    <JP-Name>ビスマルク</JP-Name>
+    <TR-Name>Bismarck</TR-Name>
+  </Ship>
+  <Ship>
+    <JP-Name>ビスマルク改</JP-Name>
+    <TR-Name>Bismarck Kai</TR-Name>
+  </Ship>
+  <Ship>
+    <JP-Name>Z1 レーベレヒト・マース</JP-Name>
+    <TR-Name>Z1</TR-Name>
+  </Ship>
+  <Ship>
+    <JP-Name>Z1改 レーベレヒト・マース</JP-Name>
+    <TR-Name>Z1 Kai</TR-Name>
+  </Ship>
+  <Ship>
+    <JP-Name>Z3 マックス・シュルツ</JP-Name>
+    <TR-Name>Z3</TR-Name>
+  </Ship>
+  <Ship>
+    <JP-Name>Z3改 マックス・シュルツ</JP-Name>
+    <TR-Name>Z3 Kai</TR-Name>
+  </Ship>
 </Ships>
