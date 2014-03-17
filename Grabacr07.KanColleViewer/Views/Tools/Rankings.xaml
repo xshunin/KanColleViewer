@@ -103,7 +103,7 @@
 									</GridViewColumn.CellTemplate>
 								</GridViewColumn>
 
-								<GridViewColumn Width="120">
+								<GridViewColumn Width="110">
 									<GridViewColumn.Header>
 										<TextBlock Text="{Binding Resources.Tools_Rankings_User, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
 									</GridViewColumn.Header>
@@ -117,7 +117,7 @@
 									</GridViewColumn.CellTemplate>
 								</GridViewColumn>
 
-								<GridViewColumn Width="140">
+								<GridViewColumn Width="120">
 									<GridViewColumn.Header>
 										<TextBlock Text="{Binding Resources.Tools_Rankings_Comment, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
 									</GridViewColumn.Header>
@@ -173,7 +173,7 @@
 									</GridViewColumn.CellTemplate>
 								</GridViewColumn>
 
-								<GridViewColumn Width="100">
+								<GridViewColumn Width="75">
 									<GridViewColumn.Header>
 										<TextBlock Text="{Binding Resources.Tools_Rankings_Experience, Source={x:Static models:ResourceService.Current}, Mode=OneWay}" />
 									</GridViewColumn.Header>
