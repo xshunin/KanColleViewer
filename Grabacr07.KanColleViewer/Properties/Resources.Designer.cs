@@ -1015,6 +1015,87 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Updates.
+        /// </summary>
+        public static string Settings_Updates {
+            get {
+                return ResourceManager.GetString("Settings_Updates", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Automatically update translations on startup.
+        /// </summary>
+        public static string Settings_Updates_AutoUpdateTrans {
+            get {
+                return ResourceManager.GetString("Settings_Updates_AutoUpdateTrans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check for the latest program and translation versions.
+        /// </summary>
+        public static string Settings_Updates_CheckUpdateButn_ToolTip {
+            get {
+                return ResourceManager.GetString("Settings_Updates_CheckUpdateButn_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check for Updates.
+        /// </summary>
+        public static string Settings_Updates_CheckUpdatesBtn {
+            get {
+                return ResourceManager.GetString("Settings_Updates_CheckUpdatesBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currently.
+        /// </summary>
+        public static string Settings_Updates_CurrentVersion {
+            get {
+                return ResourceManager.GetString("Settings_Updates_CurrentVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Online.
+        /// </summary>
+        public static string Settings_Updates_OnlineVersion {
+            get {
+                return ResourceManager.GetString("Settings_Updates_OnlineVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check for updates on startup.
+        /// </summary>
+        public static string Settings_Updates_UpdateOnStartup {
+            get {
+                return ResourceManager.GetString("Settings_Updates_UpdateOnStartup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Download Translations.
+        /// </summary>
+        public static string Settings_Updates_UpdateTransBtn {
+            get {
+                return ResourceManager.GetString("Settings_Updates_UpdateTransBtn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downloads translations only for selected UI language!.
+        /// </summary>
+        public static string Settings_Updates_UpdateTransBtn_ToolTip {
+            get {
+                return ResourceManager.GetString("Settings_Updates_UpdateTransBtn_ToolTip", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Version Info.
         /// </summary>
         public static string Settings_VersionInfo {
@@ -1470,6 +1551,60 @@ namespace Grabacr07.KanColleViewer.Properties {
         public static string Tools_Rankings_User {
             get {
                 return ResourceManager.GetString("Tools_Rankings_User", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KCV was unable to check for updates!.
+        /// </summary>
+        public static string Updater_Notification_CheckFailed {
+            get {
+                return ResourceManager.GetString("Updater_Notification_CheckFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Version of KCV is available! 「v{0}」.
+        /// </summary>
+        public static string Updater_Notification_NewAppVersion {
+            get {
+                return ResourceManager.GetString("Updater_Notification_NewAppVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KanColleViewer Updater.
+        /// </summary>
+        public static string Updater_Notification_Title {
+            get {
+                return ResourceManager.GetString("Updater_Notification_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to KCV was unable to download the translations!.
+        /// </summary>
+        public static string Updater_Notification_TransUpdate_Fail {
+            get {
+                return ResourceManager.GetString("Updater_Notification_TransUpdate_Fail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Translations are already up-to-date.
+        /// </summary>
+        public static string Updater_Notification_TransUpdate_Same {
+            get {
+                return ResourceManager.GetString("Updater_Notification_TransUpdate_Same", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Translation files have been updated!.
+        /// </summary>
+        public static string Updater_Notification_TransUpdate_Success {
+            get {
+                return ResourceManager.GetString("Updater_Notification_TransUpdate_Success", resourceCulture);
             }
         }
         

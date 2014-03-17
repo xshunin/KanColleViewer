@@ -22,7 +22,7 @@ namespace Grabacr07.KanColleViewer.Models
 			"KanColleViewer",
 			"Settings.xml");
 
-        private static readonly string CurrentSettingsVersion = "1.1";
+        private static readonly string CurrentSettingsVersion = "1.2";
 
 		public static Settings Current { get; set; }
 
@@ -54,7 +54,9 @@ namespace Grabacr07.KanColleViewer.Models
 				EnableTranslations = true,
 				EnableAddUntranslated = true,
                 EnableCriticalNotify = true,
-                EnableCriticalAccent = true
+                EnableCriticalAccent = true,
+                EnableUpdateNotification = true,
+                EnableUpdateTransOnStart = true
 			};
 		}
 
@@ -516,7 +518,45 @@ namespace Grabacr07.KanColleViewer.Models
 
         #endregion
 
-		public void Save()
+        #region EnableUpdateNotification 変更通知プロパティ
+
+        private bool _EnableUpdateNotification;
+
+        public bool EnableUpdateNotification
+        {
+            get { return this._EnableUpdateNotification; }
+            set
+            {
+                if (this._EnableUpdateNotification != value)
+                {
+                    this._EnableUpdateNotification = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        #endregion
+
+        #region EnableUpdateTransOnStart 変更通知プロパティ
+
+        private bool _EnableUpdateTransOnStart;
+
+        public bool EnableUpdateTransOnStart
+        {
+            get { return this._EnableUpdateTransOnStart; }
+            set
+            {
+                if (this._EnableUpdateTransOnStart != value)
+                {
+                    this._EnableUpdateTransOnStart = value;
+                    this.RaisePropertyChanged();
+                }
+            }
+        }
+
+        #endregion
+
+        public void Save()
 		{
 			try
 			{
