@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -59,46 +59,46 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -118,352 +118,364 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Common_Implement_Oncoming" xml:space="preserve">
-    <value>※추후 구현 예정</value>
+    <value>※ To be implemented</value>
   </data>
   <data name="Common_Notifications_Disable" xml:space="preserve">
-    <value>알리지않음</value>
+    <value>No Notifications</value>
   </data>
   <data name="Common_Notifications_NotImplemented" xml:space="preserve">
-    <value>(미실장)</value>
+    <value>(planned)</value>
   </data>
   <data name="Common_Notifications_Title" xml:space="preserve">
-    <value>알리미설정</value>
+    <value>Notifications</value>
   </data>
   <data name="Common_Notifications_Windows8" xml:space="preserve">
-    <value>(Windows 8 이상)</value>
+    <value>(Windows 8+)</value>
   </data>
   <data name="Common_ShipGirl" xml:space="preserve">
-    <value>칸무스</value>
+    <value>Shipgirl</value>
   </data>
   <data name="Debug" xml:space="preserve">
-    <value>디버그</value>
+    <value>Debug</value>
   </data>
   <data name="Debug_NotificationMessage" xml:space="preserve">
-    <value>테스트 알림입니다.</value>
+    <value>This is a test notification.</value>
   </data>
   <data name="Debug_NotificationMessage_Title" xml:space="preserve">
-    <value>테스트</value>
+    <value>Test</value>
   </data>
   <data name="Dockyard" xml:space="preserve">
-    <value>건조도크</value>
+    <value>Construction</value>
   </data>
   <data name="Dockyard_Complete" xml:space="preserve">
-    <value>완성!</value>
+    <value>Complete!</value>
   </data>
   <data name="Dockyard_Display_Reveal" xml:space="preserve">
-    <value>건조중인 배 이름을 스포일러하기</value>
+    <value>Reveal Ship Names</value>
   </data>
   <data name="Dockyard_Display_Title" xml:space="preserve">
-    <value>표시 설정</value>
+    <value>Display Settings</value>
   </data>
   <data name="Dockyard_Locked" xml:space="preserve">
-    <value>잠겨있습니다</value>
+    <value>Locked</value>
   </data>
   <data name="Dockyard_NotificationMessage" xml:space="preserve">
-    <value>공창 제 {0} 도크의 {1} 건조가 완료되었습니다</value>
+    <value>Construction of {1} in Dock {0} has been completed.</value>
   </data>
   <data name="Dockyard_NotificationMessage_Title" xml:space="preserve">
-    <value>건조완료</value>
+    <value>Construction Completed</value>
   </data>
   <data name="Dockyard_Notifications_Enable" xml:space="preserve">
-    <value>건조 완료시 알림을 표시</value>
+    <value>Notify Upon Completion</value>
   </data>
   <data name="Dockyard_Notifications_Individual" xml:space="preserve">
-    <value>도크마다 개별로 설정</value>
+    <value>Individual Dock Settings</value>
   </data>
   <data name="Dockyard_ShipName" xml:space="preserve">
-    <value>건조중인 함선</value>
+    <value>Ship In Progress</value>
   </data>
   <data name="Dockyard_TimeComplete" xml:space="preserve">
-    <value>완성시각</value>
+    <value>Completion Time</value>
   </data>
   <data name="Dockyard_TimeRemaining" xml:space="preserve">
-    <value>건조완료까지</value>
+    <value>Remaining Time</value>
   </data>
   <data name="Dockyard_Unused" xml:space="preserve">
-    <value>미사용</value>
+    <value>Empty</value>
   </data>
   <data name="Expedition" xml:space="preserve">
-    <value>원정</value>
+    <value>Expeditions</value>
   </data>
   <data name="Expedition_NoExpedition" xml:space="preserve">
-    <value>원정 나가 있지 않습니다.</value>
+    <value>Not on an Expedition.</value>
   </data>
   <data name="Expedition_NotificationMessage" xml:space="preserve">
-    <value>「{0}」 원정에서 복귀했습니다</value>
+    <value>「{0}」 has returned from an expedition.</value>
   </data>
   <data name="Expedition_NotificationMessage_Title" xml:space="preserve">
-    <value>원정완료</value>
+    <value>Expedition Completed</value>
   </data>
   <data name="Expedition_Notifications_Enable" xml:space="preserve">
-    <value>원정 귀환시 알림을 표시</value>
+    <value>Notify Upon Completion</value>
   </data>
   <data name="Expedition_Notifications_Individual" xml:space="preserve">
-    <value>함대마다 개별 설정</value>
+    <value>Individual Fleet Settings</value>
   </data>
   <data name="Expedition_TimeComplete" xml:space="preserve">
-    <value>종료시간</value>
+    <value>Completion</value>
   </data>
   <data name="Expedition_TimeRemaining" xml:space="preserve">
-    <value>함대복귀까지</value>
+    <value>Remaining</value>
   </data>
   <data name="Fleets" xml:space="preserve">
-    <value>함대</value>
+    <value>Fleets</value>
   </data>
   <data name="Homeport_FleetHQ" xml:space="preserve">
-    <value>사령부</value>
+    <value>Fleet HQ</value>
   </data>
   <data name="Homeport_InstantBuild" xml:space="preserve">
-    <value>고속건조재:</value>
+    <value>Instant Build:  </value>
   </data>
   <data name="Homeport_InstantRepair" xml:space="preserve">
-    <value>고속수복재:</value>
+    <value>Instant Repair:</value>
   </data>
   <data name="Homeport_NoOfEquipment" xml:space="preserve">
-    <value>보유장비:</value>
+    <value>Equipment:</value>
   </data>
   <data name="Homeport_NoOfShips" xml:space="preserve">
-    <value>소속칸무스:</value>
+    <value>Ship Girls:  </value>
   </data>
   <data name="IntegratedView" xml:space="preserve">
-    <value>종합</value>
+    <value>Overview</value>
   </data>
   <data name="MessageBar_Expedition" xml:space="preserve">
-    <value>이 함대는 원정중입니다.</value>
+    <value>This fleet is on an expedition.</value>
   </data>
   <data name="MessageBar_Expedition_TimeCompletion" xml:space="preserve">
-    <value> 완료시각:</value>
+    <value> Completion Time:</value>
   </data>
   <data name="MessageBar_Expedition_TimeRemaining" xml:space="preserve">
-    <value> 귀환까지:</value>
+    <value> Remaining Time:</value>
   </data>
   <data name="MessageBar_Repairing" xml:space="preserve">
-    <value>함대에 입거중인 칸무스가 있습니다. 완료시각: {0:MM/dd HH\:mm} 완료까지: {1}:{2:mm\:ss}</value>
+    <value>There are ships in your fleet currently docked for repairs. Completion Time: {0:MM/dd HH\:mm}  Remaining Time: {1}:{2:mm\:ss}</value>
   </data>
   <data name="MessageBar_Repairing_Null" xml:space="preserve">
-    <value>함대에 입거중인 칸무스가 있습니다.</value>
+    <value>There are ships in your fleet currently docked for repairs.</value>
   </data>
   <data name="MessageBar_ReSortie_BadCondition" xml:space="preserve">
-    <value>피로한 칸무스</value>
+    <value>are fatigued</value>
   </data>
   <data name="MessageBar_ReSortie_CanNotReSortie" xml:space="preserve">
-    <value>함대에 {0}가 있습니다.</value>
+    <value>There are ships in your fleet that {0}.</value>
   </data>
   <data name="MessageBar_ReSortie_CanReSortie" xml:space="preserve">
-    <value>출격가능!</value>
+    <value>Ready to sortie!</value>
   </data>
   <data name="MessageBar_ReSortie_LackForResources" xml:space="preserve">
-    <value>보급 못받은 칸무스</value>
+    <value>need resupplying</value>
   </data>
   <data name="MessageBar_ReSortie_Remaining" xml:space="preserve">
-    <value>재출격가능까지: </value>
+    <value>Time until ready again: </value>
   </data>
   <data name="MessageBar_ReSortie_Separator" xml:space="preserve">
     <value>, </value>
   </data>
   <data name="MessageBar_ReSortie_Wounded" xml:space="preserve">
-    <value>중파이상인 칸무스</value>
+    <value>are heavily damaged</value>
   </data>
   <data name="Quests" xml:space="preserve">
-    <value>임무</value>
+    <value>Quests</value>
   </data>
   <data name="Quests_CurrentQuestList" xml:space="preserve">
-    <value>현재 수행중인 임무</value>
+    <value>Active Quests</value>
   </data>
   <data name="Quests_Daily" xml:space="preserve">
-    <value>일일 임무</value>
+    <value>Daily Quests</value>
   </data>
   <data name="Quests_Notice" xml:space="preserve">
-    <value>※진행상태 (50 %, 80 %) 는 게임내의 표시와 동일합니다. 적함대의 격파수나 원정 성공횟수 카운트 등은 제공되지 않습니다.</value>
+    <value>※ The indicators (50%, 80%) mirror in-game indicators. Enemy fleet kills, successful expeditions, etc are not actively counted.</value>
   </data>
   <data name="Quests_Untaken" xml:space="preserve">
-    <value>게임안에서 [임무(퀘스트)] 화면을 열어서, 임무 목록을 갱신 해 주십시오.</value>
+    <value>Please open the in-game Quests menu to populate the Quest list.</value>
   </data>
   <data name="Quests_Weekly" xml:space="preserve">
-    <value>주간 임무</value>
+    <value>Weekly Quests</value>
   </data>
   <data name="Quest_Detail_Untaken" xml:space="preserve">
-    <value>임무화면의 모든 페이지에 접속해 주십시오.</value>
+    <value>Please visit all of the quest pages.</value>
   </data>
   <data name="Quest_Progress_50" xml:space="preserve">
-    <value> 50 % </value>
+    <value> 50% </value>
   </data>
   <data name="Quest_Progress_80" xml:space="preserve">
-    <value> 80 % </value>
+    <value> 80% </value>
   </data>
   <data name="Quest_State_Accomplished" xml:space="preserve">
-    <value> 완료 </value>
+    <value> Complete </value>
   </data>
   <data name="Quest_Title_Untaken" xml:space="preserve">
-    <value>(미습득임무)</value>
+    <value>(Unknown quest)</value>
   </data>
   <data name="Repairyard" xml:space="preserve">
-    <value>입거도크</value>
+    <value>Repair</value>
   </data>
   <data name="Repairyard_Locked" xml:space="preserve">
-    <value>잠겨있습니다</value>
+    <value>Locked</value>
   </data>
   <data name="Repairyard_NotificationMessage" xml:space="preserve">
-    <value>입거 제{0}도크 {1} 정비가 완료되었습니다</value>
+    <value>Repairs on {1} in Dock {0} have been completed.</value>
   </data>
   <data name="Repairyard_NotificationMessage_Title" xml:space="preserve">
-    <value>정비완료</value>
+    <value>Repairs Completed</value>
   </data>
   <data name="Repairyard_Notifications_Enable" xml:space="preserve">
-    <value>정비완료시에 알림을 표시</value>
+    <value>Notify Upon Completion</value>
   </data>
   <data name="Repairyard_Notifications_Individual" xml:space="preserve">
-    <value>도크마다 개별로 설정</value>
+    <value>Individual Dock Settings</value>
   </data>
   <data name="Repairyard_ShipName" xml:space="preserve">
-    <value>입거중인 함선</value>
+    <value>Docked Ship</value>
   </data>
   <data name="Repairyard_TimeComplete" xml:space="preserve">
-    <value>완료시각</value>
+    <value>Completion</value>
   </data>
   <data name="Repairyard_TimeRemaining" xml:space="preserve">
-    <value>정비완료까지</value>
+    <value>Remaining</value>
   </data>
   <data name="Reparyard_Unused" xml:space="preserve">
-    <value>미사용</value>
+    <value>Empty</value>
   </data>
   <data name="ReSortie_NotificationMessage" xml:space="preserve">
-    <value>「{0}」함대 전 칸무스 피로회복이 완료되었습니다</value>
+    <value>All ships in 「{0}」 have fully recovered from fatigue.</value>
   </data>
   <data name="ReSortie_NotificationMessage_Title" xml:space="preserve">
-    <value>피로회복완료</value>
+    <value>Fatigue Recovery Completed</value>
   </data>
   <data name="Screenshot_Failed" xml:space="preserve">
-    <value>스크린샷 저장에 실패했습니다: </value>
+    <value>Screenshot save failed: </value>
   </data>
   <data name="Screenshot_Saved" xml:space="preserve">
-    <value>스크린샷을 저장했습니다: </value>
+    <value>Screenshot saved: </value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>설정</value>
+    <value>Settings</value>
   </data>
   <data name="Settings_BrowserControl" xml:space="preserve">
-    <value>브라우저 조작</value>
+    <value>Browser</value>
   </data>
   <data name="Settings_BrowserControl_ClearZoomFactorButton" xml:space="preserve">
-    <value>줌 배율을 100%로 되돌림</value>
+    <value>Reset zoom to 100%</value>
   </data>
   <data name="Settings_BrowserControl_Display" xml:space="preserve">
-    <value>(표시)</value>
+    <value>(Display)</value>
   </data>
   <data name="Settings_BrowserControl_Notice" xml:space="preserve">
-    <value>※현재 게임 페이지에서 이동해버립니다. 주의해주십시오</value>
+    <value>※ This will leave the game, so use with caution</value>
   </data>
   <data name="Settings_Display" xml:space="preserve">
-    <value>표시설정</value>
+    <value>Display Settings</value>
   </data>
   <data name="Settings_Language" xml:space="preserve">
-    <value>언어설정</value>
+    <value>Language</value>
   </data>
   <data name="Settings_Network" xml:space="preserve">
-    <value>네트워크</value>
+    <value>Network</value>
   </data>
   <data name="Settings_Operation" xml:space="preserve">
-    <value>동작설정</value>
+    <value>Behaviour</value>
   </data>
   <data name="Settings_Other" xml:space="preserve">
-    <value>기타</value>
+    <value>Other</value>
   </data>
   <data name="Settings_Proxy" xml:space="preserve">
-    <value>프록시설정</value>
+    <value>Proxy Settings</value>
   </data>
   <data name="Settings_Proxy_Enable" xml:space="preserve">
-    <value>통신에 프록시 서버를 사용한다</value>
+    <value>Use a proxy to connect the server</value>
   </data>
   <data name="Settings_Proxy_Enable_4_SSL" xml:space="preserve">
-    <value>SSL 접속시에도 프록시 서버를 사용한다</value>
+    <value>Use the proxy for SSL connections</value>
   </data>
   <data name="Settings_Proxy_Host" xml:space="preserve">
-    <value>서버</value>
+    <value>Host</value>
   </data>
   <data name="Settings_Proxy_Port" xml:space="preserve">
-    <value>포트</value>
+    <value>Port</value>
   </data>
   <data name="Settings_Screenshot" xml:space="preserve">
-    <value>스크린샷</value>
+    <value>Screenshot Settings</value>
   </data>
   <data name="Settings_Screenshot_FolderSelectionDialog_OpenButton" xml:space="preserve">
-    <value>선택</value>
+    <value>Browse</value>
   </data>
   <data name="Settings_Screenshot_FolderSelectionDialog_Title" xml:space="preserve">
-    <value>스크린샷 저장위치를 지정</value>
+    <value>Select a location to save screenshots</value>
   </data>
   <data name="Settings_Screenshot_FolderTextBox_Label" xml:space="preserve">
-    <value>저장경로</value>
+    <value>Destination</value>
   </data>
   <data name="Settings_Screenshot_FolderTextBox_Prompt" xml:space="preserve">
-    <value>저장경로 폴더의 설정</value>
+    <value>Destination Folder Path</value>
   </data>
   <data name="Settings_Screenshot_ImageFormat_Label" xml:space="preserve">
-    <value>이미지 형식</value>
+    <value>Image Format</value>
   </data>
   <data name="Settings_Screenshot_OpenFolderButton" xml:space="preserve">
-    <value>폴더 열기</value>
+    <value>Open Folder</value>
   </data>
   <data name="Settings_VersionInfo" xml:space="preserve">
-    <value>버전 정보</value>
+    <value>Version Info</value>
   </data>
   <data name="Settings_Window" xml:space="preserve">
-    <value>창 설정</value>
+    <value>Window</value>
   </data>
   <data name="Settings_WindowControl" xml:space="preserve">
-    <value>창 조작</value>
+    <value>Window Controls</value>
   </data>
   <data name="Settings_WindowControl_LocationLeftButton" xml:space="preserve">
-    <value>창을 모니터의 왼쪽 가장자리로 이동</value>
+    <value>Dock window to left of screen.</value>
   </data>
   <data name="Settings_WindowControl_LocationLeftButton_Sub" xml:space="preserve">
-    <value>8인치 태블릿(800 x 1280) 용</value>
+    <value>For use with 8 inch tablets (800x1280)</value>
   </data>
   <data name="Settings_Window_TopMost" xml:space="preserve">
-    <value>창을 항상 맨 위에 표시</value>
+    <value>Keep window on top</value>
   </data>
   <data name="StartContent_ClearCacheButton" xml:space="preserve">
-    <value>캐시 삭제</value>
+    <value>Clear cache</value>
   </data>
   <data name="StartContent_ClearCacheButtonMessage" xml:space="preserve">
-    <value>캐시를 삭제했습니다</value>
+    <value>Browser cache cleared</value>
   </data>
   <data name="StartContent_Introduction1" xml:space="preserve">
     <value>「提督業も忙しい！」は、艦これを遊びやすくするためのツールです。</value>
   </data>
   <data name="StartContent_Welcom" xml:space="preserve">
-    <value>ようこそ</value>
-  </data>
-  <data name="StatusBar_AirSuperiorityPotential" xml:space="preserve">
-    <value>제공전력:</value>
-  </data>
-  <data name="StatusBar_AverageLevel" xml:space="preserve">
-    <value>평균레벨: </value>
+    <value>Welcome</value>
   </data>
   <data name="StatusBar_NotStarted" xml:space="preserve">
-    <value>칸코레의 기동을 기다리고 있습니다</value>
+    <value>Waiting for KanColle to start</value>
   </data>
   <data name="StatusBar_Ready" xml:space="preserve">
-    <value>준비 완료</value>
-  </data>
-  <data name="StatusBar_Speed_Fast" xml:space="preserve">
-    <value>고속함대</value>
-  </data>
-  <data name="StatusBar_Speed_Slow" xml:space="preserve">
-    <value>저속함대</value>
+    <value>Ready</value>
   </data>
   <data name="ZoomAction_OutOfRange" xml:space="preserve">
-    <value>줌 {0} % 은 지원되지 않습니다</value>
+    <value>{0}% zoom is not supported.</value>
   </data>
   <data name="ZoomAction_ZoomFailed" xml:space="preserve">
-    <value>줌에 실패했습니다: {0}</value>
+    <value>Zoom Failed: {0}</value>
+  </data>
+  <data name="Rankings" xml:space="preserve">
+    <value>Rankings</value>
+  </data>
+  <data name="Rankings_RankingsList" xml:space="preserve">
+    <value>Current Rankings</value>
+  </data>
+  <data name="Settings_Logging" xml:space="preserve">
+    <value>Logging</value>
+  </data>
+  <data name="Settings_Logging_Enable" xml:space="preserve">
+    <value>Log drops and crafting results to file</value>
+  </data>
+  <data name="StartContent_SetRegionCookieButton" xml:space="preserve">
+    <value>Set Region Cookie</value>
+  </data>
+  <data name="StartContent_SetRegionCookieMessage" xml:space="preserve">
+    <value>Cookie has been set</value>
+  </data>
+  <data name="Settings_Translations" xml:space="preserve">
+    <value>Translations</value>
+  </data>
+  <data name="Settings_Translations_Add_Enable" xml:space="preserve">
+    <value>Append untranslated items to the translation files?</value>
+  </data>
+  <data name="Settings_Translations_Enable" xml:space="preserve">
+    <value>Translate game items, ships, and quests to selected language?</value>
   </data>
   <data name="StartContent_SetRegionCookieToolTip" xml:space="preserve">
     <value>Make sure DMM.com is set to Japanese (日本語)</value>
-  </data>
-  <data name="StatusBar_TotalAverageLevel" xml:space="preserve">
-    <value>Total Level (Average):</value>
   </data>
   <data name="Stats_Accuracy" xml:space="preserve">
     <value>Accuracy</value>
@@ -477,11 +489,8 @@
   <data name="Stats_Armor" xml:space="preserve">
     <value>Armor</value>
   </data>
-  <data name="Stats_AttackRange" xml:space="preserve">
-    <value>Attack Rng</value>
-  </data>
   <data name="Stats_DiveBomb" xml:space="preserve">
-    <value>Bombing</value>
+    <value>Dive Bomb</value>
   </data>
   <data name="Stats_Evasion" xml:space="preserve">
     <value>Evasion</value>
@@ -496,12 +505,159 @@
     <value>Luck</value>
   </data>
   <data name="Stats_SightRange" xml:space="preserve">
-    <value>Sight Rng</value>
+    <value>Range</value>
   </data>
   <data name="Stats_Speed" xml:space="preserve">
     <value>Speed</value>
   </data>
   <data name="Stats_Torpedo" xml:space="preserve">
     <value>Torpedo</value>
+  </data>
+  <data name="Stats_AttackRange" xml:space="preserve">
+    <value>Attack Rng</value>
+  </data>
+  <data name="ReSortie_CriticalConditionMessage" xml:space="preserve">
+    <value>「{0}」 in {1} is in critical condition!</value>
+  </data>
+  <data name="ReSortie_CriticalConditionMessage_Title" xml:space="preserve">
+    <value>Critical Ship Warning</value>
+  </data>
+  <data name="Settings_Accent_CriticalCondition" xml:space="preserve">
+    <value>Change window color when a ship is in critical condition</value>
+  </data>
+  <data name="Settings_FleetCondition" xml:space="preserve">
+    <value>Fleet Condition</value>
+  </data>
+  <data name="Settings_Notify_CriticalCondition" xml:space="preserve">
+    <value>Give a notification for ships in critical condition</value>
+  </data>
+  <data name="Settings_Updates" xml:space="preserve">
+    <value>Updates</value>
+  </data>
+  <data name="Settings_Updates_AutoUpdateTrans" xml:space="preserve">
+    <value>Automatically update translations on startup</value>
+  </data>
+  <data name="Settings_Updates_CheckUpdateButn_ToolTip" xml:space="preserve">
+    <value>Check for the latest program and translation versions</value>
+  </data>
+  <data name="Settings_Updates_CheckUpdatesBtn" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
+  <data name="Settings_Updates_CurrentVersion" xml:space="preserve">
+    <value>Currently</value>
+  </data>
+  <data name="Settings_Updates_OnlineVersion" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="Settings_Updates_UpdateOnStartup" xml:space="preserve">
+    <value>Check for updates on startup</value>
+  </data>
+  <data name="Settings_Updates_UpdateTransBtn" xml:space="preserve">
+    <value>Download Translations</value>
+  </data>
+  <data name="Settings_Updates_UpdateTransBtn_ToolTip" xml:space="preserve">
+    <value>Downloads translations only for selected UI language!</value>
+  </data>
+  <data name="Tools_Calculator" xml:space="preserve">
+    <value>Calculator</value>
+  </data>
+  <data name="Tools_Calculator_CurrentLevel" xml:space="preserve">
+    <value>Current Level</value>
+  </data>
+  <data name="Tools_Calculator_Flagship" xml:space="preserve">
+    <value>Flagship</value>
+  </data>
+  <data name="Tools_Calculator_ListPrompt" xml:space="preserve">
+    <value>Select a Ship Girl</value>
+  </data>
+  <data name="Tools_Calculator_Map" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="Tools_Calculator_MVP" xml:space="preserve">
+    <value>MVP</value>
+  </data>
+  <data name="Tools_Calculator_RemainingExp" xml:space="preserve">
+    <value>Remaining</value>
+  </data>
+  <data name="Tools_Calculator_Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Tools_Calculator_SortieExp" xml:space="preserve">
+    <value>Sortie Exp</value>
+  </data>
+  <data name="Tools_Calculator_TargetLevel" xml:space="preserve">
+    <value>Target Level</value>
+  </data>
+  <data name="Tools_Rankings" xml:space="preserve">
+    <value>Rankings</value>
+  </data>
+  <data name="Tools_Rankings_Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Tools_Rankings_Experience" xml:space="preserve">
+    <value>Experience</value>
+  </data>
+  <data name="Tools_Rankings_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Tools_Rankings_Page" xml:space="preserve">
+    <value>Page:</value>
+  </data>
+  <data name="Tools_Rankings_Rank" xml:space="preserve">
+    <value>Rank</value>
+  </data>
+  <data name="Tools_Rankings_RankingsList" xml:space="preserve">
+    <value>Current Rankings</value>
+  </data>
+  <data name="Tools_Rankings_Rate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="Tools_Rankings_TotalRanked" xml:space="preserve">
+    <value>Total Ranked:</value>
+  </data>
+  <data name="Tools_Rankings_User" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Updater_Notification_CheckFailed" xml:space="preserve">
+    <value>KCV was unable to check for updates!</value>
+  </data>
+  <data name="Updater_Notification_NewAppVersion" xml:space="preserve">
+    <value>New Version of KCV is available! 「v{0}」</value>
+  </data>
+  <data name="Updater_Notification_Title" xml:space="preserve">
+    <value>KanColleViewer Updater</value>
+  </data>
+  <data name="Updater_Notification_TransUpdate_Fail" xml:space="preserve">
+    <value>KCV was unable to download the translations!</value>
+  </data>
+  <data name="Updater_Notification_TransUpdate_Same" xml:space="preserve">
+    <value>Translations are already up-to-date</value>
+  </data>
+  <data name="Updater_Notification_TransUpdate_Success" xml:space="preserve">
+    <value>Translation files have been updated!</value>
+  </data>
+  <data name="Fleets_AirSuperiorityPotential" xml:space="preserve">
+    <value>Air Superiority</value>
+  </data>
+  <data name="Fleets_Average" xml:space="preserve">
+    <value>Average</value>
+  </data>
+  <data name="Fleets_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Fleets_Speed_Fast" xml:space="preserve">
+    <value>Fast Fleet</value>
+  </data>
+  <data name="Fleets_Speed_Slow" xml:space="preserve">
+    <value>Slow Fleet</value>
+  </data>
+  <data name="Fleets_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="ZoomFactorSelector" xml:space="preserve">
+    <value>Game screen size</value>
+  </data>
+  <data name="ZoomFactorSelector_Tooltip" xml:space="preserve">
+    <value>Adjust the display size of the game screen.</value>
   </data>
 </root>
