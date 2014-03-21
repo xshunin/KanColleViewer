@@ -36,14 +36,14 @@
     <TR-Name>CVL</TR-Name>
   </Type>
   <Type>
-    <ID>8</ID>
-    <JP-Name>戦艦</JP-Name>
-    <TR-Name>CC</TR-Name>
-  </Type>
-  <Type>
     <ID>9</ID>
     <JP-Name>戦艦</JP-Name>
     <TR-Name>BB</TR-Name>
+  </Type>
+  <Type>
+    <ID>8</ID>
+    <JP-Name>戦艦</JP-Name>
+    <TR-Name>CC</TR-Name>
   </Type>
   <Type>
     <ID>10</ID>
