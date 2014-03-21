@@ -161,14 +161,14 @@
 									</Style>
 								</WrapPanel.Resources>
 								<!-- これっきりボタン -->
-								<metro2:CallMethodButton Content="駆逐艦">
+								<metro2:CallMethodButton Content="Destroyers">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>2</s:Int32>
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
-								<metro2:CallMethodButton Content="軽巡・雷巡">
+								<metro2:CallMethodButton Content="Light Cruisers">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>3</s:Int32>
@@ -176,7 +176,7 @@
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
-								<metro2:CallMethodButton Content="重巡・航巡">
+								<metro2:CallMethodButton Content="Heavy Cruisers">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>5</s:Int32>
@@ -184,7 +184,7 @@
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
-								<metro2:CallMethodButton Content="戦艦">
+								<metro2:CallMethodButton Content="Battleships">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>8</s:Int32>
@@ -194,7 +194,7 @@
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
-								<metro2:CallMethodButton Content="航空母艦">
+								<metro2:CallMethodButton Content="Aircraft Carriers">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>7</s:Int32>
@@ -203,7 +203,7 @@
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
-								<metro2:CallMethodButton Content="潜水艦">
+								<metro2:CallMethodButton Content="Submarines">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>13</s:Int32>
@@ -211,7 +211,7 @@
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
-								<metro2:CallMethodButton Content="航戦・航巡">
+								<metro2:CallMethodButton Content="Aviation Ships">
 									<metro2:CallMethodButton.MethodParameter>
 										<x:Array Type="s:Int32">
 											<s:Int32>6</s:Int32>
@@ -257,15 +257,15 @@
 									</Grid.ColumnDefinitions>
 									<TextBlock Margin="0,2"
 											   HorizontalAlignment="Right">
-										<Run Text="レベル" />
+										<Run Text="Level" />
 										<Run Text=":" />
 									</TextBlock>
 									<WrapPanel Grid.Column="2">
 										<RadioButton IsChecked="{Binding Both, Mode=TwoWay}">
-											<TextBlock Text="すべて" />
+											<TextBlock Text="All" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding Level2OrMore, Mode=TwoWay}">
-											<TextBlock Text="Lv.2 以上" />
+											<TextBlock Text="Lv.2 and up" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding Level1, Mode=TwoWay}">
 											<TextBlock Text="Lv.1" />
@@ -282,18 +282,18 @@
 									</Grid.ColumnDefinitions>
 									<TextBlock Margin="0,2"
 											   HorizontalAlignment="Right">
-										<Run Text="ロック" />
+										<Run Text="Lock" />
 										<Run Text=":" />
 									</TextBlock>
 									<WrapPanel Grid.Column="2">
 										<RadioButton IsChecked="{Binding Both, Mode=TwoWay}">
-											<TextBlock Text="すべて" />
+											<TextBlock Text="All" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding Locked, Mode=TwoWay}">
-											<TextBlock Text="ロックしている" />
+											<TextBlock Text="Is locked" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding Unlocked, Mode=TwoWay}">
-											<TextBlock Text="ロックしていない" />
+											<TextBlock Text="Is not locked" />
 										</RadioButton>
 									</WrapPanel>
 								</Grid>
@@ -307,12 +307,12 @@
 									</Grid.ColumnDefinitions>
 									<TextBlock Margin="0,2"
 											   HorizontalAlignment="Right">
-										<Run Text="遠征" />
+										<Run Text="Expedition" />
 										<Run Text=":" />
 									</TextBlock>
 									<WrapPanel Grid.Column="2">
 										<CheckBox IsChecked="{Binding WithoutExpedition, Mode=TwoWay}">
-											<TextBlock Text="遠征中の艦を除外する" />
+											<TextBlock Text="Exclude ships on expeditions" />
 										</CheckBox>
 									</WrapPanel>
 								</Grid>
@@ -328,18 +328,18 @@
 									</Grid.ColumnDefinitions>
 									<TextBlock Margin="0,2"
 											   HorizontalAlignment="Right">
-										<Run Text="速力" />
+										<Run Text="Speed" />
 										<Run Text=":" />
 									</TextBlock>
 									<WrapPanel Grid.Column="2">
 										<RadioButton IsChecked="{Binding Both, Mode=TwoWay}">
-											<TextBlock Text="すべて" />
+											<TextBlock Text="All" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding Fast, Mode=TwoWay}">
-											<TextBlock Text="高速" />
+											<TextBlock Text="Fast" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding Low, Mode=TwoWay}">
-											<TextBlock Text="低速" />
+											<TextBlock Text="Slow" />
 										</RadioButton>
 									</WrapPanel>
 								</Grid>
@@ -353,18 +353,18 @@
 									</Grid.ColumnDefinitions>
 									<TextBlock Margin="0,2"
 											   HorizontalAlignment="Right">
-										<Run Text="改造" />
+										<Run Text="Remodeling" />
 										<Run Text=":" />
 									</TextBlock>
 									<WrapPanel Grid.Column="2">
 										<RadioButton IsChecked="{Binding Both, Mode=TwoWay}">
-											<TextBlock Text="すべて" />
+											<TextBlock Text="All" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding AlreadyRemodeling, Mode=TwoWay}">
-											<TextBlock Text="改造完了" />
+											<TextBlock Text="Complete" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding NotAlreadyRemodeling, Mode=TwoWay}">
-											<TextBlock Text="改造未完" />
+											<TextBlock Text="Incomplete" />
 										</RadioButton>
 									</WrapPanel>
 								</Grid>
@@ -378,18 +378,18 @@
 									</Grid.ColumnDefinitions>
 									<TextBlock Margin="0,2"
 											   HorizontalAlignment="Right">
-										<Run Text="近代化改修" />
+										<Run Text="Modernization" />
 										<Run Text=":" />
 									</TextBlock>
 									<WrapPanel Grid.Column="2">
 										<RadioButton IsChecked="{Binding Both, Mode=TwoWay}">
-											<TextBlock Text="すべて" />
+											<TextBlock Text="All" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding MaxModernized, Mode=TwoWay}">
-											<TextBlock Text="改修完了" />
+											<TextBlock Text="Complete" />
 										</RadioButton>
 										<RadioButton IsChecked="{Binding NotMaxModernized, Mode=TwoWay}">
-											<TextBlock Text="改修未完" />
+											<TextBlock Text="Incomplete" />
 										</RadioButton>
 									</WrapPanel>
 								</Grid>

@@ -199,13 +199,13 @@
     <value>遠征帰投時に通知を表示する</value>
   </data>
   <data name="Expedition_Notifications_Individual" xml:space="preserve">
-    <value>艦隊ごとに個別に設定する</value>
+    <value>Individual Fleet Settings</value>
   </data>
   <data name="Expedition_TimeComplete" xml:space="preserve">
-    <value>終了時刻</value>
+    <value>Completion</value>
   </data>
   <data name="Expedition_TimeRemaining" xml:space="preserve">
-    <value>艦隊帰投まで</value>
+    <value>Remaining</value>
   </data>
   <data name="Fleets" xml:space="preserve">
     <value>艦隊</value>
@@ -301,25 +301,13 @@
     <value>入渠ドック</value>
   </data>
   <data name="Repairyard_Locked" xml:space="preserve">
-    <value>ロックされています</value>
+    <value>Locked</value>
   </data>
   <data name="Repairyard_NotificationMessage" xml:space="preserve">
     <value>入渠第 {0} ドックでの「{1}」の整備が完了しました。</value>
   </data>
   <data name="Repairyard_NotificationMessage_Title" xml:space="preserve">
     <value>整備完了</value>
-  </data>
-  <data name="Expedition_Notifications_Individual" xml:space="preserve">
-    <value>Individual Fleet Settings</value>
-  </data>
-  <data name="Expedition_TimeComplete" xml:space="preserve">
-    <value>Completion</value>
-  </data>
-  <data name="Expedition_TimeRemaining" xml:space="preserve">
-    <value>Remaining</value>
-  </data>
-  <data name="Repairyard_Locked" xml:space="preserve">
-    <value>Locked</value>
   </data>
   <data name="Repairyard_Notifications_Enable" xml:space="preserve">
     <value>整備完了時に通知を表示する</value>
@@ -512,9 +500,6 @@
   </data>
   <data name="StartContent_SetRegionCookieToolTip" xml:space="preserve">
     <value>Make sure DMM.com is set to Japanese (日本語)</value>
-  </data>
-  <data name="StatusBar_TotalAverageLevel" xml:space="preserve">
-    <value>Total Level (Average):</value>
   </data>
   <data name="Stats_Accuracy" xml:space="preserve">
     <value>Accuracy</value>
