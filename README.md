@@ -1,4 +1,4 @@
-KanColleViewer! (提督業も忙しい！)
+﻿KanColleViewer! (提督業も忙しい！)
 --
 
 KCV is a browser utility that makes it easy to play Kantai Collection.

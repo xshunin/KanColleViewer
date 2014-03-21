@@ -151,7 +151,7 @@ namespace Grabacr07.KanColleWrapper
 
         public void ChangeCulture(string Culture)
         {
-            CurrentCulture = Culture == "en-US" ? "" : (Culture + "\\");
+            CurrentCulture = Culture == "en-US" || Culture == "en" ? "" : (Culture + "\\");
 
             ShipsXML = null;
             ShipTypesXML = null;
