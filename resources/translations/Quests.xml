@@ -805,4 +805,11 @@
     <JP-Detail>「第三十駆逐隊(第一次)」を含む艦隊で出撃しキス島沖の主力艦隊と交戦せよ！</JP-Detail>
     <TR-Detail>Deploy a fleet that consists of Mutsuki (睦月), Kisaragi (如月), Yayoi (弥生), Mochizuki (望月) and up to 2 additional DDs to world 3-2 and encounter the boss.</TR-Detail>
   </Quest>
+  <Quest>
+    <ID>247</ID>
+    <JP-Name>「航空戦艦」抜錨せよ！</JP-Name>
+    <TR-Name>Form an aviation battleship fleet!</TR-Name>
+    <JP-Detail>航空戦艦2隻を基幹とする艦隊で、西方海域カスガダマ島の敵勢力を撃破せよ！</JP-Detail>
+    <TR-Detail>Have 2 BBV ships in your main fleet and score a victory against World 4-4 Boss.</TR-Detail>
+  </Quest>
 </Quests>
