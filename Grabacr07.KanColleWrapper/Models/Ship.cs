@@ -108,17 +108,17 @@ namespace Grabacr07.KanColleWrapper.Models
 		public ModernizableStatus Luck { get; private set; }
 
 		/// <summary>
-		/// Anti-Submarine stat without equipment.
+		/// Anti-Submarine stat with and without equipment.
 		/// </summary>
 		public LimitedValue AntiSub { get; private set; }
 
 		/// <summary>
-		/// Line of Sight stat without equipment.
+		/// Line of Sight stat with and without equipment.
 		/// </summary>
 		public LimitedValue LineOfSight { get; private set; }
 
 		/// <summary>
-		/// Evasion stat without equipment.
+		/// Evasion stat with and without equipment.
 		/// </summary>
 		public LimitedValue Evasion { get; private set; }
 
@@ -176,9 +176,6 @@ namespace Grabacr07.KanColleWrapper.Models
 			this.HP = new LimitedValue(this.RawData.api_nowhp, this.RawData.api_maxhp, 0);
 			this.Fuel = new LimitedValue(this.RawData.api_fuel, this.Info.RawData.api_fuel_max, 0);
 			this.Bull = new LimitedValue(this.RawData.api_bull, this.Info.RawData.api_bull_max, 0);
-			this.AntiSub = new LimitedValue(this.Info.RawData.api_tais[0], this.Info.RawData.api_tais[1], 0);
-			this.Evasion = new LimitedValue(this.Info.RawData.api_kaih[0], this.Info.RawData.api_kaih[1], 0);
-			this.LineOfSight = new LimitedValue(this.Info.RawData.api_saku[0], this.Info.RawData.api_saku[1], 0);
 
 			if (this.RawData.api_kyouka.Length >= 5)
 			{
@@ -191,6 +188,11 @@ namespace Grabacr07.KanColleWrapper.Models
 
 			this.SlotItems = this.RawData.api_slot.Select(id => this.homeport.SlotItems[id]).Where(x => x != null).ToArray();
 			this.OnSlot = this.RawData.api_onslot;
+
+			// Minimum removes equipped values.
+			this.AntiSub = new LimitedValue(this.RawData.api_taisen[0], this.RawData.api_taisen[1], this.RawData.api_taisen[0] - this.SlotItems.Sum(i => i.Info.RawData.api_tais));
+			this.Evasion = new LimitedValue(this.RawData.api_kaihi[0], this.RawData.api_kaihi[1], this.RawData.api_kaihi[0] - this.SlotItems.Sum(i => i.Info.RawData.api_houk));
+			this.LineOfSight = new LimitedValue(this.RawData.api_sakuteki[0], this.RawData.api_sakuteki[1], this.RawData.api_sakuteki[0] - this.SlotItems.Sum(i => i.Info.RawData.api_saku));
 		}
 
 

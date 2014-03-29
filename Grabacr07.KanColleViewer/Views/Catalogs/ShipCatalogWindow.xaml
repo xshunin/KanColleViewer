@@ -651,7 +651,13 @@
 								</GridViewColumn.Header>
 								<GridViewColumn.CellTemplate>
 									<DataTemplate>
-										<TextBlock Text="{Binding Ship.Evasion.Current, Mode=OneWay}" />
+										<TextBlock FontSize="9">
+											<Run Text="{Binding Ship.Evasion.Current, Mode=OneWay}" 
+												 FontSize="12"
+												 Foreground="{DynamicResource ActiveForegroundBrushKey}"/>
+											<Run Text="" />
+											<Run Text="{Binding Ship.Evasion.Minimum, StringFormat=Base: {0}, Mode=OneWay}" />
+										</TextBlock>
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
 							</GridViewColumn>
@@ -662,7 +668,13 @@
 								</GridViewColumn.Header>
 								<GridViewColumn.CellTemplate>
 									<DataTemplate>
-										<TextBlock Text="{Binding Ship.AntiSub.Current, Mode=OneWay}" />
+										<TextBlock FontSize="9">
+											<Run Text="{Binding Ship.AntiSub.Current, Mode=OneWay}" 
+												 FontSize="12"
+												 Foreground="{DynamicResource ActiveForegroundBrushKey}"/>
+											<Run Text="" />
+											<Run Text="{Binding Ship.AntiSub.Minimum, StringFormat=Base: {0}, Mode=OneWay}" />
+										</TextBlock>
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
 							</GridViewColumn>
@@ -673,7 +685,13 @@
 								</GridViewColumn.Header>
 								<GridViewColumn.CellTemplate>
 									<DataTemplate>
-										<TextBlock Text="{Binding Ship.LineOfSight.Current, Mode=OneWay}" />
+										<TextBlock FontSize="9">
+											<Run Text="{Binding Ship.LineOfSight.Current, Mode=OneWay}" 
+												 FontSize="12"
+												 Foreground="{DynamicResource ActiveForegroundBrushKey}"/>
+											<Run Text="" />
+											<Run Text="{Binding Ship.LineOfSight.Minimum, StringFormat=Base: {0}, Mode=OneWay}" />
+										</TextBlock>
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
 							</GridViewColumn>
