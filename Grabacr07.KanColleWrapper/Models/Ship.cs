@@ -108,6 +108,21 @@ namespace Grabacr07.KanColleWrapper.Models
 		public ModernizableStatus Luck { get; private set; }
 
 		/// <summary>
+		/// Anti-Submarine stat without equipment.
+		/// </summary>
+		public LimitedValue AntiSub { get; private set; }
+
+		/// <summary>
+		/// Line of Sight stat without equipment.
+		/// </summary>
+		public LimitedValue LineOfSight { get; private set; }
+
+		/// <summary>
+		/// Evasion stat without equipment.
+		/// </summary>
+		public LimitedValue Evasion { get; private set; }
+
+		/// <summary>
 		/// 火力・雷装・対空・装甲のすべてのステータス値が最大値に達しているかどうかを示す値を取得します。
 		/// </summary>
 		public bool IsMaxModernized
@@ -131,23 +146,23 @@ namespace Grabacr07.KanColleWrapper.Models
 			get { return ConditionTypeHelper.ToConditionType(this.RawData.api_cond); }
 		}
 
-        /// <summary>
-        /// For visually generated elements. "[Lv.00]   Name"
-        /// </summary>
-        public string LvName
-        {
-            get { return "[Lv." + this.Level + "]  \t" + this.Info.Name; }
-        }
+		/// <summary>
+		/// For visually generated elements. "[Lv.00]   Name"
+		/// </summary>
+		public string LvName
+		{
+			get { return "[Lv." + this.Level + "]  \t" + this.Info.Name; }
+		}
 
-        /// <summary>
-        /// For visually generated elements. 
-        /// "Name           [Lv.00]"
-        /// "Long Name      [Lv.00]"    
-        /// </summary>
-        public string NameLv
-        {
-            get { return string.Format("{0, -20} [Lv.{1}]", this.Info.Name, this.Level); }
-        }
+		/// <summary>
+		/// For visually generated elements. 
+		/// "Name           [Lv.00]"
+		/// "Long Name      [Lv.00]"    
+		/// </summary>
+		public string NameLv
+		{
+			get { return string.Format("{0, -20} [Lv.{1}]", this.Info.Name, this.Level); }
+		}
 
 		public SlotItem[] SlotItems { get; private set; }
 		public int[] OnSlot { get; private set; }
@@ -161,6 +176,9 @@ namespace Grabacr07.KanColleWrapper.Models
 			this.HP = new LimitedValue(this.RawData.api_nowhp, this.RawData.api_maxhp, 0);
 			this.Fuel = new LimitedValue(this.RawData.api_fuel, this.Info.RawData.api_fuel_max, 0);
 			this.Bull = new LimitedValue(this.RawData.api_bull, this.Info.RawData.api_bull_max, 0);
+			this.AntiSub = new LimitedValue(this.Info.RawData.api_tais[0], this.Info.RawData.api_tais[1], 0);
+			this.Evasion = new LimitedValue(this.Info.RawData.api_kaih[0], this.Info.RawData.api_kaih[1], 0);
+			this.LineOfSight = new LimitedValue(this.Info.RawData.api_saku[0], this.Info.RawData.api_saku[1], 0);
 
 			if (this.RawData.api_kyouka.Length >= 5)
 			{

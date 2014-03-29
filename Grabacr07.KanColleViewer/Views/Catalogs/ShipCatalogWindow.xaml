@@ -22,7 +22,7 @@
 				   mc:Ignorable="d"
 				   d:DataContext="{d:DesignInstance viewModels:ShipCatalogWindowViewModel}"
 				   Title="{Binding Title}"
-				   Width="920"
+				   Width="1112"
 				   Height="800"
 				   FontSize="12"
 				   Background="{DynamicResource ThemeBrushKey}"
@@ -163,9 +163,9 @@
 								<!-- これっきりボタン -->
 								<metro2:CallMethodButton Content="Destroyers">
 									<metro2:CallMethodButton.MethodParameter>
-                                        <x:Array Type="s:Int32">
-                                            <s:Int32>1</s:Int32>
-                                            <s:Int32>2</s:Int32>
+										<x:Array Type="s:Int32">
+											<s:Int32>1</s:Int32>
+											<s:Int32>2</s:Int32>
 										</x:Array>
 									</metro2:CallMethodButton.MethodParameter>
 								</metro2:CallMethodButton>
@@ -641,6 +641,39 @@
 															   Background="#7F808080"
 															   MinWidth="64"
 															   Margin="-5,0" />
+									</DataTemplate>
+								</GridViewColumn.CellTemplate>
+							</GridViewColumn>
+
+							<GridViewColumn Width="64">
+								<GridViewColumn.Header>
+									<TextBlock Text="Evasion" />
+								</GridViewColumn.Header>
+								<GridViewColumn.CellTemplate>
+									<DataTemplate>
+										<TextBlock Text="{Binding Ship.Evasion.Current, Mode=OneWay}" />
+									</DataTemplate>
+								</GridViewColumn.CellTemplate>
+							</GridViewColumn>
+
+							<GridViewColumn Width="64">
+								<GridViewColumn.Header>
+									<TextBlock Text="Anti-Sub" />
+								</GridViewColumn.Header>
+								<GridViewColumn.CellTemplate>
+									<DataTemplate>
+										<TextBlock Text="{Binding Ship.AntiSub.Current, Mode=OneWay}" />
+									</DataTemplate>
+								</GridViewColumn.CellTemplate>
+							</GridViewColumn>
+
+							<GridViewColumn Width="64">
+								<GridViewColumn.Header>
+									<TextBlock Text="LoS" />
+								</GridViewColumn.Header>
+								<GridViewColumn.CellTemplate>
+									<DataTemplate>
+										<TextBlock Text="{Binding Ship.LineOfSight.Current, Mode=OneWay}" />
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
 							</GridViewColumn>
