@@ -645,7 +645,7 @@
 								</GridViewColumn.CellTemplate>
 							</GridViewColumn>
 
-							<GridViewColumn Width="64">
+							<GridViewColumn Width="68">
 								<GridViewColumn.Header>
 									<TextBlock Text="Evasion" />
 								</GridViewColumn.Header>
@@ -656,13 +656,13 @@
 												 FontSize="12"
 												 Foreground="{DynamicResource ActiveForegroundBrushKey}"/>
 											<Run Text="" />
-											<Run Text="{Binding Ship.Evasion.Minimum, StringFormat=Base: {0}, Mode=OneWay}" />
+											<Run Text="{Binding Ship.Evasion.Minimum, StringFormat=({0}), Mode=OneWay}" />
 										</TextBlock>
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
 							</GridViewColumn>
 
-							<GridViewColumn Width="64">
+							<GridViewColumn Width="68">
 								<GridViewColumn.Header>
 									<TextBlock Text="Anti-Sub" />
 								</GridViewColumn.Header>
@@ -673,7 +673,7 @@
 												 FontSize="12"
 												 Foreground="{DynamicResource ActiveForegroundBrushKey}"/>
 											<Run Text="" />
-											<Run Text="{Binding Ship.AntiSub.Minimum, StringFormat=Base: {0}, Mode=OneWay}" />
+											<Run Text="{Binding Ship.AntiSub.Minimum, StringFormat=({0}), Mode=OneWay}" />
 										</TextBlock>
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
@@ -690,7 +690,7 @@
 												 FontSize="12"
 												 Foreground="{DynamicResource ActiveForegroundBrushKey}"/>
 											<Run Text="" />
-											<Run Text="{Binding Ship.LineOfSight.Minimum, StringFormat=Base: {0}, Mode=OneWay}" />
+											<Run Text="{Binding Ship.LineOfSight.Minimum, StringFormat=({0}), Mode=OneWay}" />
 										</TextBlock>
 									</DataTemplate>
 								</GridViewColumn.CellTemplate>
