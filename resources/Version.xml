@@ -27,7 +27,7 @@
 	</Item>
 	<Item>
 		<Name>ShipTypes</Name>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<URL>https://raw.github.com/Zharay/KanColleViewer/master/resources/translations/ShipTypes.xml</URL>
 	</Item>
 </Versions>
