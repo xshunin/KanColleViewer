@@ -190,9 +190,21 @@ namespace Grabacr07.KanColleWrapper.Models
 			this.OnSlot = this.RawData.api_onslot;
 
 			// Minimum removes equipped values.
-			this.AntiSub = new LimitedValue(this.RawData.api_taisen[0], this.RawData.api_taisen[1], this.RawData.api_taisen[0] - this.SlotItems.Sum(i => i.Info.RawData.api_tais));
-			this.Evasion = new LimitedValue(this.RawData.api_kaihi[0], this.RawData.api_kaihi[1], this.RawData.api_kaihi[0] - this.SlotItems.Sum(i => i.Info.RawData.api_houk));
-			this.LineOfSight = new LimitedValue(this.RawData.api_sakuteki[0], this.RawData.api_sakuteki[1], this.RawData.api_sakuteki[0] - this.SlotItems.Sum(i => i.Info.RawData.api_saku));
+			int EqAntiSub = 0, EqEvasion = 0, EqLineOfSight = 0;
+
+			foreach (SlotItem item in this.SlotItems)
+			{
+				if (item == null)
+					continue;
+
+				EqAntiSub += item.Info.RawData.api_tais;
+				EqEvasion += item.Info.RawData.api_houk;
+				EqLineOfSight += item.Info.RawData.api_saku;
+			}
+
+			this.AntiSub = new LimitedValue(this.RawData.api_taisen[0], this.RawData.api_taisen[1], this.RawData.api_taisen[0] - EqAntiSub);
+			this.Evasion = new LimitedValue(this.RawData.api_kaihi[0], this.RawData.api_kaihi[1], this.RawData.api_kaihi[0] - EqEvasion);
+			this.LineOfSight = new LimitedValue(this.RawData.api_sakuteki[0], this.RawData.api_sakuteki[1], this.RawData.api_sakuteki[0] - EqLineOfSight);
 		}
 
 
