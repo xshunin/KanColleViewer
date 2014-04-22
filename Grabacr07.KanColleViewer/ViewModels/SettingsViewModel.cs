@@ -691,6 +691,23 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#endregion
 
+		#region EnableFlashDebug 変更通知プロパティ
+
+		public bool EnableFlashDebug
+		{
+			get { return Settings.Current.EnableFlashDebug; }
+			set
+			{
+				if (Settings.Current.EnableFlashDebug != value)
+				{
+					Settings.Current.EnableFlashDebug = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
 		public bool HasErrors
 		{
 			get { return this.reSortieConditionError != null; }

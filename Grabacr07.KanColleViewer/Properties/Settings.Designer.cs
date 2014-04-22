@@ -128,14 +128,14 @@ namespace Grabacr07.KanColleViewer.Properties {
             "gName, c[j].getAttribute(\'value\'));\r\n        }}\r\n        \r\n        embedElem.set" +
             "Attribute(\'quality\', \'{0}\');\r\n        embedElem.setAttribute(\'wmode\', \'{1}\');\r\n " +
             "       \r\n        parentElem.removeChild(objs[i]);\r\n        parentElem.appendChil" +
-            "d(embedElem);\r\n\t}}\r\n\t}}\r\n\tcatch(e) {{\r\n\talert(\"Quality Settings Failed!\\n\"+e.mes" +
-            "sage);\r\n\t}}\r\n}};\r\n\r\nvar InjectTimeOut = 0;\r\n\r\nvar TimedInject = setInterval(func" +
-            "tion () {{\r\n    CheckChange();\r\n}}, 100);\r\n\r\nfunction CheckChange() {{\r\n    if (" +
-            "document.getElementById(\'flashWrap\') {{\r\n\t    if document.getElementById(\'flashW" +
-            "rap\').innerHTML.length > 10) {{\r\n            flashQuality();\r\n            clearI" +
-            "nterval(TimedInject);\r\n\t\t}}\r\n\t\telse {{\r\n\t\t    InjectTimeOut++;  \r\n\t    }}\r\n    }" +
-            "}\r\n\tif (!document.getElementById(\'flashWrap\') || InjectTimeOut >= 100) {{\r\n     " +
-            "   clearInterval(TimedInject);\r\n    }}\r\n}}")]
+            "d(embedElem);\r\n\t}}\r\n\t}}\r\n\tcatch(e) {{\r\n\tif ({2}) alert(\"Quality Settings Failed!" +
+            "\\n\"+e.message);\r\n\t}}\r\n}};\r\n\r\nvar InjectTimeOut = 0;\r\n\r\nvar TimedInject = setInte" +
+            "rval(function () {{\r\n    CheckChange();\r\n}}, 100);\r\n\r\nfunction CheckChange() {{\r" +
+            "\n    if (document.getElementById(\'flashWrap\') {{\r\n\t    if document.getElementByI" +
+            "d(\'flashWrap\').innerHTML.length > 10) {{\r\n            flashQuality();\r\n         " +
+            "   clearInterval(TimedInject);\r\n\t\t}}\r\n\t\telse {{\r\n\t\t    InjectTimeOut++;  \r\n\t    " +
+            "}}\r\n    }}\r\n\tif (!document.getElementById(\'flashWrap\') || InjectTimeOut >= 100) " +
+            "{{\r\n        clearInterval(TimedInject);\r\n    }}\r\n}}")]
         public string FlashQualityJS {
             get {
                 return ((string)(this["FlashQualityJS"]));

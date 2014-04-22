@@ -880,6 +880,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enable flash debug alerts.
+        /// </summary>
+        public static string Settings_Flash_DebugAlert {
+            get {
+                return ResourceManager.GetString("Settings_Flash_DebugAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You must use the default method of playing Kancolle through DMM.com&apos;s website or through a OSAPI link. SWF/API links do not work!
         ///[You must reload the game for the changes to take affect.].
         /// </summary>

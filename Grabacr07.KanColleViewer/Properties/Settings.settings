@@ -85,7 +85,7 @@
 	}}
 	}}
 	catch(e) {{
-	alert("Quality Settings Failed!\n"+e.message);
+	if ({2}) alert("Quality Settings Failed!\n"+e.message);
 	}}
 }};
 

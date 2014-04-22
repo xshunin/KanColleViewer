@@ -691,4 +691,7 @@ Low: Performance over quality. Ugliest setting.</value>
   <data name="Settings_Updates_GetKCVBtn_ToolTip" xml:space="preserve">
     <value>Opens a link to the latest version of KCV found here.</value>
   </data>
+  <data name="Settings_Flash_DebugAlert" xml:space="preserve">
+    <value>Enable flash debug alerts</value>
+  </data>
 </root>
