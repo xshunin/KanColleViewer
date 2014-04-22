@@ -125,8 +125,8 @@
 						  VerticalScrollBarVisibility="Auto"
 						  VerticalAlignment="Top">
 				<ContentControl DataContext="{Binding SelectedItem}"
-								Content="{Binding}"
-								MinHeight="{Binding Source={x:Static properties:Settings.Default}, Path=UIContentHight}">
+								Content="{Binding}">
+								<!-- MinHeight="{Binding Source={x:Static properties:Settings.Default}, Path=UIContentHight}"> -->
 					<ContentControl.Resources>
 						<DataTemplate DataType="{x:Type vmContents:OverviewViewModel}">
 							<contents:Overview />
@@ -145,11 +145,11 @@
 						</DataTemplate>
 						<DataTemplate DataType="{x:Type vmContents:ExpeditionsViewModel}">
 							<contents:Expeditions />
-                        </DataTemplate>
-                        <DataTemplate DataType="{x:Type vmContents:ToolsViewModel}">
-                            <tools:Tools />
-                        </DataTemplate>
-                        <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+						</DataTemplate>
+						<DataTemplate DataType="{x:Type vmContents:ToolsViewModel}">
+							<tools:Tools />
+						</DataTemplate>
+						<DataTemplate DataType="{x:Type vm:SettingsViewModel}">
 							<settings:Settings />
 						</DataTemplate>
 						<DataTemplate DataType="{x:Type devVm:DebugTabViewModel}">

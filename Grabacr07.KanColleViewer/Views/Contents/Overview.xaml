@@ -18,8 +18,7 @@
 			 xmlns:fleets="clr-namespace:Grabacr07.KanColleViewer.ViewModels.Contents.Fleets"
 			 mc:Ignorable="d"
 			 d:DataContext="{d:DesignInstance vmContents:OverviewViewModel}"
-			 d:DesignWidth="680"
-			 d:DesignHeight="333">
+			 d:DesignWidth="680">
 	<UserControl.Resources>
 		<ResourceDictionary>
 			<Style TargetType="{x:Type Border}">
@@ -30,7 +29,7 @@
 				<Setter Property="Padding"
 						Value="8" />
 				<Setter Property="Margin"
-						Value="5,0,5,10" />
+						Value="5,0,5,0" />
 			</Style>
 
 			<Style x:Key="JumbButtonStyleKey"
@@ -45,7 +44,7 @@
 				<Setter Property="VerticalContentAlignment"
 						Value="Stretch" />
 				<Setter Property="Margin"
-						Value="5,0,5,10" />
+						Value="5,0,5,0" />
 			</Style>
 		</ResourceDictionary>
 	</UserControl.Resources>
@@ -294,7 +293,7 @@
 									 Style="{StaticResource JumbButtonStyleKey}"
 									 MethodName="Jump"
 									 MethodParameter="Quests"
-									 Margin="5,0,5,0">
+									 Margin="5,10,5,0">
 				<StackPanel DataContext="{Binding Content.Quests}">
 					<TextBlock>
 						<Run Text="{Binding Name}" />
@@ -401,7 +400,7 @@
 			<metro2:CallMethodButton Style="{StaticResource JumbButtonStyleKey}"
 									 MethodName="Jump"
 									 MethodParameter="Dockyard"
-									 Margin="5,0,5,0">
+									 Margin="5,10,5,0">
 				<StackPanel DataContext="{Binding Content.Dockyard}">
 					<TextBlock>
 						<Run Text="{Binding Name, Mode=OneWay}" />
