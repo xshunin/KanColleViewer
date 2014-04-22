@@ -472,10 +472,13 @@
     <value>ゲーム画面の表示サイズを調整</value>
   </data>
   <data name="Settings_Logging" xml:space="preserve">
-    <value>Logging</value>
+    <value>ログ</value>
   </data>
   <data name="Settings_Logging_Enable" xml:space="preserve">
-    <value>Log drops and crafting results to file</value>
+    <value>ドロップ・建造・開発ログを記録する</value>
+  </data>
+  <data name="Fleets_ViewRange" xml:space="preserve">
+    <value>索敵能力</value>
   </data>
   <data name="Tools_Rankings" xml:space="preserve">
     <value>Rankings</value>

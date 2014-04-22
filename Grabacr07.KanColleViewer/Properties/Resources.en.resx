@@ -682,4 +682,7 @@ Medium: Average Performance
 AutoLow: Will emphasize speed when needed
 Low: Performance over quality. Ugliest setting.</value>
   </data>
+  <data name="Fleets_ViewRange" xml:space="preserve">
+    <value>Total LoS</value>
+  </data>
 </root>
