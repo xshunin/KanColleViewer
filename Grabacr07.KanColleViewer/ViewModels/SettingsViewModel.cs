@@ -870,5 +870,18 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				
 			KanColleClient.Current.Homeport.Translations.ChangeCulture(Culture);
 		}
+
+		public void OpenKCVLink()
+		{
+			try
+			{
+				if (!AppOnlineVersionURL.IsEmpty())
+					Process.Start(AppOnlineVersionURL);
+			}
+			catch
+			{
+
+			}
+		}
 	}
 }

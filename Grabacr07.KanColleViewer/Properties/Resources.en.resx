@@ -685,4 +685,10 @@ Low: Performance over quality. Ugliest setting.</value>
   <data name="Fleets_ViewRange" xml:space="preserve">
     <value>Total LoS</value>
   </data>
+  <data name="Settings_Updates_GetKCVBtn" xml:space="preserve">
+    <value>Get Latest KCV</value>
+  </data>
+  <data name="Settings_Updates_GetKCVBtn_ToolTip" xml:space="preserve">
+    <value>Opens a link to the latest version of KCV found here.</value>
+  </data>
 </root>
