@@ -97,6 +97,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\LivetExtensions.1.1.0.0\lib\net45\Microsoft.WindowsAPICodePack.Shell.dll</HintPath>
     </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\packages\NAudio.1.7.1\lib\net35\NAudio.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -143,6 +146,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\BrowserZoomFactor.cs" />
+    <Compile Include="Models\CustomSound.cs" />
     <Compile Include="Models\IWindowsNotifier.cs" />
     <Compile Include="Models\IZoomFactor.cs" />
     <Compile Include="Models\ProductInfo.cs" />
@@ -631,6 +635,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <PropertyGroup>
@@ -641,15 +648,20 @@ xcopy /Y /E /I "$(TargetDir)en" "$(SolutionDir)KanColleViewer-Compiled\lib\en"
 xcopy /Y /E /I "$(TargetDir)zh-CN" "$(SolutionDir)KanColleViewer-Compiled\lib\zh-CN"
 xcopy /Y /E /I "$(TargetDir)ko-KR" "$(SolutionDir)KanColleViewer-Compiled\lib\ko-KR"
 xcopy /Y /E /I "$(SolutionDir)resources\Translations" "$(SolutionDir)KanColleViewer-Compiled\Translations"
-xcopy /Y /E /I "$(SolutionDir)resources\Translations" "$(TargetDir)Translations"</PostBuildEvent>
+xcopy /Y /E /I "$(SolutionDir)resources\Translations" "$(TargetDir)Translations"
+xcopy /Y /E /I "$(SolutionDir)resources\Sounds" "$(SolutionDir)KanColleViewer-Compiled\Sounds"
+xcopy /Y /E /I "$(SolutionDir)resources\Sounds" "$(TargetDir)Sounds"</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>rd /S /Q "$(TargetDir)Translations"
+rd /S /Q "$(TargetDir)Sounds"
 rd /S /Q "$(SolutionDir)KanColleViewer-Compiled"
 md "$(SolutionDir)KanColleViewer-Compiled"
 md "$(SolutionDir)KanColleViewer-Compiled\lib"
 md "$(SolutionDir)KanColleViewer-Compiled\Translations"
-md "$(TargetDir)Translations"</PreBuildEvent>
+md "$(SolutionDir)KanColleViewer-Compiled\Sounds"
+md "$(TargetDir)Translations"
+md "$(TargetDir)Sounds"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
