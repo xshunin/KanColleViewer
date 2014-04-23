@@ -11,6 +11,7 @@ This is the translation project of the original [KanColleViewer](http://grabacr.
 * [southrop](https://github.com/southrop) -- Original text file translation code (defunct)
 * [m-kc](https://github.com/m-kc) -- Rankings section
 * [taihou](https://github.com/taihou) -- Logging option
+* [FreyYa](https://github.com/FreyYa) -- Custom Sound
 
 ## Downloads
 All builds can be found in the following links below.
@@ -50,6 +51,9 @@ Please let me know if this is happening and tell me what OS you are using and th
 These are sounds that play immediately when a normal windows notification is to be displayed. Supported formats are WAV and MP3. You must place them in the "Sounds" and under the subdirectory corresponding to the notification you require. It doesn't matter the name or the number you have; a random file will be chosen to be played every time.
 
 Note! For those not in English UI, you may need to place them in the folders that are generated *after* a notification is played once. Any missing folders will be created for you.
+
+#### My Fleets and Expeditions don't show/update!
+Clear your cache and relaunch KCV again. Especially after updates or playing between versions of KCV, this should fix any issues regarding this.
 
 #### What is the difference between this and the original?
 * Horizontal version is unique to this project. 
