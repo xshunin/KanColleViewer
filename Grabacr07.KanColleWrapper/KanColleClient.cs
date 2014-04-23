@@ -5,6 +5,7 @@ using System.Reactive.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Grabacr07.KanColleWrapper.Internal;
+using Grabacr07.KanColleWrapper.Models.Raw;
 using Livet;
 
 namespace Grabacr07.KanColleWrapper
@@ -42,10 +43,10 @@ namespace Grabacr07.KanColleWrapper
 		/// </summary>
 		public ObservableSynchronizedCollection<KanColleError> Errors { get; private set; }
 
-        /// <summary>
-        /// Application update notifications and downloads.
-        /// </summary>
-        public Updater Updater { get; private set; }
+		/// <summary>
+		/// Application update notifications and downloads.
+		/// </summary>
+		public Updater Updater { get; private set; }
 
 		#region IsStarted 変更通知プロパティ
 
@@ -74,13 +75,18 @@ namespace Grabacr07.KanColleWrapper
 			this.Errors = new ObservableSynchronizedCollection<KanColleError>();
 
 			this.Proxy = new KanColleProxy();
-			this.Master = new Master(this.Proxy);
+			//this.Master = new Master(this.Proxy);
 			this.Homeport = new Homeport(this.Proxy);
-            this.Updater = new Updater();
+			this.Updater = new Updater();
 
-			this.Proxy.ApiSessionSource.Where(x => x.PathAndQuery == "/kcsapi/api_start")
-				.TryParse()
-				.Subscribe(x => this.IsStarted = x.IsSuccess);
+			this.Proxy.ApiSessionSource.Where(x => x.PathAndQuery == "/kcsapi/api_start2")
+				.TryParse<kcsapi_start2>()
+				.Select(x => new Master(x))
+				.Subscribe(x =>
+				{
+					this.Master = x;
+					this.IsStarted = true;
+				});
 		}
 	}
 }
