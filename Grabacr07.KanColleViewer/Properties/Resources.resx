@@ -696,6 +696,6 @@ Low: Performance over quality. Ugliest setting.</value>
     <value>Volume</value>
   </data>
   <data name="Settings_Notify_Fatigue" xml:space="preserve">
-    <value>Give a notification when a fleet's fatigue as reset.</value>
+    <value>Give a notification when a fleet's fatigue as reset. (Not 100% accurate!)</value>
   </data>
 </root>
