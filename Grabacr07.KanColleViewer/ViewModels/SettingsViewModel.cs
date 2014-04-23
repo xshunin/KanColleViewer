@@ -708,6 +708,23 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#endregion
 
+		#region CustomSoundVolume 変更通知プロパティ
+
+		public int CustomSoundVolume
+		{
+			get { return Settings.Current.CustomSoundVolume; }
+			set
+			{
+				if (Settings.Current.CustomSoundVolume != value)
+				{
+					Settings.Current.CustomSoundVolume = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
 		public bool HasErrors
 		{
 			get { return this.reSortieConditionError != null; }

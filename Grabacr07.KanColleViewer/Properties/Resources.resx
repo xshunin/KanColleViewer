@@ -689,6 +689,12 @@ Low: Performance over quality. Ugliest setting.</value>
   <data name="Settings_Updates_GetKCVBtn_ToolTip" xml:space="preserve">
     <value>Opens a link to the latest version of KCV found here.</value>
   </data>
+  <data name="Settings_CustomSound" xml:space="preserve">
+    <value>Custom Sound Notifications</value>
+  </data>
+  <data name="Settings_CustomSound_Volume" xml:space="preserve">
+    <value>Volume</value>
+  </data>
   <data name="Settings_Notify_Fatigue" xml:space="preserve">
     <value>Give a notification when a fleet's fatigue as reset.</value>
   </data>

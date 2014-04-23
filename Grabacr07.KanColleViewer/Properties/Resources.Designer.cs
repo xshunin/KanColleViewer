@@ -862,6 +862,24 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Custom Sound Notifications.
+        /// </summary>
+        public static string Settings_CustomSound {
+            get {
+                return ResourceManager.GetString("Settings_CustomSound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Volume.
+        /// </summary>
+        public static string Settings_CustomSound_Volume {
+            get {
+                return ResourceManager.GetString("Settings_CustomSound_Volume", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 表示設定.
         /// </summary>
         public static string Settings_Display {

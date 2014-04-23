@@ -7,13 +7,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 using NAudio.Wave;
+using Settings = Grabacr07.KanColleViewer.Models.Settings;
 
 namespace Grabacr07.KanColleViewer.Models
 {
 	class CustomSound
 	{
-		private BlockAlignReductionStream stream = null;
-		private DirectSoundOut output = null;
+		private BlockAlignReductionStream BlockStream = null;
+		private DirectSoundOut SoundOut = null;
 		string Main_folder = Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
 
 		public void SoundOutput(string header, bool IsWin8)
@@ -40,23 +41,24 @@ namespace Grabacr07.KanColleViewer.Models
 				else if (IsWin8 && Audiofile == null)
 					return;							//위와 동일한 조건이지만 윈도우8인경우는 이 소스에서는 아무 소리도 내보내지않음.
 
+				float Volume = Settings.Current.CustomSoundVolume > 0 ? (float)Settings.Current.CustomSoundVolume / 100 : 0;
+
 				if (Path.GetExtension(Audiofile).ToLower() == ".wav")
 				{
-					WaveStream pcm = new WaveChannel32(new WaveFileReader(Audiofile));
-					stream = new BlockAlignReductionStream(pcm);
+					WaveStream pcm = new WaveChannel32(new WaveFileReader(Audiofile), Volume, 0);
+					BlockStream = new BlockAlignReductionStream(pcm);
 				}
 				else if (Path.GetExtension(Audiofile).ToLower() == ".mp3")
 				{
-					WaveStream pcm = WaveFormatConversionStream.CreatePcmStream(new Mp3FileReader(Audiofile));
-					stream = new BlockAlignReductionStream(pcm);
+					WaveStream pcm = new WaveChannel32(new Mp3FileReader(Audiofile), Volume, 0);
+					BlockStream = new BlockAlignReductionStream(pcm);
 				}
 				else
 					return;
 
-				output = new DirectSoundOut();
-				output.Init(stream);
-				output.Volume = 0.5;
-				output.Play();
+				SoundOut = new DirectSoundOut();
+				SoundOut.Init(BlockStream);
+				SoundOut.Play();
 			}
 			catch (Exception ex)
 			{
@@ -150,16 +152,17 @@ namespace Grabacr07.KanColleViewer.Models
 		{
 			try
 			{
-				if (output != null)
+				if (SoundOut != null)
 				{
-					if (output.PlaybackState == PlaybackState.Playing) output.Stop();
-					output.Dispose();
-					output = null;
+					if (SoundOut.PlaybackState == PlaybackState.Playing) 
+						SoundOut.Stop();
+					SoundOut.Dispose();
+					SoundOut = null;
 				}
-				if (stream != null)
+				if (BlockStream != null)
 				{
-					stream.Dispose();
-					stream = null;
+					BlockStream.Dispose();
+					BlockStream = null;
 				}
 			}
 			catch { }

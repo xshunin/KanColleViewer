@@ -22,7 +22,7 @@ namespace Grabacr07.KanColleViewer.Models
 			"KanColleViewer",
 			"Settings.xml");
 
-		private static readonly string CurrentSettingsVersion = "1.4";
+		private static readonly string CurrentSettingsVersion = "1.5";
 
 		public static Settings Current { get; set; }
 
@@ -68,7 +68,8 @@ namespace Grabacr07.KanColleViewer.Models
 				NotifyRepairingCompleted = true,
 				NotifyExpeditionReturned = true,
 				FlashQuality = "High",
-				FlashWindow = "Opaque"
+				FlashWindow = "Opaque",
+				CustomSoundVolume = 50
 			};
 		}
 
@@ -958,6 +959,24 @@ namespace Grabacr07.KanColleViewer.Models
 				if (this._EnableFatigueNotification != value)
 				{
 					this._EnableFatigueNotification = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+		#endregion
+
+		#region CustomSoundVolume 変更通知プロパティ
+
+		private int _CustomSoundVolume;
+
+		public int CustomSoundVolume
+		{
+			get { return this._CustomSoundVolume; }
+			set
+			{
+				if (this._CustomSoundVolume != value)
+				{
+					this._CustomSoundVolume = value;
 					this.RaisePropertyChanged();
 				}
 			}
