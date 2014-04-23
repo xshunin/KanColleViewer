@@ -68,8 +68,7 @@ namespace Grabacr07.KanColleViewer.Models
 				NotifyRepairingCompleted = true,
 				NotifyExpeditionReturned = true,
 				FlashQuality = "High",
-				FlashWindow = "Opaque",
-				EnableFlashDebug = false
+				FlashWindow = "Opaque"
 			};
 		}
 
@@ -911,7 +910,7 @@ namespace Grabacr07.KanColleViewer.Models
 
 		#endregion
 
-		#region FlashQuality 変更通知プロパティ
+		#region FlashQuality変更通知プロパティ
 
 		private string _FlashQuality;
 
@@ -929,7 +928,7 @@ namespace Grabacr07.KanColleViewer.Models
 		}
 		#endregion
 
-		#region FlashWindow 変更通知プロパティ
+		#region FlashWindow変更通知プロパティ
 
 		private string _FlashWindow;
 
@@ -941,24 +940,6 @@ namespace Grabacr07.KanColleViewer.Models
 				if (this._FlashWindow != value)
 				{
 					this._FlashWindow = value;
-					this.RaisePropertyChanged();
-				}
-			}
-		}
-		#endregion
-
-		#region EnableFlashDebug 変更通知プロパティ
-
-		private bool _EnableFlashDebug;
-
-		public bool EnableFlashDebug
-		{
-			get { return this._EnableFlashDebug; }
-			set
-			{
-				if (this._EnableFlashDebug != value)
-				{
-					this._EnableFlashDebug = value;
 					this.RaisePropertyChanged();
 				}
 			}

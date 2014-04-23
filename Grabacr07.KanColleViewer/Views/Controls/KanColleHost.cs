@@ -231,7 +231,7 @@ namespace Grabacr07.KanColleViewer.Views.Controls
 					IHTMLElement head = (IHTMLElement)((IHTMLElementCollection)mainFrame.all.tags("head")).item(null, 0);
 					IHTMLScriptElement scriptOjbect = (IHTMLScriptElement)mainFrame.createElement("script");
 					scriptOjbect.type = @"text/javascript";
-					scriptOjbect.text = string.Format(Properties.Settings.Default.FlashQualityJS, KCVSettings.Current.FlashQuality, KCVSettings.Current.FlashWindow, KCVSettings.Current.EnableFlashDebug.ToString().ToLower());
+					scriptOjbect.text = string.Format(Properties.Settings.Default.FlashQualityJS, KCVSettings.Current.FlashQuality, KCVSettings.Current.FlashWindow);
 					((HTMLHeadElement)head).appendChild((IHTMLDOMNode)scriptOjbect);
 				}
 			}
