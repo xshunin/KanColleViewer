@@ -142,8 +142,8 @@
 						  VerticalAlignment="Top"
 						  Margin="4,5,4,0">
 				<ContentControl DataContext="{Binding SelectedItem}"
-								Content="{Binding}">
-								<!-- MinHeight="{Binding Source={x:Static properties:Settings.Default}, Path=UIContentHight}"> -->
+								Content="{Binding}"
+								MinHeight="{Binding Source={x:Static properties:Settings.Default}, Path=UIContentHight}">
 					<ContentControl.Resources>
 						<DataTemplate DataType="{x:Type vmContents:OverviewViewModel}">
 							<contents:Overview />
