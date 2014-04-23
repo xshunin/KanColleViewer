@@ -987,6 +987,15 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Give a notification when a fleet&apos;s fatigue as reset..
+        /// </summary>
+        public static string Settings_Notify_Fatigue {
+            get {
+                return ResourceManager.GetString("Settings_Notify_Fatigue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 動作設定.
         /// </summary>
         public static string Settings_Operation {
@@ -1689,7 +1698,7 @@ namespace Grabacr07.KanColleViewer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to KanColleViewer Updater.
+        ///   Looks up a localized string similar to Updater.
         /// </summary>
         public static string Updater_Notification_Title {
             get {

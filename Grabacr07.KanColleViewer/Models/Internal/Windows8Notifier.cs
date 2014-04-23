@@ -73,7 +73,7 @@ namespace Grabacr07.KanColleViewer.Models.Internal
 			toast.Activated += (sender, args) => activated();
 			if (failed != null) toast.ToastFailed += (sender, args) => failed(args.ErrorCode);
 
-			sound.SoundOutput(header, false);
+			sound.SoundOutput(header, true);
 			toast.Show();
 		}
 

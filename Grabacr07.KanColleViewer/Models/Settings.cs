@@ -910,7 +910,7 @@ namespace Grabacr07.KanColleViewer.Models
 
 		#endregion
 
-		#region FlashQuality変更通知プロパティ
+		#region FlashQuality 変更通知プロパティ
 
 		private string _FlashQuality;
 
@@ -928,7 +928,7 @@ namespace Grabacr07.KanColleViewer.Models
 		}
 		#endregion
 
-		#region FlashWindow変更通知プロパティ
+		#region FlashWindow 変更通知プロパティ
 
 		private string _FlashWindow;
 
@@ -940,6 +940,24 @@ namespace Grabacr07.KanColleViewer.Models
 				if (this._FlashWindow != value)
 				{
 					this._FlashWindow = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+		#endregion
+
+		#region EnableFatigueNotification 変更通知プロパティ
+
+		private bool _EnableFatigueNotification;
+
+		public bool EnableFatigueNotification
+		{
+			get { return this._EnableFatigueNotification; }
+			set
+			{
+				if (this._EnableFatigueNotification != value)
+				{
+					this._EnableFatigueNotification = value;
 					this.RaisePropertyChanged();
 				}
 			}

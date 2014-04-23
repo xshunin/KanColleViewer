@@ -55,6 +55,7 @@ namespace Grabacr07.KanColleViewer.Models
 
 				output = new DirectSoundOut();
 				output.Init(stream);
+				output.Volume = 0.5;
 				output.Play();
 			}
 			catch (Exception ex)

@@ -691,6 +691,23 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		#endregion
 
+		#region EnableFatigueNotification 変更通知プロパティ
+
+		public bool EnableFatigueNotification
+		{
+			get { return Settings.Current.EnableFatigueNotification; }
+			set
+			{
+				if (Settings.Current.EnableFatigueNotification != value)
+				{
+					Settings.Current.EnableFatigueNotification = value;
+					this.RaisePropertyChanged();
+				}
+			}
+		}
+
+		#endregion
+
 		public bool HasErrors
 		{
 			get { return this.reSortieConditionError != null; }

@@ -649,7 +649,7 @@
     <value>New Version of KCV is available! 「v{0}」</value>
   </data>
   <data name="Updater_Notification_Title" xml:space="preserve">
-    <value>KanColleViewer Updater</value>
+    <value>Updater</value>
   </data>
   <data name="Updater_Notification_TransUpdate_Fail" xml:space="preserve">
     <value>KCV was unable to download the translations!</value>
@@ -688,5 +688,8 @@ Low: Performance over quality. Ugliest setting.</value>
   </data>
   <data name="Settings_Updates_GetKCVBtn_ToolTip" xml:space="preserve">
     <value>Opens a link to the latest version of KCV found here.</value>
+  </data>
+  <data name="Settings_Notify_Fatigue" xml:space="preserve">
+    <value>Give a notification when a fleet's fatigue as reset.</value>
   </data>
 </root>
