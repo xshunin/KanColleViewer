@@ -332,6 +332,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				{
 					Settings.Current.EnableTranslations = value;
 					KanColleClient.Current.Homeport.Translations.EnableTranslations = value;
+					KanColleClient.Current.Homeport.Translations.ChangeCulture(this.Culture);
 					this.RaisePropertyChanged();
 				}
 			}
@@ -912,9 +913,9 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				if (!AppOnlineVersionURL.IsEmpty())
 					Process.Start(AppOnlineVersionURL);
 			}
-			catch
+			catch (Exception ex)
 			{
-
+				Debug.WriteLine(ex);
 			}
 		}
 	}
