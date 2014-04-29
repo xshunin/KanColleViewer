@@ -26,7 +26,7 @@ namespace Grabacr07.KanColleWrapper.Models
 		{
 			get
 			{
-				return KanColleClient.Current.Homeport.Translations.GetTranslation(this.RawData.api_name, TranslationType.Equipment, this.RawData);
+				return KanColleClient.Current.Translations.GetTranslation(this.RawData.api_name, TranslationType.Equipment, this.RawData);
 			}
 		}
 
@@ -54,29 +54,29 @@ namespace Grabacr07.KanColleWrapper.Models
 				string AddDetail = "";
 
 				if (this.RawData.api_houg > 0)
-					AddDetail += " +" + this.RawData.api_houg + " " + KanColleClient.Current.Homeport.Translations.Firepower;
+					AddDetail += " +" + this.RawData.api_houg + " " + KanColleClient.Current.Translations.Firepower;
 				if (this.RawData.api_tyku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_tyku + " " + KanColleClient.Current.Homeport.Translations.AntiAir;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_tyku + " " + KanColleClient.Current.Translations.AntiAir;
 				if (this.RawData.api_raig > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_raig + " " + KanColleClient.Current.Homeport.Translations.Torpedo;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_raig + " " + KanColleClient.Current.Translations.Torpedo;
 				if (this.RawData.api_tais > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_tais + " " + KanColleClient.Current.Homeport.Translations.AntiSub;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_tais + " " + KanColleClient.Current.Translations.AntiSub;
 				if (this.RawData.api_saku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_saku + " " + KanColleClient.Current.Homeport.Translations.SightRange;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_saku + " " + KanColleClient.Current.Translations.SightRange;
 				if (this.RawData.api_soku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_soku + " " + KanColleClient.Current.Homeport.Translations.Speed;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_soku + " " + KanColleClient.Current.Translations.Speed;
 				if (this.RawData.api_souk > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_souk + " " + KanColleClient.Current.Homeport.Translations.Armor;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_souk + " " + KanColleClient.Current.Translations.Armor;
 				if (this.RawData.api_taik > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_taik + " " + KanColleClient.Current.Homeport.Translations.Health;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_taik + " " + KanColleClient.Current.Translations.Health;
 				if (this.RawData.api_luck > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_luck + " " + KanColleClient.Current.Homeport.Translations.Luck;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_luck + " " + KanColleClient.Current.Translations.Luck;
 				if (this.RawData.api_houk > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_houk + " " + KanColleClient.Current.Homeport.Translations.Evasion;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_houk + " " + KanColleClient.Current.Translations.Evasion;
 				if (this.RawData.api_houm > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_houm + " " + KanColleClient.Current.Homeport.Translations.Accuracy;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_houm + " " + KanColleClient.Current.Translations.Accuracy;
 				if (this.RawData.api_baku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_baku + " " + KanColleClient.Current.Homeport.Translations.DiveBomb;
+					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_baku + " " + KanColleClient.Current.Translations.DiveBomb;
 // 				if (this.RawData.api_raik > 0)
 // 					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_raik + " api_raik";
 //				if (this.RawData.api_raim > 0)
@@ -90,7 +90,7 @@ namespace Grabacr07.KanColleWrapper.Models
 // 				if (this.RawData.api_bakk > 0)
 // 					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_bakk + " api_bakk";
 				if (this.RawData.api_leng > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " " + KanColleClient.Current.Homeport.Translations.AttackRange + " (" + this.RawData.api_leng + ")";
+					AddDetail += (AddDetail != "" ? "\n" : "") + " " + KanColleClient.Current.Translations.AttackRange + " (" + this.RawData.api_leng + ")";
 
 				return AddDetail;
 			}
@@ -115,26 +115,17 @@ namespace Grabacr07.KanColleWrapper.Models
 		}
 
 		/// <summary>
-		/// この装備アイテムが艦載機かどうかを示す値を取得します。
+		/// 制空戦に参加できる戦闘機または水上機かどうかを示す値を取得します。
 		/// </summary>
-		public bool IsAircraft
+		public bool IsAirSuperiorityFighter
 		{
 			get
 			{
-				return this.IconType == SlotItemIconType.Fighter ||
-					   this.IconType == SlotItemIconType.TorpedoBomber ||
-					   this.IconType == SlotItemIconType.DiveBomber ||
-					   this.IconType == SlotItemIconType.ReconPlane;
+				var type = this.RawData.api_type.Get(2);
+				return type.HasValue && (type == 6 || type == 7 || type == 8 || type == 11);
 			}
 		}
 
-		/// <summary>
-		/// この装備アイテムが水上機かどうかを示す値を取得します。
-		/// </summary>
-		public bool IsSeaplane
-		{
-			get { return this.IconType == SlotItemIconType.ReconSeaplane; }
-		}
 
 		internal SlotItemInfo(kcsapi_mst_slotitem rawData) : base(rawData) { }
 
