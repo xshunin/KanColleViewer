@@ -298,21 +298,21 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				if (Settings.Current.Culture != value)
 				{
 					ResourceService.Current.ChangeCulture(value);
-					KanColleClient.Current.Homeport.Translations.ChangeCulture(value);
+					KanColleClient.Current.Translations.ChangeCulture(value);
 
-					KanColleClient.Current.Homeport.Translations.Firepower =Properties.Resources.Stats_Firepower;
-					KanColleClient.Current.Homeport.Translations.AntiAir = Properties.Resources.Stats_AntiAir;
-					KanColleClient.Current.Homeport.Translations.Accuracy = Properties.Resources.Stats_Accuracy;
-					KanColleClient.Current.Homeport.Translations.Torpedo = Properties.Resources.Stats_Torpedo;
-					KanColleClient.Current.Homeport.Translations.AntiSub = Properties.Resources.Stats_AntiSub;
-					KanColleClient.Current.Homeport.Translations.Evasion = Properties.Resources.Stats_Evasion;
-					KanColleClient.Current.Homeport.Translations.SightRange = Properties.Resources.Stats_SightRange;
-					KanColleClient.Current.Homeport.Translations.Luck = Properties.Resources.Stats_Luck;
-					KanColleClient.Current.Homeport.Translations.Speed = Properties.Resources.Stats_Speed;
-					KanColleClient.Current.Homeport.Translations.Armor = Properties.Resources.Stats_Armor;
-					KanColleClient.Current.Homeport.Translations.Health = Properties.Resources.Stats_Health;
-					KanColleClient.Current.Homeport.Translations.AttackRange = Properties.Resources.Stats_AttackRange;
-					KanColleClient.Current.Homeport.Translations.DiveBomb = Properties.Resources.Stats_DiveBomb;
+					KanColleClient.Current.Translations.Firepower =Properties.Resources.Stats_Firepower;
+					KanColleClient.Current.Translations.AntiAir = Properties.Resources.Stats_AntiAir;
+					KanColleClient.Current.Translations.Accuracy = Properties.Resources.Stats_Accuracy;
+					KanColleClient.Current.Translations.Torpedo = Properties.Resources.Stats_Torpedo;
+					KanColleClient.Current.Translations.AntiSub = Properties.Resources.Stats_AntiSub;
+					KanColleClient.Current.Translations.Evasion = Properties.Resources.Stats_Evasion;
+					KanColleClient.Current.Translations.SightRange = Properties.Resources.Stats_SightRange;
+					KanColleClient.Current.Translations.Luck = Properties.Resources.Stats_Luck;
+					KanColleClient.Current.Translations.Speed = Properties.Resources.Stats_Speed;
+					KanColleClient.Current.Translations.Armor = Properties.Resources.Stats_Armor;
+					KanColleClient.Current.Translations.Health = Properties.Resources.Stats_Health;
+					KanColleClient.Current.Translations.AttackRange = Properties.Resources.Stats_AttackRange;
+					KanColleClient.Current.Translations.DiveBomb = Properties.Resources.Stats_DiveBomb;
 
 					this.RaisePropertyChanged();
 				}
@@ -331,8 +331,8 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				if (Settings.Current.EnableTranslations != value)
 				{
 					Settings.Current.EnableTranslations = value;
-					KanColleClient.Current.Homeport.Translations.EnableTranslations = value;
-					KanColleClient.Current.Homeport.Translations.ChangeCulture(this.Culture);
+					KanColleClient.Current.Translations.EnableTranslations = value;
+					KanColleClient.Current.Translations.ChangeCulture(this.Culture);
 					this.RaisePropertyChanged();
 				}
 			}
@@ -350,7 +350,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				if (Settings.Current.EnableAddUntranslated != value)
 				{
 					Settings.Current.EnableAddUntranslated = value;
-					KanColleClient.Current.Homeport.Translations.EnableAddUntranslated = value;
+					KanColleClient.Current.Translations.EnableAddUntranslated = value;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -417,12 +417,12 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public string EquipmentVersion
 		{
-			get { return KanColleClient.Current.Homeport.Translations.EquipmentVersion; }
+			get { return KanColleClient.Current.Translations.EquipmentVersion; }
 			set
 			{
-				if (KanColleClient.Current.Homeport.Translations.EquipmentVersion != value)
+				if (KanColleClient.Current.Translations.EquipmentVersion != value)
 				{
-					KanColleClient.Current.Homeport.Translations.EquipmentVersion = value;
+					KanColleClient.Current.Translations.EquipmentVersion = value;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -434,12 +434,12 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public string OperationsVersion
 		{
-			get { return KanColleClient.Current.Homeport.Translations.OperationsVersion; }
+			get { return KanColleClient.Current.Translations.OperationsVersion; }
 			set
 			{
-				if (KanColleClient.Current.Homeport.Translations.OperationsVersion != value)
+				if (KanColleClient.Current.Translations.OperationsVersion != value)
 				{
-					KanColleClient.Current.Homeport.Translations.OperationsVersion = value;
+					KanColleClient.Current.Translations.OperationsVersion = value;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -451,12 +451,12 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public string QuestsVersion
 		{
-			get { return KanColleClient.Current.Homeport.Translations.QuestsVersion; }
+			get { return KanColleClient.Current.Translations.QuestsVersion; }
 			set
 			{
-				if (KanColleClient.Current.Homeport.Translations.QuestsVersion != value)
+				if (KanColleClient.Current.Translations.QuestsVersion != value)
 				{
-					KanColleClient.Current.Homeport.Translations.QuestsVersion = value;
+					KanColleClient.Current.Translations.QuestsVersion = value;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -468,12 +468,12 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public string ShipsVersion
 		{
-			get { return KanColleClient.Current.Homeport.Translations.ShipsVersion; }
+			get { return KanColleClient.Current.Translations.ShipsVersion; }
 			set
 			{
-				if (KanColleClient.Current.Homeport.Translations.ShipsVersion != value)
+				if (KanColleClient.Current.Translations.ShipsVersion != value)
 				{
-					KanColleClient.Current.Homeport.Translations.ShipsVersion = value;
+					KanColleClient.Current.Translations.ShipsVersion = value;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -485,12 +485,12 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public string ShipTypesVersion
 		{
-			get { return KanColleClient.Current.Homeport.Translations.ShipTypesVersion; }
+			get { return KanColleClient.Current.Translations.ShipTypesVersion; }
 			set
 			{
-				if (KanColleClient.Current.Homeport.Translations.ShipTypesVersion != value)
+				if (KanColleClient.Current.Translations.ShipTypesVersion != value)
 				{
-					KanColleClient.Current.Homeport.Translations.ShipTypesVersion = value;
+					KanColleClient.Current.Translations.ShipTypesVersion = value;
 					this.RaisePropertyChanged();
 				}
 			}
@@ -772,7 +772,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 			});
 			this.BrowserZoomFactor = zoomFactor;
 
-			this.CompositeDisposable.Add(new PropertyChangedEventListener(KanColleClient.Current.Homeport.Translations)
+			this.CompositeDisposable.Add(new PropertyChangedEventListener(KanColleClient.Current.Translations)
 			{
 				(sender, args) => this.RaisePropertyChanged(args.PropertyName),
 			});
@@ -879,7 +879,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 
 		public void UpdateTranslations()
 		{
-			int UpdateStatus = KanColleClient.Current.Updater.UpdateTranslations(Properties.Settings.Default.XMLTransUrl.AbsoluteUri, Culture, KanColleClient.Current.Homeport.Translations);
+			int UpdateStatus = KanColleClient.Current.Updater.UpdateTranslations(Properties.Settings.Default.XMLTransUrl.AbsoluteUri, Culture, KanColleClient.Current.Translations);
 			
 			if (UpdateStatus > 0)
 			{
@@ -903,7 +903,7 @@ namespace Grabacr07.KanColleViewer.ViewModels
 					() => App.ViewModelRoot.Activate());
 			}
 				
-			KanColleClient.Current.Homeport.Translations.ChangeCulture(Culture);
+			KanColleClient.Current.Translations.ChangeCulture(Culture);
 		}
 
 		public void OpenKCVLink()
