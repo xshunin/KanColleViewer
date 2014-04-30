@@ -317,9 +317,9 @@ namespace Grabacr07.KanColleWrapper.Models
 			get { return (this.HP.Maximum - this.HP.Current) > 0; }
 		}
 
-		public bool IsSlightlyDamaged
+		public bool IsLightlyDamaged
 		{
-			get { return this.IsDamaged && (this.HP.Current / (double)this.HP.Maximum) > 0.75; }
+			get { return this.IsDamaged && (this.HP.Current / (double)this.HP.Maximum) > 0.5; }
 		}
 
 		public bool IsBadlyDamaged

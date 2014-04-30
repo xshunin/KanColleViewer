@@ -21,7 +21,7 @@ namespace Grabacr07.KanColleViewer.ViewModels.Contents
 				if (!this.Ship.IsDamaged)
 					return "OK";
 
-				return string.Format(Resources.Ship_RepairDockToolTip, this.Ship.RepairDockTime) + (this.Ship.IsSlightlyDamaged ? "\n" + string.Format(Resources.Ship_RepairFacilityToolTip, this.Ship.RepairFacilityTime) : "");
+				return string.Format(Resources.Ship_RepairDockToolTip, this.Ship.RepairDockTime) + (this.Ship.IsLightlyDamaged ? "\n" + string.Format(Resources.Ship_RepairFacilityToolTip, this.Ship.RepairFacilityTime) : "");
 			}
 		}
 
