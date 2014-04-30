@@ -30,69 +30,11 @@ namespace Grabacr07.KanColleWrapper.Models
 			}
 		}
 
-		public string DetailedName
-		{
-			get 
-			{
-				string _Detail = this.Detail;
-				return this.Name + (_Detail != "" ? "\n" + _Detail : "");
-			}
-		}
-
 		public string UntranslatedName
 		{
 			get
 			{
 				return (this.RawData.api_name != this.Name ? this.RawData.api_name : "");
-			}
-		}
-
-		public string Detail
-		{
-			get
-			{
-				string AddDetail = "";
-
-				if (this.RawData.api_houg > 0)
-					AddDetail += " +" + this.RawData.api_houg + " " + KanColleClient.Current.Translations.Firepower;
-				if (this.RawData.api_tyku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_tyku + " " + KanColleClient.Current.Translations.AntiAir;
-				if (this.RawData.api_raig > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_raig + " " + KanColleClient.Current.Translations.Torpedo;
-				if (this.RawData.api_tais > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_tais + " " + KanColleClient.Current.Translations.AntiSub;
-				if (this.RawData.api_saku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_saku + " " + KanColleClient.Current.Translations.SightRange;
-				if (this.RawData.api_soku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_soku + " " + KanColleClient.Current.Translations.Speed;
-				if (this.RawData.api_souk > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_souk + " " + KanColleClient.Current.Translations.Armor;
-				if (this.RawData.api_taik > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_taik + " " + KanColleClient.Current.Translations.Health;
-				if (this.RawData.api_luck > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_luck + " " + KanColleClient.Current.Translations.Luck;
-				if (this.RawData.api_houk > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_houk + " " + KanColleClient.Current.Translations.Evasion;
-				if (this.RawData.api_houm > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_houm + " " + KanColleClient.Current.Translations.Accuracy;
-				if (this.RawData.api_baku > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_baku + " " + KanColleClient.Current.Translations.DiveBomb;
-// 				if (this.RawData.api_raik > 0)
-// 					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_raik + " api_raik";
-//				if (this.RawData.api_raim > 0)
-//					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_raim + " api_raim";
-// 				if (this.RawData.api_sakb > 0)
-// 					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_sakb + " api_sakb";
-// 				if (this.RawData.api_atap > 0)
-// 					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_atap + " api_atap";
-//  			if (this.RawData.api_rare > 0)
-//  				AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_rare + " api_rare";
-// 				if (this.RawData.api_bakk > 0)
-// 					AddDetail += (AddDetail != "" ? "\n" : "") + " +" + this.RawData.api_bakk + " api_bakk";
-				if (this.RawData.api_leng > 0)
-					AddDetail += (AddDetail != "" ? "\n" : "") + " " + KanColleClient.Current.Translations.AttackRange + " (" + this.RawData.api_leng + ")";
-
-				return AddDetail;
 			}
 		}
 
@@ -124,6 +66,66 @@ namespace Grabacr07.KanColleWrapper.Models
 				var type = this.RawData.api_type.Get(2);
 				return type.HasValue && (type == 6 || type == 7 || type == 8 || type == 11);
 			}
+		}
+
+		public int Firepower
+		{
+			get { return this.RawData.api_houg; }
+		}
+
+		public int Torpedo
+		{
+			get { return this.RawData.api_raig; }
+		}
+
+		public int AntiSub
+		{
+			get { return this.RawData.api_tais; }
+		}
+
+		public int SightRange
+		{
+			get { return this.RawData.api_saku; }
+		}
+
+		public int Speed
+		{
+			get { return this.RawData.api_soku; }
+		}
+
+		public int Armor
+		{
+			get { return this.RawData.api_souk; }
+		}
+
+		public int Health
+		{
+			get { return this.RawData.api_taik; }
+		}
+
+		public int Luck
+		{
+			get { return this.RawData.api_luck; }
+		}
+
+		public int Evasion
+		{
+			get { return this.RawData.api_houk; }
+		}
+
+		public int Accuracy
+		{
+			get { return this.RawData.api_houm; }
+		}
+
+		public int DiveBomb
+		{
+			get { return this.RawData.api_baku; }
+		}
+
+		public int AttackRange
+		{
+			get { return this.RawData.api_leng; }
 		}
 
 

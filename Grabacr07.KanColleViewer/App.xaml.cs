@@ -46,7 +46,6 @@ namespace Grabacr07.KanColleViewer
 			KanColleClient.Current.Proxy.UpstreamProxyPort = Settings.Current.ProxyPort;
 
 			ResourceService.Current.ChangeCulture(Settings.Current.Culture);
-			//KanColleClient.Current.Homeport.Logger.EnableLogging = Settings.Current.EnableLogging;
 
 			// Initialize translations
 			KanColleClient.Current.Translations.EnableTranslations = Settings.Current.EnableTranslations;
@@ -77,22 +76,6 @@ namespace Grabacr07.KanColleViewer
 					}
 				}
 			}
-
-			KanColleClient.Current.Translations.Firepower = KanColleViewer.Properties.Resources.Stats_Firepower;
-			KanColleClient.Current.Translations.AntiAir = KanColleViewer.Properties.Resources.Stats_AntiAir;
-			KanColleClient.Current.Translations.Accuracy = KanColleViewer.Properties.Resources.Stats_Accuracy;
-			KanColleClient.Current.Translations.Torpedo = KanColleViewer.Properties.Resources.Stats_Torpedo;
-			KanColleClient.Current.Translations.AntiSub = KanColleViewer.Properties.Resources.Stats_AntiSub;
-			KanColleClient.Current.Translations.Evasion = KanColleViewer.Properties.Resources.Stats_Evasion;
-			KanColleClient.Current.Translations.SightRange = KanColleViewer.Properties.Resources.Stats_SightRange;
-			KanColleClient.Current.Translations.Luck = KanColleViewer.Properties.Resources.Stats_Luck;
-			KanColleClient.Current.Translations.Speed = KanColleViewer.Properties.Resources.Stats_Speed;
-			KanColleClient.Current.Translations.Armor = KanColleViewer.Properties.Resources.Stats_Armor;
-			KanColleClient.Current.Translations.Health = KanColleViewer.Properties.Resources.Stats_Health;
-			KanColleClient.Current.Translations.AttackRange = KanColleViewer.Properties.Resources.Stats_AttackRange;
-			KanColleClient.Current.Translations.DiveBomb = KanColleViewer.Properties.Resources.Stats_DiveBomb;
-
-			//KanColleClient.Current.Homeport.Logger.EnableLogging = Settings.Current.EnableLogging;
 
 			ThemeService.Current.Initialize(this, Theme.Dark, Accent.Purple);
 
