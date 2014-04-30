@@ -416,7 +416,7 @@
 	<JP-Name>深海棲艦ポートワイン泊地</JP-Name>
 	<TR-Name>Port Wine Area Deep Sea Fleet (Boss)</TR-Name>
   </Sortie>
-	<Sortie>
+  <Sortie>
 	<JP-Name>敵増援任務部隊</JP-Name>
 	<TR-Name>Renforcement Task Force</TR-Name>
   </Sortie>

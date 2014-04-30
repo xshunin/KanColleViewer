@@ -296,29 +296,35 @@ namespace Grabacr07.KanColleWrapper.Models
 		/// <summary>
 		/// Repair time taking in consideration HP, LV, and Ship Type.
 		/// </summary>
-		public string RepairTime
+		public string RepairDockTime
 		{
 			get
 			{
-				return TimeSpan.FromSeconds((this.HP.Maximum - this.HP.Current) > 0 ? (this.HP.Maximum - this.HP.Current) * BaseRepairTime[Math.Min(this.Level, 99)] * this.Info.ShipType.RepairMultiplier + 30 : 0).ToString();
+				return TimeSpan.FromSeconds(Math.Floor((this.HP.Maximum - this.HP.Current) * BaseRepairTime[Math.Min(this.Level, 99)] * this.Info.ShipType.RepairMultiplier) + 30).ToString();
 			}
 		}
 
-		public string Detail
+		public string RepairFacilityTime
 		{
 			get
 			{
-				string AddDetail = "";
-				if (this.Info.Name != this.Info.RawData.api_name)
-					AddDetail += this.Info.RawData.api_name + "\n";
-				AddDetail += string.Format("{0}: {1} ({2})\n", KanColleClient.Current.Translations.Firepower, this.Firepower.Current, (this.Firepower.IsMax ? @"MAX" : "+" + (this.Firepower.Max - this.Firepower.Current).ToString()));
-				AddDetail += string.Format("{0}: {1} ({2})\n", KanColleClient.Current.Translations.Torpedo, this.Torpedo.Current, (this.Torpedo.IsMax ? @"MAX" : "+" + (this.Torpedo.Max - this.Torpedo.Current).ToString()));
-				AddDetail += string.Format("{0}: {1} ({2})\n", KanColleClient.Current.Translations.AntiAir, this.AA.Current, (this.AA.IsMax ? @"MAX" : "+" + (this.AA.Max - this.AA.Current).ToString()));
-				AddDetail += string.Format("{0}: {1} ({2})\n", KanColleClient.Current.Translations.Armor, this.Armer.Current, (this.Armer.IsMax ? @"MAX" : "+" + (this.Armer.Max - this.Armer.Current).ToString()));
-				AddDetail += string.Format("{0}: {1} ({2})", KanColleClient.Current.Translations.Luck, this.Luck.Current, (this.Luck.IsMax ? @"MAX" : "+" + (this.Luck.Max - this.Luck.Current).ToString()));
-
-				return AddDetail;
+				return TimeSpan.FromMinutes((this.HP.Maximum - this.HP.Current) * 20).ToString();
 			}
+		}
+
+		public bool IsDamaged
+		{
+			get { return (this.HP.Maximum - this.HP.Current) > 0; }
+		}
+
+		public bool IsSlightlyDamaged
+		{
+			get { return this.IsDamaged && (this.HP.Current / (double)this.HP.Maximum) > 0.75; }
+		}
+
+		public bool IsBadlyDamaged
+		{
+			get { return (this.HP.Current / (double)this.HP.Maximum) <= 0.25; }
 		}
 
 		public SlotItem[] SlotItems { get; private set; }

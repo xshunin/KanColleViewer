@@ -300,20 +300,6 @@ namespace Grabacr07.KanColleViewer.ViewModels
 					ResourceService.Current.ChangeCulture(value);
 					KanColleClient.Current.Translations.ChangeCulture(value);
 
-					KanColleClient.Current.Translations.Firepower =Properties.Resources.Stats_Firepower;
-					KanColleClient.Current.Translations.AntiAir = Properties.Resources.Stats_AntiAir;
-					KanColleClient.Current.Translations.Accuracy = Properties.Resources.Stats_Accuracy;
-					KanColleClient.Current.Translations.Torpedo = Properties.Resources.Stats_Torpedo;
-					KanColleClient.Current.Translations.AntiSub = Properties.Resources.Stats_AntiSub;
-					KanColleClient.Current.Translations.Evasion = Properties.Resources.Stats_Evasion;
-					KanColleClient.Current.Translations.SightRange = Properties.Resources.Stats_SightRange;
-					KanColleClient.Current.Translations.Luck = Properties.Resources.Stats_Luck;
-					KanColleClient.Current.Translations.Speed = Properties.Resources.Stats_Speed;
-					KanColleClient.Current.Translations.Armor = Properties.Resources.Stats_Armor;
-					KanColleClient.Current.Translations.Health = Properties.Resources.Stats_Health;
-					KanColleClient.Current.Translations.AttackRange = Properties.Resources.Stats_AttackRange;
-					KanColleClient.Current.Translations.DiveBomb = Properties.Resources.Stats_DiveBomb;
-
 					this.RaisePropertyChanged();
 				}
 			}
