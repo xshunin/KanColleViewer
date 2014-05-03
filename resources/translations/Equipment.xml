@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Equipment Version="1.0.1">
+<Equipment Version="1.0.2">
   <Item>
     <JP-Name>12cm単装砲</JP-Name>
     <TR-Name>12cm Single Cannon</TR-Name>
@@ -331,5 +331,9 @@
   <Item>
     <JP-Name>艦艇修理施設</JP-Name>
     <TR-Name>Ship Repair Facility</TR-Name>
+  </Item>
+  <Item>
+    <JP-Name>新型高温高圧缶</JP-Name>
+    <TR-Name>New High Pressure-Temperature Steam Boiler</TR-Name>
   </Item>
 </Equipment>
