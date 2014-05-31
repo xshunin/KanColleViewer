@@ -1180,4 +1180,12 @@
     <JP-Name>酒匂改</JP-Name>
     <TR-Name>Sakawa Kai</TR-Name>
   </Ship>
+  <Ship>
+    <JP-Name>浦風</JP-Name>
+    <TR-Name>Urakaze</TR-Name>
+  </Ship>
+  <Ship>
+    <JP-Name>浦風改</JP-Name>
+    <TR-Name>Urakaze Kai</TR-Name>
+  </Ship>
 </Ships>
