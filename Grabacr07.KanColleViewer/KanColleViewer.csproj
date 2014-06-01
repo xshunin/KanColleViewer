@@ -231,6 +231,7 @@
     <Compile Include="Views\Controls\KanColleHost.cs" />
     <Compile Include="Views\Controls\WebBrowserHelper.cs" />
     <Compile Include="Views\Behaviors\ZoomAction.cs" />
+    <Compile Include="Views\Converters\RankIDToRankNameConverter.cs" />
     <Compile Include="Views\Settings\Browser.xaml.cs">
       <DependentUpon>Browser.xaml</DependentUpon>
     </Compile>
