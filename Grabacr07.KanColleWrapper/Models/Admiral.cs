@@ -130,6 +130,10 @@ namespace Grabacr07.KanColleWrapper.Models
 			get { return this.RawData.api_max_slotitem; }
 		}
 
+		public void Update()
+		{
+			this.RaisePropertyChanged("RankID");
+		}
 
 		internal Admiral(kcsapi_basic rawData)
 			: base(rawData)

@@ -299,6 +299,11 @@ namespace Grabacr07.KanColleViewer.ViewModels
 				{
 					ResourceService.Current.ChangeCulture(value);
 					KanColleClient.Current.Translations.ChangeCulture(value);
+					try
+					{
+						KanColleClient.Current.Homeport.Admiral.Update();
+					}
+					catch (NullReferenceException e) { }
 
 					this.RaisePropertyChanged();
 				}
