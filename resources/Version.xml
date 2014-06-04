@@ -2,12 +2,12 @@
 <Versions>
 	<Item>
 		<Name>App</Name>
-		<Version>2.6.0.458</Version>
-		<URL>https://github.com/Zharay/KanColleViewer/releases/tag/v2.6.0r458</URL>
+		<Version>2.6.0.462</Version>
+		<URL>https://github.com/Yuubari/KanColleViewer/releases/tag/v2.6.0r462</URL>
 	</Item>
 	<Item>
 		<Name>Equipment</Name>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 		<URL>https://raw.github.com/Zharay/KanColleViewer/master/resources/translations/Equipment.xml</URL>
 	</Item>
 	<Item>
@@ -22,8 +22,8 @@
 	</Item>
 	<Item>
 		<Name>Ships</Name>
-		<Version>1.0.4</Version>
-		<URL>https://raw.github.com/Zharay/KanColleViewer/master/resources/translations/Ships.xml</URL>
+		<Version>1.0.5</Version>
+		<URL>https://raw.github.com/Yuubari/KanColleViewer/master/resources/translations/Ships.xml</URL>
 	</Item>
 	<Item>
 		<Name>ShipTypes</Name>

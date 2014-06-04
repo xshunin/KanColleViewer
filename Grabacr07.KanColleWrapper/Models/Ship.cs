@@ -308,6 +308,12 @@ namespace Grabacr07.KanColleWrapper.Models
 		{
 			get
 			{
+				// Time it takes to heal 1HP
+				double MinDockTime = Math.Floor(BaseRepairTime[Math.Min(this.Level, 99)] * this.Info.ShipType.RepairMultiplier) + 30;
+
+				if (MinDockTime < 1200)
+					return RepairDockTime;
+					
 				return TimeSpan.FromMinutes((this.HP.Maximum - this.HP.Current) * 20).ToString();
 			}
 		}
@@ -317,9 +323,9 @@ namespace Grabacr07.KanColleWrapper.Models
 			get { return (this.HP.Maximum - this.HP.Current) > 0; }
 		}
 
-		public bool IsSlightlyDamaged
+		public bool IsLightlyDamaged
 		{
-			get { return this.IsDamaged && (this.HP.Current / (double)this.HP.Maximum) > 0.75; }
+			get { return this.IsDamaged && (this.HP.Current / (double)this.HP.Maximum) > 0.5; }
 		}
 
 		public bool IsBadlyDamaged
@@ -377,7 +383,7 @@ namespace Grabacr07.KanColleWrapper.Models
 				this.Luck = new ModernizableStatus(this.Info.RawData.api_luck, this.RawData.api_kyouka[4]);
 			}
 
-			this.SlotItems = this.RawData.api_slot.Select(id => this.homeport.SlotItems[id]).Where(x => x != null).ToArray();
+			this.SlotItems = this.RawData.api_slot.Select(id => this.homeport.Itemyard.SlotItems[id]).Where(x => x != null).ToArray();
 			this.OnSlot = this.RawData.api_onslot;
 
 			// Minimum removes equipped values.
