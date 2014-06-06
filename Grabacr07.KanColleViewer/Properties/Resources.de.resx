@@ -250,7 +250,7 @@
     <value>Einige Schiffe in deiner Flotte, die {0}.</value>
   </data>
   <data name="MessageBar_ReSortie_CanReSortie" xml:space="preserve">
-    <value>bereit zum Einsatz sind!</value>
+    <value>Bereit zum Einsatz!</value>
   </data>
   <data name="MessageBar_ReSortie_LackForResources" xml:space="preserve">
     <value>Versorgung brauchen.</value>
