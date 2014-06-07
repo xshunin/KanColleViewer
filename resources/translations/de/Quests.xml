@@ -3,63 +3,63 @@
   <Quest>
     <ID>A1</ID>
     <JP-Name>はじめての「編成」！</JP-Name>
-    <TR-Name>First Formation!</TR-Name>
+    <TR-Name>Erste Formation!</TR-Name>
     <JP-Detail>2隻以上の艦で編成される「艦隊」を編成せよ！</JP-Detail>
-    <TR-Detail>Have 2 ships in your main fleet.</TR-Detail>
+    <TR-Detail>Habe 2 Schiffe in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A2</ID>
     <JP-Name>「駆逐隊」を編成せよ！</JP-Name>
-    <TR-Name>Form a Destroyer Squadron!</TR-Name>
+    <TR-Name>Bilde ein Zerstörer Squadron!</TR-Name>
     <JP-Detail>駆逐艦4隻以上で編成される「駆逐隊」を編成せよ！</JP-Detail>
-    <TR-Detail>Have 4 DD in your main fleet.</TR-Detail>
+    <TR-Detail>Habe 4 DD in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A3</ID>
     <JP-Name>「水雷戦隊」を編成せよ！</JP-Name>
-    <TR-Name>Form a Torpedo Squadron!</TR-Name>
+    <TR-Name>Bilde ein Torpedo Squadron!</TR-Name>
     <JP-Detail>軽巡洋艦を旗艦とし、数隻の駆逐艦で構成される「水雷戦隊」を編成せよ！</JP-Detail>
-    <TR-Detail>Have a CL as a flagship and 5 DD in your main fleet.</TR-Detail>
+    <TR-Detail>Habe ein CL als dein Flaggschiff und 5 DD in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A4</ID>
     <JP-Name>6隻編成の艦隊を編成せよ！</JP-Name>
-    <TR-Name>Form a Six Ship Fleet!</TR-Name>
+    <TR-Name>Bilde eine Sechs-Schiff Flotte!</TR-Name>
     <JP-Detail>全6隻で構成される主力艦隊を編成せよ！</JP-Detail>
-    <TR-Detail>Have 6 ships in your main fleet.</TR-Detail>
+    <TR-Detail>Habe 6 Schiffe in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A5</ID>
     <JP-Name>軽巡2隻を擁する隊を編成せよ！</JP-Name>
-    <TR-Name>Form a Squadron with Two CL!</TR-Name>
+    <TR-Name>Bilde ein Squadron mit zwei CL in deiner Flotte!</TR-Name>
     <JP-Detail>軽巡洋艦2隻を擁する高速艦隊を編成せよ！</JP-Detail>
-    <TR-Detail>Have 2 CL in your main fleet.</TR-Detail>
+    <TR-Detail>Habe 2 CL in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A6</ID>
     <JP-Name>第2艦隊を編成せよ！</JP-Name>
-    <TR-Name>Form the Second Fleet!</TR-Name>
+    <TR-Name>Bilde eine zweite Flotte!</TR-Name>
     <JP-Detail>二つ目の艦隊、第2艦隊の旗艦を指定して、第2艦隊を編成せよ！</JP-Detail>
-    <TR-Detail>Have a flagship in your second fleet.</TR-Detail>
+    <TR-Detail>Habe ein Flaggschiff in deiner zweiten Flotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A7</ID>
     <JP-Name>「重巡戦隊」を編成せよ！</JP-Name>
-    <TR-Name>Form a Heavy Cruiser Squadron!</TR-Name>
+    <TR-Name>Bilde ein Schwerer Kreuzer Squadron!</TR-Name>
     <JP-Detail>重巡洋艦２隻を擁する重巡艦隊を編成せよ！</JP-Detail>
-    <TR-Detail>Have 2 CA in your main fleet.</TR-Detail>
+    <TR-Detail>Habe 2 CA in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A8</ID>
     <JP-Name>「天龍」型軽巡姉妹の全2艦を編成せよ！</JP-Name>
-    <TR-Name>Form the Tenryuu-class!</TR-Name>
+    <TR-Name>Bilde die Tenryuu-Klasse!</TR-Name>
     <JP-Detail>天龍型軽巡洋艦「天龍」「龍田」を同一艦隊に配属せよ！</JP-Detail>
-    <TR-Detail>Have Tenryuu (天龍) and Tatsuta (龍田) in your main fleet.</TR-Detail>
+    <TR-Detail>Habe Tenryuu (天龍) und Tatsuta (龍田) in deiner Hauptflotte.</TR-Detail>
   </Quest>
   <Quest>
     <ID>A9</ID>
     <JP-Name>「水上機母艦」を配備せよ！</JP-Name>
-    <TR-Name>Ready a Seaplane Carrier!</TR-Name>
+    <TR-Name>Stelle einen Wasserflugzeugträger bereit!</TR-Name>
     <JP-Detail>多数の水上偵察機を運用する「水上機母艦」を艦隊に配備せよ！</JP-Detail>
     <TR-Detail>Have an AV in your main fleet.</TR-Detail>
   </Quest>

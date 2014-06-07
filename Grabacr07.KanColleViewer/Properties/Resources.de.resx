@@ -241,7 +241,7 @@
     <value>Es sind derzeit Schiffe in der Reparatur. Zeit bis zur Fertigstellung: {0:MM/dd HH\:mm}  Verbleibende Zeit: {1}:{2:mm\:ss}</value>
   </data>
   <data name="MessageBar_Repairing_Null" xml:space="preserve">
-    <value>Es sind derzeit Schiffe in der Reparatur..</value>
+    <value>Es sind derzeit Schiffe in der Reparatur...</value>
   </data>
   <data name="MessageBar_ReSortie_BadCondition" xml:space="preserve">
     <value>erschöpft sind</value>
@@ -565,7 +565,7 @@
     <value>Derzeitiges Level</value>
   </data>
   <data name="Tools_Calculator_Flagship" xml:space="preserve">
-    <value>Flagschiff</value>
+    <value>Flaggschiff</value>
   </data>
   <data name="Tools_Calculator_ListPrompt" xml:space="preserve">
     <value>Schiffsmädchen auswählen</value>
