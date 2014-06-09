@@ -852,7 +852,7 @@
     <JP-Name>「第五戦隊」出撃せよ！</JP-Name>
     <TR-Name>Deploy the 5th Fleet</TR-Name>
     <JP-Detail>「第五戦隊」は沖ノ島沖の戦闘哨戒を実施、敵艦隊主力を捕捉、これを撃滅せよ！</JP-Detail>
-    <TR-Detail>Deploy Myoukou (妙高), Nachi  (那智) and Haguro (羽黒) to World 2-5. Score an S rank victory against the boss.</TR-Detail>
+    <TR-Detail>Deploy Myoukou (妙高), Nachi (那智) and Haguro (羽黒) to World 2-5. Score an S rank victory against the boss.</TR-Detail>
   </Quest>
   <Quest>
     <ID>250</ID>
