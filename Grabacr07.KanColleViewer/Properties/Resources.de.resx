@@ -232,13 +232,13 @@
     <value>Diese Flotte ist auf einer Expedition.</value>
   </data>
   <data name="MessageBar_Expedition_TimeCompletion" xml:space="preserve">
-    <value> Zeit bis zur Rückkehr:</value>
+    <value> Zeitpunkt der Rückkehr:</value>
   </data>
   <data name="MessageBar_Expedition_TimeRemaining" xml:space="preserve">
     <value> Verbleibende Zeit:</value>
   </data>
   <data name="MessageBar_Repairing" xml:space="preserve">
-    <value>Es sind derzeit Schiffe in der Reparatur. Zeit bis zur Fertigstellung: {0:MM/dd HH\:mm}  Verbleibende Zeit: {1}:{2:mm\:ss}</value>
+    <value>Es sind derzeit Schiffe in der Reparatur. Zeitpunkt der Fertigstellung: {0:MM/dd HH\:mm}  Verbleibende Zeit: {1}:{2:mm\:ss}</value>
   </data>
   <data name="MessageBar_Repairing_Null" xml:space="preserve">
     <value>Es sind derzeit Schiffe in der Reparatur...</value>
