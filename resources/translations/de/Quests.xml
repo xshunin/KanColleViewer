@@ -488,7 +488,7 @@
 		<JP-Name>敵北方艦隊主力を撃滅せよ！</JP-Name>
 		<TR-Name>Wöchentlicher Einsatz 7</TR-Name>
 		<JP-Detail>北方海域の深部に出撃し、敵北方艦隊の主力艦隊を捕捉、これを撃滅せよ！</JP-Detail>
-		<TR-Detail>Besiege 5 Bosse in Welt 3-3 und 3-4 (TL Note: insgesamt, nicht jeweils).</TR-Detail>
+		<TR-Detail>Besiege 5 Bosse in Welt 3-3 oder 3-4.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>Bw8</ID>
