@@ -565,35 +565,35 @@
 		<JP-Name>第一次潜水艦派遣作戦</JP-Name>
 		<TR-Name>Die erste U-Boot Operation</TR-Name>
 		<JP-Detail>はじめての潜水艦派遣作戦を成功させよう！</JP-Detail>
-		<TR-Detail>Complete Expedition 30.</TR-Detail>
+		<TR-Detail>Schließe Expedition 30 erfolgreich ab.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>D6</ID>
 		<JP-Name>第二次潜水艦派遣作戦</JP-Name>
-		<TR-Name>The Second Submarine Operation</TR-Name>
+		<TR-Name>Die zweite U-Boot Operation</TR-Name>
 		<JP-Detail>第２次潜水艦派遣作戦を成功させよう！</JP-Detail>
-		<TR-Detail>Complete Expedition 30 one more time.</TR-Detail>
+		<TR-Detail>Schließe Expedition 30 ein weiteres mal erfolgreich ab.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>D7</ID>
 		<JP-Name>潜水艦派遣作戦による技術入手の継続！</JP-Name>
-		<TR-Name>Continuation of Submarine Operations</TR-Name>
+		<TR-Name>Forsetzung der U-Boot Operationen</TR-Name>
 		<JP-Detail>第3次及び第4次潜水艦派遣作戦を成功させ、他国製技術の導入に努めよ！</JP-Detail>
-		<TR-Detail>Complete Expedition 30 two more times.</TR-Detail>
+		<TR-Detail>Schließe Expedition 30 zwei weitere male ab.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>E1</ID>
 		<JP-Name>はじめての「補給」！</JP-Name>
-		<TR-Name>First Supply</TR-Name>
+		<TR-Name>Erste Versorgung</TR-Name>
 		<JP-Detail>補給は大事です！燃料・弾薬を艦に「補給」しよう！</JP-Detail>
-		<TR-Detail>Resupply a ship.</TR-Detail>
+		<TR-Detail>Versorge ein Schiff.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>E2</ID>
 		<JP-Name>はじめての「入渠」！</JP-Name>
-		<TR-Name>First Docking</TR-Name>
+		<TR-Name>Erstes Andocken</TR-Name>
 		<JP-Detail>戦闘で傷ついた艦を「入渠」させて修理して、次の出撃に備えよう！</JP-Detail>
-		<TR-Detail>Repair a ship.</TR-Detail>
+		<TR-Detail>Repariere ein Schiff.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>E3</ID>
