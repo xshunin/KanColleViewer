@@ -544,21 +544,21 @@
 		<JP-Name>「遠征」を３回成功させよう！</JP-Name>
 		<TR-Name>Tägliche Expeditionen 1</TR-Name>
 		<JP-Detail>本日中に「遠征」３回成功させよう！</JP-Detail>
-		<TR-Detail>Führe 3 Erfolgreiche Expeditionen am selben Tag durch.</TR-Detail>
+		<TR-Detail>Führe 3 erfolgreiche Expeditionen am selben Tag durch.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>D3</ID>
 		<JP-Name>「遠征」を１０回成功させよう！</JP-Name>
 		<TR-Name>Tägliche Expeditionen 2</TR-Name>
 		<JP-Detail>本日中に「遠征」10回成功させよう！</JP-Detail>
-		<TR-Detail>Führe 10 Erfolgreiche Expeditionen am selben Tag durch.</TR-Detail>
+		<TR-Detail>Führe 10 erfolgreiche Expeditionen am selben Tag durch.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>D4</ID>
 		<JP-Name>大規模遠征作戦、発令！</JP-Name>
 		<TR-Name>Wöchentliche Expeditionen</TR-Name>
 		<JP-Detail>今週中に「遠征」30回成功させよう！</JP-Detail>
-		<TR-Detail>Führe 30 Erfolgreiche Expeditionen in der selben Woche durch.</TR-Detail>
+		<TR-Detail>Führe 30 erfolgreiche Expeditionen in der selben Woche durch.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>D5</ID>
