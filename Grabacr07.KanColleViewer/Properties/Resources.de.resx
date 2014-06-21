@@ -253,7 +253,7 @@
     <value>Bereit zum Einsatz!</value>
   </data>
   <data name="MessageBar_ReSortie_LackForResources" xml:space="preserve">
-    <value>benötigen Versörgung.</value>
+    <value>benötigen Versörgung</value>
   </data>
   <data name="MessageBar_ReSortie_Remaining" xml:space="preserve">
     <value>Wartezeit: </value>
