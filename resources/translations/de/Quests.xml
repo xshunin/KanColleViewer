@@ -390,21 +390,21 @@
 		<JP-Name>敵艦隊を撃破せよ！</JP-Name>
 		<TR-Name>Täglicher Einsatz 1</TR-Name>
 		<JP-Detail>艦隊を出撃させ、敵艦隊を捕捉、これを撃滅せよ！</JP-Detail>
-		<TR-Detail>Zerstöre eine gegnerische Flotte.</TR-Detail>
+		<TR-Detail>Besiege eine gegnerische Flotte.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>Bd2</ID>
 		<JP-Name>敵艦隊主力を撃滅せよ！</JP-Name>
 		<TR-Name>Täglicher Einsatz 2</TR-Name>
 		<JP-Detail>艦隊を出撃させ、敵艦隊「主力」を捕捉！これを撃滅せよ！</JP-Detail>
-		<TR-Detail>Zerstöre das Flaggschiff einer gegnerischen Flotte.</TR-Detail>
+		<TR-Detail>Besiege das Flaggschiff einer gegnerischen Flotte.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>Bd3</ID>
 		<JP-Name>敵艦隊を10回邀撃せよ！</JP-Name>
 		<TR-Name>Täglicher Einsatz 3</TR-Name>
 		<JP-Detail>艦隊全力出撃！遊弋する敵艦隊を10回邀撃せよ！</JP-Detail>
-		<TR-Detail>Zerstöre 10 gegnerische Flotten.</TR-Detail>
+		<TR-Detail>Besiege 10 gegnerische Flotten.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>Bd4</ID>
@@ -724,30 +724,30 @@
 	<Quest>
 		<ID>WF01</ID>
 		<JP-Name>式の準備！(その壱)</JP-Name>
-		<TR-Name>In Preparation of Love! (Part 1)</TR-Name>
+		<TR-Name>Hochzeitsvorbereitungen! (Teil 1)</TR-Name>
 		<JP-Detail>式の準備をします！「工廠」で装備アイテムを2回「廃棄」して身の回りの整理を！</JP-Detail>
-		<TR-Detail>Scrap equipment 2 times to show your love!.</TR-Detail>
+		<TR-Detail>Recycle 2 Ausrüstungsteile um deine Liebe zu zeigen!</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>WC01</ID>
 		<JP-Name>式の準備！(その弐)</JP-Name>
-		<TR-Name>In Preparation of Love! (Part 2)</TR-Name>
+		<TR-Name>Hochzeitsvorbereitungen! (Teil 2)</TR-Name>
 		<JP-Detail>本日中に「演習」で2回以上「勝利」をおさめ、式への気持ちを整理しよう！</JP-Detail>
-		<TR-Detail>Show your love by getting 2 victories in practice mode!</TR-Detail>
+		<TR-Detail>Zeige deine Liebe indem du 2 mal im Übungsmodus gewinnst!</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>WA01</ID>
 		<JP-Name>式の準備！(その参)</JP-Name>
-		<TR-Name>In Preparation of Love! (Part 3)</TR-Name>
+		<TR-Name>Hochzeitsvorbereitungen! (Teil 3)</TR-Name>
 		<JP-Detail>第一艦隊旗艦に練度の高い(Lv.90以上～99以下)艦娘を配備して気持ちを整理せよ！</JP-Detail>
-		<TR-Detail>Organize your feelings and deploy your fleet with a high level flagship (Lv.90~99)!</TR-Detail>
+		<TR-Detail>Ordne deine Gefühle und stationiere deine Flotte mit einem High-Level Flaggschiff (Lv.90~99)!</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>WB01</ID>
 		<JP-Name>式の準備！(最終)</JP-Name>
-		<TR-Name>In Preparation of Love! (Final)</TR-Name>
+		<TR-Name>Hochzeitsvorbereitungen! (Finale)</TR-Name>
 		<JP-Detail>練度の高い(Lv.90以上～99以下）第一艦隊旗艦で出撃し、オリョール海の暁に勝利を刻め！</JP-Detail>
-		<TR-Detail>Deploy a fleet with a high level (Lv.90~99) flagship to 2-3 obtain an S victory or higher against the boss.</TR-Detail>
+		<TR-Detail>Stationiere deine Flotte mit einem High-Level Flaggschiff (Lv.90~99) nach 2-3 und besiege den Boss mit einem S-Rank oder höher.</TR-Detail>
 	</Quest>
 	<Quest>
 		<ID>WA02</ID>
